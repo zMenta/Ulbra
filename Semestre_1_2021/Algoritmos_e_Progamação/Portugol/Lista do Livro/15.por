@@ -10,7 +10,38 @@ que foram entrevistadas dez pessoas. Faça um programa que calcule e mostre:
 ■■ a percentagem de homens que responderam não, entre todos os homens analisados.*/
 	funcao inicio()
 	{
-		
+		inteiro i,q_s = 0, q_n = 0, m_s = 0
+		real  h_n = 0, h =0
+		cadeia resp, sex
+
+		para(i = 0; i != 10; i++){
+			escreva("Digite sua resposta (s/n): ")
+			leia(resp)
+			escreva("Digite seu sexo (h/m): ")
+			leia(sex)
+
+			se(sex == "h"){
+				h++
+			}
+
+			se(resp == "s"){
+				q_s++
+				se(sex == "m"){
+					m_s++
+				}
+			}senao se(resp == "n"){
+				q_n++
+				se(sex == "h"){
+					h_n++
+				}
+			}
+
+		}
+
+		escreva("TOTAL SIM: ",q_s)
+		escreva("\nTOTAL NÃO: ",q_n)
+		escreva("\nMULHERES SIM: ",m_s)
+		escreva("\nHOMEM NÃO PORCENTAGEM: ",(h_n/h)*100)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -18,7 +49,7 @@ que foram entrevistadas dez pessoas. Faça um programa que calcule e mostre:
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 536; 
+ * @POSICAO-CURSOR = 698; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
