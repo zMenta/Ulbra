@@ -3,7 +3,6 @@
  a leitura chega ao final quando a soma dos números lidos for igual a 20.
  Mostrar ao final qual o maior valor lido
 """
-
 num_sum = 0
 
 print()
