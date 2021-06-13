@@ -53,6 +53,7 @@ os seguintes vetores resultantes:
 			}
 		}
 
+		escreva("The union of the array_1 with array_2 is: ")
 		para(i = 0; i != u; i++){
 			escreva(array_xuy[i],", ")
 		}
