@@ -25,7 +25,7 @@ os seguintes vetores resultantes:
 			}
 
 			se(found){
-
+				
 				repeated = falso
 				k = 0
 				enquanto(k < 10 e nao repeated){
@@ -51,7 +51,7 @@ os seguintes vetores resultantes:
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 478; 
+ * @POSICAO-CURSOR = 676; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {j, 11, 13, 1}-{inter, 11, 19, 5}-{array_x, 12, 10, 7}-{array_y, 13, 10, 7}-{inter_xy, 14, 10, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
