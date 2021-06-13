@@ -40,10 +40,28 @@ os seguintes vetores resultantes:
 			// Then don't add the number.
 			se(j >= u){
 				array_xuy[u] = array_x[i]
-				
 				u++ // U is working as the position of the array_xuy. When a number is added, it moves to the next position.
 			}
 			
+		}
+
+		//Adds non repeated numbers in array_xuy from the array_y.
+		para(i = 0; i != 10; i++){
+			j = 0
+
+			enquanto(j < u e array_y[i] != array_xuy[j]){
+				j++
+			}
+
+			se(j >= u){
+				array_xuy[u] = array_y[i]
+				u++
+			}
+		}
+
+
+		para(i = 0; i != u; i++){
+			escreva(array_xuy[i],", ")
 		}
 		
 	}
@@ -53,9 +71,9 @@ os seguintes vetores resultantes:
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1101; 
+ * @POSICAO-CURSOR = 1668; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {array_xuy, 28, 10, 9};
+ * @SIMBOLOS-INSPECIONADOS = {i, 21, 10, 1}-{j, 21, 13, 1}-{u, 21, 17, 1}-{array_xuy, 28, 10, 9};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
