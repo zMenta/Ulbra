@@ -15,7 +15,7 @@ Pedro 4,0 | 5,0  | 4,5 |Reprovado
 	funcao inicio()
 	{
 		const inteiro size = 2
-		real f_grade[size], average = 0, num, grade1[size], grade2[size]
+		real f_grade[size], average = 0, grade1[size], grade2[size] 
 		cadeia name[size]
 
 		inteiro i, tot_pas = 0, tot_fai = 0
@@ -61,9 +61,9 @@ Pedro 4,0 | 5,0  | 4,5 |Reprovado
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1487; 
+ * @POSICAO-CURSOR = 485; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {average, 18, 22, 7}-{num, 18, 35, 3};
+ * @SIMBOLOS-INSPECIONADOS = {average, 18, 22, 7};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
