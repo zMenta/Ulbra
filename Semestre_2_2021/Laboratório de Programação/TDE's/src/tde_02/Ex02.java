@@ -10,7 +10,7 @@ import java.util.Scanner;
     Para entrada e saída de dados utilize a classe JOptionPane.*/
 
 
-public class Ex2 {
+public class Ex02 {
 
     public static void main(String[] args) {
 
