@@ -15,10 +15,10 @@ public class Ex05 {
     static double discountCalculate(double price){
         double newPrice = price;
 
-        double percent5 = 0.95;
-        double percent6 = 0.94;
-        double percent7 = 0.93;
-        double percent8 = 0.92;
+        final double percent5 = 0.95;
+        final double percent6 = 0.94;
+        final double percent7 = 0.93;
+        final double percent8 = 0.92;
 
         if(price >= 50 && price < 200){
             return newPrice*percent5;
