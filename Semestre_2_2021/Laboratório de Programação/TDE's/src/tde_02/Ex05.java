@@ -50,7 +50,7 @@ public class Ex05 {
         System.out.println("Please type the price of the product: ");
         double productPrice = input.nextDouble();
 
-        System.out.println("If possible discounts applied you need to pay: $"+discountCalculate(productPrice));
-        
+        System.out.println("If available discounts applied you need to pay $"+discountCalculate(productPrice));
+
     }
 }
