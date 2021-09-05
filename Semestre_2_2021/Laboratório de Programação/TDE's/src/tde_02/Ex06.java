@@ -44,12 +44,11 @@ public class Ex06 {
             }
         }
 
-        equivalentResistance = equivalentResistance / resistances.size();
-
-        System.out.println(resistances);
-
-        System.out.println(resistances.get(2));
-        System.out.println(resistances.get(0));
+        System.out.println("Typed resistances: "+resistances);
+        System.out.println("The equivalent resistance "+equivalentResistance);
+        System.out.println("-------------------------------------------------");
+        System.out.println("The highest resistance: "+highestResistance);
+        System.out.println("The lowest resistance: "+lowestResistance);
 
 
 
