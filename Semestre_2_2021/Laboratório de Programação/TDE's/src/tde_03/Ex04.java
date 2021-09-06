@@ -10,18 +10,15 @@ public class Ex04 {
         String newPhrase = "";
 
         System.out.println("Type an phrase: ");
-        phrase = input.next();
-
-        phrase.replaceAll("\\s","");
-
+        phrase = input.nextLine();
+        phrase = phrase.replaceAll("\\s","");
+        
         for(int i = phrase.length()-1; i >= 0; i--){
             newPhrase += phrase.charAt(i);
         }
 
-        System.out.println(phrase.length());
         System.out.println(phrase);
         System.out.println(newPhrase);
-
 
     }
 }
