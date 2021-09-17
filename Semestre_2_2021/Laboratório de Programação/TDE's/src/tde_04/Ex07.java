@@ -8,7 +8,7 @@ public class Ex07 {
     public static void main(String[] args) {
         Random random = new Random();
 
-        final int size = 5;
+        final int size = 40;
         int[][] canvas = new int[size][size];
 
         for(int y = 0; y < size; y++){
@@ -23,6 +23,6 @@ public class Ex07 {
             }
             System.out.println();
         }
-        
+
     }
 }
