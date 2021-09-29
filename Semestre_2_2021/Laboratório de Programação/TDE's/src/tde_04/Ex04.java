@@ -1,4 +1,5 @@
 package tde_04;
+import java.util.Locale;
 import java.util.Scanner;
 
 /*Escreva um programa que crie um String e use um laço for para verificar se ele é um palíndromo, ou seja,
@@ -9,19 +10,18 @@ public class Ex04 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Write a word: ");
-        String word = input.next();
+        String word = input.next().toLowerCase();
 
-        String inversedWord = "";
+        String invertedWord = "";
         for(int i = word.length()-1; i >= 0; i--) {
-            inversedWord += word.charAt(i);
+            invertedWord += word.charAt(i);
         }
 
-        if(word.equals(inversedWord)){
+        if(word.equals(invertedWord)){
             System.out.println("This word is a palindrome.");
         }else{
             System.out.println("This word is Not a palindrome.");
         }
-
 
     }
 }

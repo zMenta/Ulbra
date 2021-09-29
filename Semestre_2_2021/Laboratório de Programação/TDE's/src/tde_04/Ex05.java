@@ -12,6 +12,11 @@ public class Ex05 {
         double[] grades = new double[5];
         double sum = 0;
 
+        String[] numbers = {"Carro", "pablo", "jorge", "Carlos"};
+
+        System.out.println(numbers[0].length());
+
+
         for(int i = 0; i < 5; i++){
             System.out.println("Write the grades: ");
             grades[i] = input.nextDouble();

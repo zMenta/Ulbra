@@ -27,7 +27,7 @@ public class Ex02 {
         }
     }
 
-    public static void count(int start, int end){
+     public static void count(int start, int end){
         for(int i = start; i <= end; i++){
             System.out.print(i);
             if( i < end){
