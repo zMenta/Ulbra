@@ -88,8 +88,18 @@ public class Read {
         return value;
     }
 
-    public void validateEmail(){
+    public String validateEmail(){
+        print("Type an email to be validated: ");
+        String email = input.next();
 
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+ "[a-zA-Z0-9_+&*-]+)*@" + "(?:[a-zA-Z0-9-]+\\.)+[a-z" + "A-Z]{2,7}$";
+        boolean validEmail = email.matches(emailRegex);
+
+        if(validEmail == true){
+            return email;
+        }else {
+            return null;
+        }
     }
 
 

@@ -5,7 +5,7 @@ public class Main {
         Read read = new Read();
 
         //read.writeInt();
-        read.writeInt("Type a whole number: ");
+        //read.writeInt("Type a whole number: ");
 
         //read.writeFloat();
         //read.writeFloat("Type a float value: ");
@@ -18,6 +18,8 @@ public class Main {
 
         //read.writeChar();
         //read.writeChar("Type a character: ");
+
+        //read.validateEmail();
 
     }
 }
