@@ -21,5 +21,7 @@ public class Main {
 
         //read.validateEmail();
 
+        boolean x = read.validadeNumber();
+        System.out.println(x);
     }
 }

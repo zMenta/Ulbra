@@ -88,6 +88,7 @@ public class Read {
         return value;
     }
 
+    // Ex) A
     public String validateEmail(){
         print("Type an email to be validated: ");
         String email = input.next();
@@ -100,6 +101,21 @@ public class Read {
         }else {
             return null;
         }
+    }
+
+    // Ex) E
+    public boolean validadeNumber(){
+        message("data value");
+        String value = input.next();
+
+        try{
+            Float.parseFloat(value);
+            return true;
+        }catch(NumberFormatException e){
+            return false;
+        }
+
+
     }
 
 
