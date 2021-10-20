@@ -145,7 +145,7 @@ public class Read {
         for(int i = 6; i < 10; i++){
             changedDate += date.charAt(i);
         }
-        
+
         return changedDate;
     }
 
