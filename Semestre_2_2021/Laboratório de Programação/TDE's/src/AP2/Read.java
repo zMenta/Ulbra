@@ -117,25 +117,36 @@ public class Read {
     }
 
     // Ex) C
-
     public String validateDate(){
-        message("date(DD/MM/YYYY");
-        print("Type the day: ");
-        int day = input.nextInt();
-        print("Type the month: ");
-        int month = input.nextInt();
-        print("Type the year:");
-        String year = input.next();
+        message("date(DD/MM/YYYY)");
+        String date = input.next();
+        final int dateLenght = 10;
 
-        String date;
-        //Validate date
-        if((day >= 0 && day <= 31) && (month >= 1 && month <= 12) && (year.length() <= 4)){
-            date = day+"/"+month+"/"+year;
-        }else{
-            date = null;
+        if(date.length() == dateLenght && date.charAt(2) == '/' && date.charAt(5) == '/'){
+            return date;
         }
 
-        return date;
+        return null;
+    }
+
+    // Ex) D
+    public String changeDate(){
+        message("date(DD/MM/YYYY)");
+        String date = input.next();
+        String changedDate = "";
+
+        changedDate += date.charAt(3);
+        changedDate += date.charAt(4);
+        changedDate += "/";
+        changedDate += date.charAt(0);
+        changedDate += date.charAt(1);
+        changedDate += "/";
+
+        for(int i = 6; i < 10; i++){
+            changedDate += date.charAt(i);
+        }
+        
+        return changedDate;
     }
 
     // Ex) E

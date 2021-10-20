@@ -25,6 +25,8 @@ public class Main {
 
         //read.validatePhoneNumber();
 
-        System.out.println(read.validateDate());
+        //read.validateDate();
+
+        System.out.println(read.changeDate());
     }
 }
