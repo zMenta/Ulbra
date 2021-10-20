@@ -103,6 +103,41 @@ public class Read {
         }
     }
 
+    // Ex) B
+    public String validatePhoneNumber(){
+        message("phone number(DDD-XXXXXXXXX)");
+        String phoneNumber = input.next();
+        final int phoneNumberLenght = 13;
+
+        if( phoneNumber.charAt(3) == '-' && phoneNumber.length() == phoneNumberLenght){
+            return phoneNumber;
+        }else{
+            return null;
+        }
+    }
+
+    // Ex) C
+
+    public String validateDate(){
+        message("date(DD/MM/YYYY");
+        print("Type the day: ");
+        int day = input.nextInt();
+        print("Type the month: ");
+        int month = input.nextInt();
+        print("Type the year:");
+        String year = input.next();
+
+        String date;
+        //Validate date
+        if((day >= 0 && day <= 31) && (month >= 1 && month <= 12) && (year.length() <= 4)){
+            date = day+"/"+month+"/"+year;
+        }else{
+            date = null;
+        }
+
+        return date;
+    }
+
     // Ex) E
     public boolean validadeNumber(){
         message("data value");
