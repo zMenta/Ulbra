@@ -1,4 +1,5 @@
 package AP2;
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Read {
@@ -27,6 +28,15 @@ public class Read {
         return value;
     }
 
+    public int writeInt(String customMessage, boolean activateJOptionPane){
+        if(activateJOptionPane == false){
+            return writeInt(customMessage);
+        }else{
+            String value = JOptionPane.showInputDialog(customMessage);
+            return Integer.parseInt(value);
+        }
+    }
+
     //FLOAT METHODS
     public float writeFloat(){
         message("float");
@@ -40,6 +50,15 @@ public class Read {
         float value = input.nextFloat();
 
         return value;
+    }
+
+    public float writeFloat(String customMessage, boolean activateJOptionPane){
+        if(activateJOptionPane == false){
+            return writeFloat(customMessage);
+        }else{
+            String value = JOptionPane.showInputDialog(customMessage);
+            return Float.parseFloat(value);
+        }
     }
 
 
@@ -58,6 +77,16 @@ public class Read {
         return value;
     }
 
+    public double writeDouble(String customMessage, boolean activateJOptionPane){
+        if(activateJOptionPane == false){
+            return writeDouble(customMessage);
+        }else{
+            String value = JOptionPane.showInputDialog(customMessage);
+            return Double.parseDouble(value);
+        }
+    }
+
+
     //STRING METHODS
     public String writeString(){
         message("string");
@@ -72,6 +101,15 @@ public class Read {
 
         return value;
     }
+
+    public String writeString(String customMessage, boolean activateJOptionPane){
+        if(activateJOptionPane == false){
+            return writeString(customMessage);
+        }else{
+            return JOptionPane.showInputDialog(customMessage);
+        }
+    }
+
 
     //CHAR METHODS
     public char writeChar(){
@@ -88,6 +126,15 @@ public class Read {
         return value;
     }
 
+    public char writeChar(String customMessage, boolean activateJOptionPane){
+        if(activateJOptionPane == false){
+            return writeChar(customMessage);
+        }else{
+            return JOptionPane.showInputDialog(customMessage).charAt(0);
+        }
+    }
+
+    
     // Ex) A
     public String validateEmail(){
         print("Type an email to be validated: ");

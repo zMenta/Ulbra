@@ -6,9 +6,11 @@ public class Main {
 
         //read.writeInt();
         //read.writeInt("Type a whole number: ");
+        //read.writeInt("Type a int value: ", true);
 
         //read.writeFloat();
         //read.writeFloat("Type a float value: ");
+
 
         //read.writeDouble();
         //read.writeDouble("Type a double value: ");
