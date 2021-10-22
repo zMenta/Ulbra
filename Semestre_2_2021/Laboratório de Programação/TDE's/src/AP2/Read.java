@@ -134,7 +134,7 @@ public class Read {
         }
     }
 
-    
+
     // Ex) A
     public String validateEmail(){
         print("Type an email to be validated: ");
@@ -197,7 +197,7 @@ public class Read {
     }
 
     // Ex) E
-    public boolean validadeNumber(){
+    public boolean validateNumber(){
         message("data value");
         String value = input.next();
 

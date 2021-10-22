@@ -10,20 +10,25 @@ public class Main {
 
         //read.writeFloat();
         //read.writeFloat("Type a float value: ");
+        //read.writeFloat("Type a float value: ",true);
 
 
         //read.writeDouble();
         //read.writeDouble("Type a double value: ");
+        //read.writeDouble("Type a double value: ", true);
 
         //read.writeString();
         //read.writeString("Type a string: ");
+        //read.writeString("Type a string: ", true);
+
 
         //read.writeChar();
         //read.writeChar("Type a character: ");
+        //read.writeChar("Type a character: ", true);
 
         //read.validateEmail();
 
-        //read.validadeNumber();
+        //read.validateNumber();
 
         //read.validatePhoneNumber();
 
