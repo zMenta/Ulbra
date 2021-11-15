@@ -73,7 +73,9 @@ public class main {
                     boolean showFound = false;
                     for(int i = 0; i < series.size(); i++){
                         if(series.get(i).title.equals(name)){
-                            System.out.println("Found the show!");
+                            printLine();
+                            System.out.println("Show Found!");
+                            series.get(i).info();
                             showFound = true;
                         }
                     }
@@ -87,7 +89,8 @@ public class main {
                 // Exit
                 case 8:
                     printLine();
-                    System.out.println("End");
+                    System.out.println("\t\t\tEnd");
+                    printLine();
                     break;
             }
             
