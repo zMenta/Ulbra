@@ -75,6 +75,7 @@ public class main {
                     printLine();
                     System.out.println("1- Sort by watched | 2- Sort by NOT watched");
                     int subChoice = input.nextInt();
+                    printLine();
                     for(int i = 0; i < series.size(); i++){
                         //watched
                         if(subChoice == 1 && series.get(i).watched){
