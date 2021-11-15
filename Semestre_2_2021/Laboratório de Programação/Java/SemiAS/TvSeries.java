@@ -16,6 +16,9 @@ public class TvSeries {
     public TvSeries(ArrayList data){
         this.title = data.get(0).toString();
         this.seasons = Integer.parseInt(data.get(1).toString());
+        this.number_episodes = Integer.parseInt(data.get(2).toString());
+        this.summary = data.get(3).toString();
+        this.watched = Boolean.parseBoolean(data.get(4).toString());
         System.out.println("Created " +this.title+ " tv series!");
     }
 

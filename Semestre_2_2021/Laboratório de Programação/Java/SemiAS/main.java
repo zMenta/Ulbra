@@ -19,7 +19,7 @@ public class main {
         do{
             data.clear();
             System.out.println("Select a number:");
-            System.out.println("1- Add a show | 2- List Shows | 3- Remove a show | 4- Total of registered series | 5- Search serie by name | 8 - Exit");
+            System.out.println("1- Add a show | 2- List Shows | 3- Remove a show | 4- Total of registered series | 5- Filter by watched |6- Search serie by name | 7- Exit");
             choice = input.nextInt();
 
             switch(choice) {
@@ -30,6 +30,12 @@ public class main {
                     data.add(input.next());
                     System.out.println("Type the number of seasons: ");
                     data.add(input.nextInt());
+                    System.out.println("Type the total number of episodes: ");
+                    data.add(input.nextInt());
+                    System.out.println("Type summary of the show: ");
+                    data.add(input.next());
+                    System.out.println("Is watched: ");
+                    data.add(input.nextBoolean());
                     TvSeries show = new TvSeries(data);
                     series.add(show);
                     printLine();    
@@ -64,9 +70,27 @@ public class main {
                     printLine();
                     break;
                     
+                //Filter by watched
+                case 5:
+                    printLine();
+                    System.out.println("1- Sort by watched | 2- Sort by NOT watched");
+                    int subChoice = input.nextInt();
+                    for(int i = 0; i < series.size(); i++){
+                        //watched
+                        if(subChoice == 1 && series.get(i).watched){
+                            System.out.println(i + " | "+ series.get(i).title + " | Watched: "+series.get(i).watched);
+                        }
+
+                        //no watched
+                        if(subChoice == 2 && !series.get(i).watched){
+                            System.out.println(i + " | "+ series.get(i).title + " | Watched: "+series.get(i).watched);
+                        }
+                    }
+                    printLine();
+                    break;
 
                 //Search by Name
-                case 5:
+                case 6:
                     printLine();
                     System.out.println("Type the name of the show that you want to search: ");
                     String name = input.next();
@@ -87,7 +111,7 @@ public class main {
                     printLine();
                     break;
                 // Exit
-                case 8:
+                case 7:
                     printLine();
                     System.out.println("\t\t\tEnd");
                     printLine();
@@ -95,7 +119,7 @@ public class main {
             }
             
             
-        }while(choice != 8);
+        }while(choice != 7);
         
     }
 }
