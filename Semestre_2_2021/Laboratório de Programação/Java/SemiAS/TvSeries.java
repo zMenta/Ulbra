@@ -1,5 +1,4 @@
 package Shows;
-
 import java.util.ArrayList;
 
 public class TvSeries {
