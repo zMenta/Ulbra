@@ -27,8 +27,5 @@ public class TvSeries {
         System.out.println("Watched: "+this.watched);
     }
 
-    public String getName(){
-        return this.title;
-    }
 
 }
