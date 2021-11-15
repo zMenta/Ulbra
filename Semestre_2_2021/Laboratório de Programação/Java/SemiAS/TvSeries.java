@@ -29,5 +29,4 @@ public class TvSeries {
         System.out.println("Watched: "+this.watched);
     }
 
-
 }

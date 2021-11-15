@@ -2,8 +2,6 @@ package Shows;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthStyleFactory;
-
 public class main {
 
     static void printLine(){
