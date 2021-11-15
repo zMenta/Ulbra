@@ -1,4 +1,5 @@
 package Shows;
+import java.util.ArrayList;
 
 public class TvSeries {
     String title;
@@ -11,18 +12,13 @@ public class TvSeries {
         System.out.println("created a tv series!");
     }
 
-    public TvSeries(String title){
-        this.title = title;
-        System.out.println("created " +this.title+ " tv series");
-    }
-
-    public TvSeries(String title, int seasons, int number_episodes, String summary, Boolean watched){
-        this.title = title;
-        this.seasons = seasons;
-        this.number_episodes = number_episodes;
-        this.summary = summary;
-        this.watched = watched;
-        System.out.println("created " +this.title+ " tv series");
+    public TvSeries(ArrayList data){
+        this.title = data.get(0).toString();
+        this.seasons = Integer.parseInt(data.get(1).toString());
+        this.number_episodes = Integer.parseInt(data.get(2).toString());
+        this.summary = data.get(3).toString();
+        this.watched = Boolean.parseBoolean(data.get(4).toString());
+        System.out.println("Created " +this.title+ " tv series!");
     }
 
     public void info(){
