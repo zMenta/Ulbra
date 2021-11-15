@@ -2,6 +2,8 @@ package Shows;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthStyleFactory;
+
 public class main {
 
     static void printLine(){
@@ -17,7 +19,7 @@ public class main {
         do{
             data.clear();
             System.out.println("Select a number:");
-            System.out.println("1- Add a show | 2- List Shows | 3- Remove a show | 4- Total of registered series | 5 - Exit");
+            System.out.println("1- Add a show | 2- List Shows | 3- Remove a show | 4- Total of registered series | 5- Search serie by name | 8 - Exit");
             choice = input.nextInt();
 
             switch(choice) {
@@ -62,15 +64,35 @@ public class main {
                     printLine();
                     break;
                     
-                    // Exit
-                    case 5:
+
+                //Search by Name
+                case 5:
+                    printLine();
+                    System.out.println("Type the name of the show that you want to search: ");
+                    String name = input.next();
+                    boolean showFound = false;
+                    for(int i = 0; i < series.size(); i++){
+                        if(series.get(i).title.equals(name)){
+                            System.out.println("Found the show!");
+                            showFound = true;
+                        }
+                    }
+                    
+                    if(!showFound){
+                        System.out.println("Not found.");
+                    }
+
+                    printLine();
+                    break;
+                // Exit
+                case 8:
                     printLine();
                     System.out.println("End");
                     break;
             }
             
             
-        }while(choice != 5);
+        }while(choice != 8);
         
     }
 }
