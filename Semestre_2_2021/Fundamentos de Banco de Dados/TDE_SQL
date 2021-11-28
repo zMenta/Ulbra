@@ -1,1 +1,8 @@
 
+--1-  FUS que calcule a média de valor unitário dos produtos vendidos num mês de sua escolha.
+
+SELECT id_produto, AVG(valor_unit) as sell_price_average
+FROM notas_itens
+INNER JOIN notas ON notas.id = notas_itens.id_nota
+WHERE notas.data_emissao BETWEEN '2009-11-01' AND '2050-11-30'
+GROUP BY id_produto
