@@ -41,3 +41,23 @@ WHERE nome LIKE 'Yuri%'
 GROUP BY c.id, P.descricao
 ORDER By SUM(NI.quantidade) DESC
 LIMIT 1
+
+
+
+-- 4 - qual o produto mais caro que um cliente comprou num determinado período
+-- (sua escolha).
+
+-- listagem de produtos comprados por clientes
+-- por uma faixa de tempo
+-- filtrar por preço mais caro
+
+SELECT produtos.descricao as nome_cliente, MAX(produtos.valor_unit) as max_price_unitario
+FROM notas
+INNER JOIN notas_itens
+ON notas_itens.id_nota = notas.id
+INNER JOIN produtos
+ON notas_itens.id_produto = produtos.id
+WHERE notas.data_emissao BETWEEN '2040-11-01' AND '2050-11-30'
+GROUP BY produtos.id
+ORDER BY MAX(produtos.valor_unit) DESC
+LIMIT 1
