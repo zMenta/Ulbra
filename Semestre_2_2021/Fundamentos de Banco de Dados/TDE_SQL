@@ -23,3 +23,21 @@ ON N.id = NI.id
 WHERE nome LIKE 'Yuri%'
 GROUP BY c.id
 HAVING SUM(NI.quantidade) > 800
+
+
+
+-- 3 - NA consulta anterior, 
+-- acrescente saber qual foi o produto que mais foi comprado.
+
+SELECT C.id as id_cliente, C.nome , SUM(NI.quantidade), P.descricao
+FROM clientes C
+INNER JOIN notas N 
+ON C.id = N.id_cliente
+INNER Join notas_itens NI
+ON N.id = NI.id
+INNER JOIN produtos P
+ON NI.id_produto = P.id
+WHERE nome LIKE 'Yuri%'
+GROUP BY c.id, P.descricao
+ORDER By SUM(NI.quantidade) DESC
+LIMIT 1
