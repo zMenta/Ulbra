@@ -62,3 +62,12 @@ FROM livros
 INNER JOIN autores 
 ON livros.id_autor = autores.id
 
+-- group by
+
+-- listagem nome do autor e quantidade de livros publicados
+SELECT autores.nome, COUNt(livros.id) as num_de_livros
+FROM livros
+INNER JOIN autores 
+ON livros.id_autor = autores.id
+GROUP BY autores.id;
+
