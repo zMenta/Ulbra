@@ -45,3 +45,13 @@ VALUES
 ('Eu sinto frio', 100, 5, 1),
 ('Skate Rugoso',35,  1, 3),
 ('Moeda Suja', 47.20, 2, 1);
+
+--1  função de agregação (minimo 2. ex. Sum, count)
+
+SELECT AVG(preco) as average, COUNT(id) as numero_de_livros
+FROM livros;
+
+SELECT SUM(preco) as soma_de_precos
+FROM livros
+
+-- joins
