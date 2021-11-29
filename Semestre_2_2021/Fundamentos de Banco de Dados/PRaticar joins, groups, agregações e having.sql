@@ -55,3 +55,10 @@ SELECT SUM(preco) as soma_de_precos
 FROM livros
 
 -- joins
+
+-- listagem nome do livro e do autor
+SELECT livros.nome, autores.nome
+FROM livros
+INNER JOIN autores 
+ON livros.id_autor = autores.id
+
