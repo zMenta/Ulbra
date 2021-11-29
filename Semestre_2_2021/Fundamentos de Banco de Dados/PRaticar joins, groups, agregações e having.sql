@@ -71,3 +71,13 @@ INNER JOIN autores
 ON livros.id_autor = autores.id
 GROUP BY autores.id;
 
+-- having
+
+-- listagem nome do autor e quantidade de livros publicados. Somente quem publicou menos que dois livros
+SELECT autores.nome, COUNt(livros.id) as num_de_livros
+FROM livros
+INNER JOIN autores 
+ON livros.id_autor = autores.id
+GROUP BY autores.id
+HAVING COUNT(livros.id) < 2;
+
