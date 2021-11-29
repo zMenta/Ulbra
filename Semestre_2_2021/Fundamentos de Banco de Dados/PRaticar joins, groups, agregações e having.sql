@@ -13,6 +13,7 @@ CREATE TABLE Editoras(
 CREATE TABLE Livros(
 	id serial NOT NULL PRIMARY KEY,
   	nome VARCHAR(40),
+	preco decimal,
   	id_autor INT,
   	id_editora INT,
   	CONSTRAINT FK_Autor FOREIGN KEY (id_autor) REFERENCES autores(id),
@@ -37,10 +38,10 @@ VALUES
 ('Tinta'),
 ('Castelo Velho');
 
-INSERT INTO livros (nome, id_autor, id_editora)
+INSERT INTO livros (nome, preco, id_autor, id_editora)
 VALUES
-('Meu Skate Liso', 1, 2),
-('Altos Bancos', 2, 3),
-('Eu sinto frio', 5, 1),
-('Skate Rugoso', 1, 3),
-('Moeda Suja', 2, 1);
+('Meu Skate Liso', 49.50, 1, 2),
+('Saltins Bancos', 80, 2, 3),
+('Eu sinto frio', 100, 5, 1),
+('Skate Rugoso',35,  1, 3),
+('Moeda Suja', 47.20, 2, 1);
