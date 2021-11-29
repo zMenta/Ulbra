@@ -22,3 +22,11 @@ CREATE TABLE Livros(
 
 
 --Insert Values:
+
+INSERT INTO autores( nome )
+VALUES 
+('Clarabela'),
+('Pablo'),
+('Ricardo'),
+('Carolina'),
+('Ana')
