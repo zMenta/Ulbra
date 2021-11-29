@@ -30,3 +30,17 @@ VALUES
 ('Ricardo'),
 ('Carolina'),
 ('Ana')
+
+INSERT Into editoras(nome)
+VALUES
+('Rio Branco'),
+('Tinta'),
+('Castelo Velho')
+
+INSERT INTO livros (nome, id_autor, id_editora)
+VALUES
+('Meu Skate Liso', 1, 2),
+('Saltins Bancos', 2, 3),
+('Eu sinto frio', 5, 1),
+('Skate Rugoso', 1, 3),
+('Moeda Suja', 2, 1)
