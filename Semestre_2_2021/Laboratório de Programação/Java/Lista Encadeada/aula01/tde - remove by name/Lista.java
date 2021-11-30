@@ -127,4 +127,16 @@ public class Lista {
         return true;
     }
     }
+
+    public boolean removerPorNome(String nome){
+        int index = 0;
+        Cao aux = primeiro;
+
+        while (!aux.nome.equals(nome)){
+            index++;
+            aux=aux.proximo;
+        }
+
+        return this.remover(index);
+    }
 }
