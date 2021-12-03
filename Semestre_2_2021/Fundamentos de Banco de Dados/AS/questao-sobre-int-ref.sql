@@ -6,5 +6,6 @@
 -- Por Exemplo: 
 
 -- Na tabela Aluno, temos o idcid que referencia a tabela Cidade, onde com esse relacionamento podemos saber em qual cidade o Aluno mora.
--- Por exemplo tendo uma cidade com idcid igual a 5. Se um aluno tem o idcid igual a 5, sabemos que esse aluno mora na cidade 5. 
--- Assim o banco de dados é íntegro com seus dados.
+-- Por exemplo tendo uma cidade com idcid igual a 5. Se um aluno tem o idcid igual a 5, sabemos que esse aluno mora na cidade 5. Porém o
+-- banco de dados não poderá ter um Aluno que referencia um idcid que não existe, ou seja, uma cidade ainda não cadastrada no banco. 
+-- Assim o banco de dados é íntegro com seus dados..
