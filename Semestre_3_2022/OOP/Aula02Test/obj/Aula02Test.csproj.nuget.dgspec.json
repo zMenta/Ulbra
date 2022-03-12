@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Repositorios\\Ulbra\\Aula02Test\\Aula02Test.csproj": {}
+    "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\Aula02Test\\Aula02Test.csproj": {}
   },
   "projects": {
-    "E:\\Repositorios\\Ulbra\\Aula02Test\\Aula02Test.csproj": {
+    "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\Aula02Test\\Aula02Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Repositorios\\Ulbra\\Aula02Test\\Aula02Test.csproj",
+        "projectUniqueName": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\Aula02Test\\Aula02Test.csproj",
         "projectName": "Aula02Test",
-        "projectPath": "E:\\Repositorios\\Ulbra\\Aula02Test\\Aula02Test.csproj",
+        "projectPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\Aula02Test\\Aula02Test.csproj",
         "packagesPath": "C:\\Users\\brent\\.nuget\\packages\\",
-        "outputPath": "E:\\Repositorios\\Ulbra\\Aula02Test\\obj\\",
+        "outputPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\Aula02Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brent\\AppData\\Roaming\\NuGet\\NuGet.Config"
