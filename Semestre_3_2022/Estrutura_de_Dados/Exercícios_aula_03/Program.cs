@@ -8,22 +8,35 @@ namespace Exercícios_aula_03
     {
         static void Main(string[] args)
         {
-            
+
             var exerciseMap = new Dictionary<string, Action>
             {
                 {"1", Exercise01.run}
             };
 
+            if (args.Length == 0)
+            {
+                System.Console.WriteLine("No exercise specified, running them all.");
 
-            // Exercise01.run();
+                foreach (var exerciseAction in exerciseMap.Values)
+                {
+                    exerciseAction();
+                }
 
-            // Exercise01 ex = new Exercise01();
-
-            if( true){
-                exerciseMap.TryGetValue(args[0], out var execiseAction);
-                execiseAction();
+                return;
             }
 
+            var exercises = args[0].Split(',');
+
+            foreach (var exercise in exercises)
+            {
+                if (!exerciseMap.TryGetValue(exercise, out var exerciseAction))
+                {
+                    Console.WriteLine($"Exercise not found of id {exercise}");
+                    continue;
+                }
+                exerciseAction();
+            }
         }
     }
 }
