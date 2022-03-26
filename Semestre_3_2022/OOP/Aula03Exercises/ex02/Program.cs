@@ -23,6 +23,7 @@ namespace ex02
             List<Person> friends_group = new List<Person>{john, bob};
         
             PhoneBook phoneBook2 = new PhoneBook(friends_group);
+            PhoneBook phoneBook1 = new PhoneBook();
 
             phoneBook2.show();
             phoneBook2.People.Add(bob_mom);

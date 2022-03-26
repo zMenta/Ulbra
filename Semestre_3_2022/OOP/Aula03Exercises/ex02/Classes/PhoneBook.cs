@@ -4,11 +4,11 @@ namespace ex02.Classes
 {
     public class PhoneBook
     {
+        public PhoneBook(){}
         public PhoneBook(List<Person> people)
         {
             this.People = people;
         }
-
         public List<Person> People { get; set; }
 
 
