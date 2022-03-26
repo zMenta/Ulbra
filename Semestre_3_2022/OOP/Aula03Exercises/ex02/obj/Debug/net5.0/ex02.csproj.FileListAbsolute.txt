@@ -1,0 +1,16 @@
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ex02.csproj.AssemblyReference.cache
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ex02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ex02.AssemblyInfoInputs.cache
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ex02.AssemblyInfo.cs
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ex02.csproj.CoreCompileInputs.cache
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\bin\Debug\net5.0\ex02.exe
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\bin\Debug\net5.0\ex02.deps.json
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\bin\Debug\net5.0\ex02.runtimeconfig.json
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\bin\Debug\net5.0\ex02.runtimeconfig.dev.json
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\bin\Debug\net5.0\ex02.dll
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\bin\Debug\net5.0\ref\ex02.dll
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\bin\Debug\net5.0\ex02.pdb
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ex02.dll
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ref\ex02.dll
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ex02.pdb
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex02\obj\Debug\net5.0\ex02.genruntimeconfig.cache
