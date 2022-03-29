@@ -11,7 +11,8 @@ namespace Exercícios_aula_03
 
             var exerciseMap = new Dictionary<string, Action>
             {
-                {"1", Exercise01.run}
+                {"1", Exercise01.run},
+                {"2", Exercise02.run},
             };
 
             if (args.Length == 0)
