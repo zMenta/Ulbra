@@ -12,8 +12,16 @@ namespace ex01
              a respectiva quantidade. Esse pedido pode ser pago em dinheiro, cheque ou cartão.” */
 
             Product banana = new Product("banana", 20, 4);
+            Product tv = new Product("tv", 3, 200);
 
+            System.Console.WriteLine(banana.Stock);
             Order order = new Order(banana);
+            order.AddToOrder(banana,3);
+            order.AddToOrder(tv,4);
+
+            System.Console.WriteLine(banana.Stock);
+
+            order.Pay();
 
         }
     }
