@@ -1,0 +1,16 @@
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\bin\Debug\net5.0\ex01.exe
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\bin\Debug\net5.0\ex01.deps.json
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\bin\Debug\net5.0\ex01.runtimeconfig.json
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\bin\Debug\net5.0\ex01.runtimeconfig.dev.json
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\bin\Debug\net5.0\ex01.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\bin\Debug\net5.0\ref\ex01.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\bin\Debug\net5.0\ex01.pdb
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ex01.csproj.AssemblyReference.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ex01.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ex01.AssemblyInfoInputs.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ex01.AssemblyInfo.cs
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ex01.csproj.CoreCompileInputs.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ex01.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ref\ex01.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ex01.pdb
+E:\Repositorios\Ulbra\Semestre_3_2022\OOP\Aula03Exercises\ex01\obj\Debug\net5.0\ex01.genruntimeconfig.cache

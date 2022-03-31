@@ -13,6 +13,7 @@ namespace ex01
 
             Product banana = new Product("banana", 20, 4);
 
+            Order order = new Order(banana);
 
         }
     }

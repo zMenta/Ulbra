@@ -10,7 +10,9 @@ namespace ex01
 
         public Order(Product products)
         {
+            Products = new List<Product>();
             AddToOrder(products);
+
         }
         public List<Product> Products { get; set; }
 
@@ -44,7 +46,7 @@ namespace ex01
         {
             if ((product.Stock - quantity) > 0)
             {
-                this.Products.Add(product);
+                Products.Add(product);
                 product.Stock -= quantity;
             }
             else
