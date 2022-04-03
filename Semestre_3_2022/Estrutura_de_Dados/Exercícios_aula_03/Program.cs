@@ -13,6 +13,7 @@ namespace Exercícios_aula_03
             {
                 {"1", Exercise01.run},
                 {"2", Exercise02.run},
+                {"3", Exercise03.run}
             };
 
             if (args.Length == 0)

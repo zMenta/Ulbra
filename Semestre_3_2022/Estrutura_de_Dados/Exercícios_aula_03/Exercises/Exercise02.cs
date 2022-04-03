@@ -41,7 +41,7 @@ namespace Exercícios_aula_03.Exercises
                         break;
 
                     case "R":
-                        remove_value_to_matrix(matrix);
+                        remove_value_from_matrix(matrix);
                         break;
 
                     case "C":
@@ -97,7 +97,7 @@ namespace Exercícios_aula_03.Exercises
 
             matrix[row_value, collumn_value] = number;
         }
-        private static void remove_value_to_matrix(int[,] matrix)
+        private static void remove_value_from_matrix(int[,] matrix)
         {
             System.Console.WriteLine("Type the row position: ");
             int row_value = int.Parse(Console.ReadLine());
