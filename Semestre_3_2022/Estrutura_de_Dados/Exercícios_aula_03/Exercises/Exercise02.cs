@@ -22,22 +22,41 @@ namespace Exercícios_aula_03.Exercises
             */
 
             int[,] matrix = new int[4, 4];
-            string choice = null;
+            string choice = string.Empty;
 
-            // while (choice.Equals("E"))
-            // {
+            while (!choice.Equals("E"))
+            {
+                show_menu_option();
+                choice = Console.ReadLine().ToUpper();
 
-            // }
+                switch (choice)
+                {
+                    case "S":
+                        show_matrix(matrix);
+                        break;
 
-            show_menu_option();
+                    case "A":
+                        add_value_to_matrix(matrix);
+                        break;
+                    
+                    case "E":
+                        System.Console.WriteLine("Exit");
+                        break;
 
+                    default:
+                        System.Console.WriteLine("Invalid Option");
+                        break;
+                }
+
+
+            }
         }
 
         private static void show_menu_option(string title = "Welcome to the matrix manager", int size = 20, char pad = '-')
         {
             int title_size = title.Length;
 
-            System.Console.WriteLine("".PadLeft(size,pad) + title + "".PadLeft(size,pad));
+            System.Console.WriteLine("".PadLeft(size, pad) + title + "".PadLeft(size, pad));
             System.Console.WriteLine();
             System.Console.WriteLine("A - Add an value into the matrix;");
             System.Console.WriteLine("R - Remove an value from the matrix;");
@@ -45,7 +64,7 @@ namespace Exercícios_aula_03.Exercises
             System.Console.WriteLine("S - Show the matrix values;");
             System.Console.WriteLine("E - Exit matrix manager.");
             System.Console.WriteLine();
-            System.Console.WriteLine("".PadLeft(size,pad) + "".PadLeft(title_size,pad) + "".PadLeft(size,pad));
+            System.Console.WriteLine("".PadLeft(size, pad) + "".PadLeft(title_size, pad) + "".PadLeft(size, pad));
         }
 
         private static void show_matrix(int[,] matrix, int row_count = 4, int collumn_count = 4)
@@ -58,6 +77,19 @@ namespace Exercícios_aula_03.Exercises
                 }
                 System.Console.WriteLine();
             }
+        }
+
+        private static void add_value_to_matrix(int[,] matrix)
+        {
+            System.Console.WriteLine("Type the row position: ");
+            int row_value = int.Parse(Console.ReadLine());
+            System.Console.WriteLine("Type the collumn position: ");
+            int collumn_value = int.Parse(Console.ReadLine());
+            System.Console.WriteLine("Now type the value to insert into the position: ");
+            int number = int.Parse(Console.ReadLine());
+
+            matrix[row_value,collumn_value] = number;
+
         }
 
     }
