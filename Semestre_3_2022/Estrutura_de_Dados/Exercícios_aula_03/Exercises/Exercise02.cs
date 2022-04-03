@@ -28,6 +28,7 @@ namespace Exercícios_aula_03.Exercises
             {
                 show_menu_option();
                 choice = Console.ReadLine().ToUpper();
+                Console.Clear();
 
                 switch (choice)
                 {
@@ -38,17 +39,23 @@ namespace Exercícios_aula_03.Exercises
                     case "A":
                         add_value_to_matrix(matrix);
                         break;
-                    
+
+                    case "R":
+                        remove_value_to_matrix(matrix);
+                        break;
+
+                    case "C":
+                        clear_matrix(matrix);
+                        break;
+
                     case "E":
-                        System.Console.WriteLine("Exit");
+                        System.Console.WriteLine("Goodbye, have a good time!");
                         break;
 
                     default:
                         System.Console.WriteLine("Invalid Option");
                         break;
                 }
-
-
             }
         }
 
@@ -88,8 +95,27 @@ namespace Exercícios_aula_03.Exercises
             System.Console.WriteLine("Now type the value to insert into the position: ");
             int number = int.Parse(Console.ReadLine());
 
-            matrix[row_value,collumn_value] = number;
+            matrix[row_value, collumn_value] = number;
+        }
+        private static void remove_value_to_matrix(int[,] matrix)
+        {
+            System.Console.WriteLine("Type the row position: ");
+            int row_value = int.Parse(Console.ReadLine());
+            System.Console.WriteLine("Type the collumn position: ");
+            int collumn_value = int.Parse(Console.ReadLine());
+            System.Console.WriteLine($"Value removed from position [{row_value},{collumn_value}]");
 
+            matrix[row_value, collumn_value] = 0;
+        }
+        private static void clear_matrix(int[,] matrix, int row_count = 4, int collumn_count = 4)
+        {
+            for (int i = 0; i < row_count; i++)
+            {
+                for (int j = 0; j < collumn_count; j++)
+                {
+                    matrix[i, j] = 0;
+                }
+            }
         }
 
     }
