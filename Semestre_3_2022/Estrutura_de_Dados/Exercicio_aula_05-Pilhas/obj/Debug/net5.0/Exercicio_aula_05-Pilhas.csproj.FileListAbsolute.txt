@@ -1,0 +1,16 @@
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\bin\Debug\net5.0\Exercicio_aula_05-Pilhas.exe
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\bin\Debug\net5.0\Exercicio_aula_05-Pilhas.deps.json
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\bin\Debug\net5.0\Exercicio_aula_05-Pilhas.runtimeconfig.json
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\bin\Debug\net5.0\Exercicio_aula_05-Pilhas.runtimeconfig.dev.json
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\bin\Debug\net5.0\Exercicio_aula_05-Pilhas.dll
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\bin\Debug\net5.0\ref\Exercicio_aula_05-Pilhas.dll
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\bin\Debug\net5.0\Exercicio_aula_05-Pilhas.pdb
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\Exercicio_aula_05-Pilhas.csproj.AssemblyReference.cache
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\Exercicio_aula_05-Pilhas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\Exercicio_aula_05-Pilhas.AssemblyInfoInputs.cache
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\Exercicio_aula_05-Pilhas.AssemblyInfo.cs
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\Exercicio_aula_05-Pilhas.csproj.CoreCompileInputs.cache
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\Exercicio_aula_05-Pilhas.dll
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\ref\Exercicio_aula_05-Pilhas.dll
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\Exercicio_aula_05-Pilhas.pdb
+C:\Users\WINDOWS X\Documents\Lucas\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_05-Pilhas\obj\Debug\net5.0\Exercicio_aula_05-Pilhas.genruntimeconfig.cache

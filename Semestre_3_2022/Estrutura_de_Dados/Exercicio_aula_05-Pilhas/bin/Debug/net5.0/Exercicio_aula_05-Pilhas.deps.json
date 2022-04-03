@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Exercicio_aula_05-Pilhas/1.0.0": {
+        "runtime": {
+          "Exercicio_aula_05-Pilhas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Exercicio_aula_05-Pilhas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
