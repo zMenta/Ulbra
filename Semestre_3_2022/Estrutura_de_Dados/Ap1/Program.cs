@@ -32,8 +32,10 @@ namespace Ap1
 
             // int[,] read_test = test_matrix.Clone();
 
-            // PrintMatrix(test_matrix);
-            // FindPattern(test_matrix,pattern,matrix_size);
+            PrintMatrix(test_matrix);
+            int patterns_found = FindPattern(test_matrix, pattern, matrix_size);
+
+            System.Console.WriteLine($"Patterns Found: {patterns_found}");
         }
 
         private static int[,] GenerateMatrix(int matrix_size)
@@ -67,7 +69,7 @@ namespace Ap1
             }
         }
 
-        private static void FindPattern(int[,] matrix, int[] pattern, int matrix_size)
+        private static int FindPattern(int[,] matrix, int[] pattern, int matrix_size)
         {
             int found_pattern_counter = 0;
 
@@ -75,24 +77,21 @@ namespace Ap1
             {
                 for (int j = 0; j < matrix_size; j++)
                 {
-                    int[] read = new int[4];
                     // reads the matrix 
                     if (j < matrix_size - 1)
                     {
-                        read = new int[] { matrix[i, j], matrix[i, j + 1], matrix[i + 1, j], matrix[i + 1, j + 1] };
-                    }
+                        int[] read = new int[4] { matrix[i, j], matrix[i, j + 1], matrix[i + 1, j], matrix[i + 1, j + 1] };
 
-                    // compares it to the pattern
-                    if (EqualArray(read, pattern))
-                    {
-                        System.Console.WriteLine("EQUALS");
-                    }
-                    else
-                    {
-                        System.Console.WriteLine("WRONG");
+                        // compares it to the pattern
+                        if (EqualArray(read, pattern))
+                        {
+                            found_pattern_counter++;
+                        }
                     }
                 }
             }
+
+            return found_pattern_counter;
         }
 
         private static bool EqualArray(int[] array1, int[] array2)
