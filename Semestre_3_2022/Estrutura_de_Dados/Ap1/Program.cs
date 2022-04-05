@@ -29,9 +29,6 @@ namespace Ap1
             // FindPattern(matrix, pattern, matrix_size);
 
             int[,] test_matrix = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
-            int[,] test_matrix2 = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
-
-            System.Console.WriteLine(EqualMatrixes(test_matrix,test_matrix2));
 
             // int[,] read_test = test_matrix.Clone();
 
@@ -86,7 +83,7 @@ namespace Ap1
                     }
 
                     // compares it to the pattern
-                    if (read.Equals(matrix))
+                    if (EqualArray(read, pattern))
                     {
                         System.Console.WriteLine("EQUALS");
                     }
@@ -98,23 +95,22 @@ namespace Ap1
             }
         }
 
-        private static bool EqualMatrixes(int[,] matrix1, int[,] matrix2)
+        private static bool EqualArray(int[] array1, int[] array2)
+        //<summary>
+        //Returns true if both arrays are equal in each element.
+        //<summary>
         {
-            if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.GetLength(1) != matrix2.GetLength(1)){
-                throw new Exception("Can't compare matrixes. Row or collumn sizes are different");
+            if (array1.Length != array2.Length)
+            {
+                throw new Exception("Can't compare arrays. Array lenghts are different.");
             }
-            int row_count = matrix1.GetLength(0);
-            int column_count = matrix1.GetLength(1);
             bool isEqual = true;
 
-            for (int i = 0; i < row_count; i++)
+            for (int i = 0; i < array1.Length; i++)
             {
-                for (int j = 0; j < column_count; j++)
+                if (array1[i] != array2[i])
                 {
-                    if (matrix1[i,j] != matrix2[i,j])
-                    {
-                        isEqual = false;
-                    }
+                    isEqual = false;
                 }
             }
 
