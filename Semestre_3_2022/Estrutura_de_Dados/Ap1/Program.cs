@@ -6,7 +6,72 @@ namespace Ap1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            /*Find the matrix pattern 
+            [ 1 , 1 ]
+            [ 1 , 0 ]
+            
+            In given array formed from 0 and 1's. The array must be at least 100x100.
+
+            a) The program must be able to read a matrix at least 100x100;
+            b) The program must be able to read random or "test" matrixes;
+            c) The program must have a run time timer;
+            d) The program must be able to count how many patterns it found.
+            */
+
+            // Pattern is given in an array of 4 elements. First 2 number are the 2 row values of the matrix,
+            // the other two corresponds to the other row of numbers.
+            int[] pattern = new int[4] { 1, 1, 1, 0 };
+            int matrix_size = 4;
+            // System.Console.WriteLine(pattern.Length);
+
+            int[,] matrix = GenerateMatrix(matrix_size);
+            PrintMatrix(matrix);
+            FindPattern(matrix, pattern, matrix_size);
+        }
+
+        private static int[,] GenerateMatrix(int matrix_size)
+        {
+            int[,] matrix = new int[matrix_size, matrix_size];
+            Random random = new Random();
+
+            for (int i = 0; i < matrix_size - 1; i++)
+            {
+                for (int j = 0; j < matrix_size - 1; j++)
+                {
+                    matrix[i, j] = random.Next(0, 2);
+                }
+            }
+
+            return matrix;
+        }
+
+        private static void PrintMatrix(int[,] matrix)
+        {
+            int row_count = matrix.GetLength(0);
+            int column_count = matrix.GetLength(1);
+
+            for (int i = 0; i < row_count; i++)
+            {
+                for (int j = 0; j < column_count; j++)
+                {
+                    System.Console.Write($"\t{matrix[i, j]},");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        private static void FindPattern(int[,] matrix, int[] pattern, int matrix_size)
+        {
+            int found_pattern_counter = 0;
+
+            for (int i = 0; i < matrix_size - 1; i++)
+            {
+                for (int j = 0; j < matrix_size; j++)
+                {
+                    int[] read = new int[] { matrix[i, j], matrix[i + 1, j], matrix[i, j + 1], matrix[i + 1, j + 1] };
+                }
+            }
+
         }
     }
 }
