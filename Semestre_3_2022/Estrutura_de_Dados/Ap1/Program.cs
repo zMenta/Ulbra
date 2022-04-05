@@ -19,17 +19,25 @@ namespace Ap1
 
             // Pattern is given in an array of 4 elements. First 2 number are the 2 row values of the matrix,
             // the other two corresponds to the other row of numbers.
+
+            DateTime start = DateTime.Now;
+
             int[] pattern = new int[4] { 1, 1, 1, 0 };
-            int matrix_size = 3;
+            int matrix_size = 100;
             bool printPatternPosition = false;
 
             int[,] matrix = GenerateMatrix(matrix_size);
             // int[,] matrix = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
 
-            PrintMatrix(matrix);
+            // PrintMatrix(matrix);
             int patterns_found = FindPattern(matrix, pattern, matrix_size, printPatternPosition);
 
-            System.Console.WriteLine($"Patterns Found: {patterns_found}");
+            DateTime end = DateTime.Now;
+            TimeSpan elapsedTime = new TimeSpan(end.Ticks - start.Ticks);
+
+            System.Console.WriteLine($"Patterns Found in {matrix_size}x{matrix_size} matrix: {patterns_found}");
+            System.Console.WriteLine($"Time it took to find all patterns: {elapsedTime.TotalSeconds:N4} seconds");
+            System.Console.WriteLine($"Or {elapsedTime.TotalMilliseconds:N2} milliseconds");
         }
 
         private static int[,] GenerateMatrix(int matrix_size)
