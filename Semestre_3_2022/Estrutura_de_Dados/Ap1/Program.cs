@@ -20,8 +20,8 @@ namespace Ap1
             // Pattern is given in an array of 4 elements. First 2 number are the 2 row values of the matrix,
             // the other two corresponds to the other row of numbers.
             int[] pattern = new int[4] { 1, 1, 1, 0 };
-            int matrix_size = 10;
-            bool printPatternPosition = true;
+            int matrix_size = 3;
+            bool printPatternPosition = false;
 
             int[,] matrix = GenerateMatrix(matrix_size);
             // int[,] matrix = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
@@ -37,9 +37,9 @@ namespace Ap1
             int[,] matrix = new int[matrix_size, matrix_size];
             Random random = new Random();
 
-            for (int i = 0; i < matrix_size - 1; i++)
+            for (int i = 0; i < matrix_size; i++)
             {
-                for (int j = 0; j < matrix_size - 1; j++)
+                for (int j = 0; j < matrix_size; j++)
                 {
                     matrix[i, j] = random.Next(0, 2);
                 }
@@ -57,7 +57,7 @@ namespace Ap1
             {
                 for (int j = 0; j < column_count; j++)
                 {
-                    System.Console.Write($"\t{matrix[i, j]},");
+                    System.Console.Write($"{matrix[i, j]},");
                 }
                 System.Console.WriteLine();
             }
