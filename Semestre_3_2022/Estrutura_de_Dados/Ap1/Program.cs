@@ -21,12 +21,22 @@ namespace Ap1
             // Pattern is given in an array of 4 elements. First 2 number are the 2 row values of the matrix,
             // the other two corresponds to the other row of numbers.
             int[] pattern = new int[4] { 1, 1, 1, 0 };
-            int matrix_size = 4;
+            int matrix_size = 3;
             // System.Console.WriteLine(pattern.Length);
 
-            int[,] matrix = GenerateMatrix(matrix_size);
-            PrintMatrix(matrix);
-            FindPattern(matrix, pattern, matrix_size);
+            // int[,] matrix = GenerateMatrix(matrix_size);
+            // PrintMatrix(matrix);
+            // FindPattern(matrix, pattern, matrix_size);
+
+            int[,] test_matrix = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
+            int[,] test_matrix2 = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
+
+            System.Console.WriteLine(EqualMatrixes(test_matrix,test_matrix2));
+
+            // int[,] read_test = test_matrix.Clone();
+
+            // PrintMatrix(test_matrix);
+            // FindPattern(test_matrix,pattern,matrix_size);
         }
 
         private static int[,] GenerateMatrix(int matrix_size)
@@ -68,10 +78,47 @@ namespace Ap1
             {
                 for (int j = 0; j < matrix_size; j++)
                 {
-                    int[] read = new int[] { matrix[i, j], matrix[i + 1, j], matrix[i, j + 1], matrix[i + 1, j + 1] };
+                    int[] read = new int[4];
+                    // reads the matrix 
+                    if (j < matrix_size - 1)
+                    {
+                        read = new int[] { matrix[i, j], matrix[i, j + 1], matrix[i + 1, j], matrix[i + 1, j + 1] };
+                    }
+
+                    // compares it to the pattern
+                    if (read.Equals(matrix))
+                    {
+                        System.Console.WriteLine("EQUALS");
+                    }
+                    else
+                    {
+                        System.Console.WriteLine("WRONG");
+                    }
+                }
+            }
+        }
+
+        private static bool EqualMatrixes(int[,] matrix1, int[,] matrix2)
+        {
+            if (matrix1.GetLength(0) != matrix2.GetLength(0) || matrix1.GetLength(1) != matrix2.GetLength(1)){
+                throw new Exception("Can't compare matrixes. Row or collumn sizes are different");
+            }
+            int row_count = matrix1.GetLength(0);
+            int column_count = matrix1.GetLength(1);
+            bool isEqual = true;
+
+            for (int i = 0; i < row_count; i++)
+            {
+                for (int j = 0; j < column_count; j++)
+                {
+                    if (matrix1[i,j] != matrix2[i,j])
+                    {
+                        isEqual = false;
+                    }
                 }
             }
 
+            return isEqual;
         }
     }
 }
