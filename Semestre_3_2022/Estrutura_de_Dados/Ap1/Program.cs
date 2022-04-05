@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Ap1
 {
     class Program
@@ -21,19 +20,14 @@ namespace Ap1
             // Pattern is given in an array of 4 elements. First 2 number are the 2 row values of the matrix,
             // the other two corresponds to the other row of numbers.
             int[] pattern = new int[4] { 1, 1, 1, 0 };
-            int matrix_size = 3;
-            // System.Console.WriteLine(pattern.Length);
+            int matrix_size = 10;
+            bool printPatternPosition = true;
 
-            // int[,] matrix = GenerateMatrix(matrix_size);
-            // PrintMatrix(matrix);
-            // FindPattern(matrix, pattern, matrix_size);
+            int[,] matrix = GenerateMatrix(matrix_size);
+            // int[,] matrix = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
 
-            int[,] test_matrix = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
-
-            // int[,] read_test = test_matrix.Clone();
-
-            PrintMatrix(test_matrix);
-            int patterns_found = FindPattern(test_matrix, pattern, matrix_size);
+            PrintMatrix(matrix);
+            int patterns_found = FindPattern(matrix, pattern, matrix_size, printPatternPosition);
 
             System.Console.WriteLine($"Patterns Found: {patterns_found}");
         }
@@ -69,7 +63,7 @@ namespace Ap1
             }
         }
 
-        private static int FindPattern(int[,] matrix, int[] pattern, int matrix_size)
+        private static int FindPattern(int[,] matrix, int[] pattern, int matrix_size, bool printPatternPosition = false)
         {
             int found_pattern_counter = 0;
 
@@ -86,6 +80,11 @@ namespace Ap1
                         if (EqualArray(read, pattern))
                         {
                             found_pattern_counter++;
+
+                            if (printPatternPosition)
+                            {
+                                System.Console.WriteLine($"{found_pattern_counter}# Pattern start position: [{i},{j}]");
+                            }
                         }
                     }
                 }
