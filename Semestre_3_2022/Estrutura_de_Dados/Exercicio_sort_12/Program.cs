@@ -30,7 +30,8 @@ namespace Exercicio_sort_12
             //  Merge
             PrintArray(array);
             System.Console.WriteLine();
-            MergeSort.Sort(array);
+            array = MergeSort.Sort(array);
+            PrintArray(array);
 
         }
 

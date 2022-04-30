@@ -6,7 +6,7 @@ namespace Exercicio_sort_12
     {
         public static int[] Sort(int[] array)
         {
-            if (array.Length <= 1)
+            if (array.Length == 1)
             {
                 return array;
             }
@@ -15,22 +15,58 @@ namespace Exercicio_sort_12
             int[] array_left = arrays[0];
             int[] array_right = arrays[1];
 
-            PrintArray(array_left);
-            System.Console.WriteLine();
-            PrintArray(array_right);
-            System.Console.WriteLine();
-            System.Console.WriteLine("---------------------------------------------");
+            // PrintArray(array_left);
+            // System.Console.WriteLine();
+            // PrintArray(array_right);
+            // System.Console.WriteLine();
+            // System.Console.WriteLine("---------------------------------------------");
 
             Sort(array_left);
             Sort(array_right);
+            // array = Merge(array_left, array_right);
+            // return array;
 
-            return array;
+            return Merge(array_left, array_right);
         }
 
 
-        private static int[] Merge(int[] array1, int[] array2)
+        private static int[] Merge(int[] array_left, int[] array_right)
         {
-            int[] merged_arrays = new int[array1.Length + array2.Length];
+            int[] merged_arrays = new int[array_left.Length + array_right.Length];
+
+            int i = 0;
+            int j = 0;
+            int array_position = 0;
+
+            while (i < array_left.Length && j < array_right.Length)
+            {
+                if (array_left[i] < array_right[j])
+                {
+                    merged_arrays[array_position] = array_left[i];
+                    i++;
+                }
+                else
+                {
+                    merged_arrays[array_position] = array_right[j];
+                    j++;
+                }
+                array_position++;
+            }
+
+            // Now array_left or array_right are already compared / finished.
+            while (i < array_left.Length)
+            {
+                merged_arrays[array_position] = array_left[i];
+                i++;
+                array_position++;
+            }
+
+            while (j < array_right.Length)
+            {
+                merged_arrays[array_position] = array_right[j];
+                j++;
+                array_position++;
+            }
 
             return merged_arrays;
         }
