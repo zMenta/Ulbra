@@ -6,28 +6,31 @@ namespace Exercicio_sort_12
     {
         static void Main(string[] args)
         {
-            const int LIST_SIZE = 100;
-            int[] list = GenerateArray(LIST_SIZE, 10);
+            const int ARRAY_SIZE = 10;
+            int[] array = GenerateArray(ARRAY_SIZE, 10);
 
             //  Selection
-            // // PrintArray(list);
+            // // PrintArray(array);
             // DateTime start = DateTime.Now;
-            // SelectionSort.Sort(list);
+            // SelectionSort.Sort(array);
             // DateTime end = DateTime.Now;
 
             // TimeSpan elapsedTime = new TimeSpan(end.Ticks - start.Ticks);
 
             // System.Console.WriteLine($"Time it took to Selection sort: {elapsedTime.TotalSeconds:N4} seconds");
             // System.Console.WriteLine();
-            // // PrintArray(list);
+            // // PrintArray(array);
 
             //  Bubble
-            // PrintArray(list);
-            // BubbleSort.Sort(list);
+            // PrintArray(array);
+            // BubbleSort.Sort(array);
             // System.Console.WriteLine();
-            // PrintArray(list);
+            // PrintArray(array);
 
-            
+            //  Merge
+            PrintArray(array);
+            System.Console.WriteLine();
+            MergeSort.Sort(array);
 
         }
 
@@ -41,15 +44,15 @@ namespace Exercicio_sort_12
 
         public static int[] GenerateArray(int array_size, int random_range = 101)
         {
-            int[] list = new int[array_size];
+            int[] array = new int[array_size];
             Random random = new Random();
 
             for (int i = 0; i < array_size; i++)
             {
-                list[i] = random.Next(0, random_range);
+                array[i] = random.Next(0, random_range);
             }
 
-            return list;
+            return array;
         }
     }
 }
