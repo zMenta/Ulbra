@@ -1,0 +1,16 @@
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\bin\Debug\net5.0\Exercicio_sort_12.exe
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\bin\Debug\net5.0\Exercicio_sort_12.deps.json
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\bin\Debug\net5.0\Exercicio_sort_12.runtimeconfig.json
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\bin\Debug\net5.0\Exercicio_sort_12.runtimeconfig.dev.json
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\bin\Debug\net5.0\Exercicio_sort_12.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\bin\Debug\net5.0\ref\Exercicio_sort_12.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\bin\Debug\net5.0\Exercicio_sort_12.pdb
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\Exercicio_sort_12.csproj.AssemblyReference.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\Exercicio_sort_12.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\Exercicio_sort_12.AssemblyInfoInputs.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\Exercicio_sort_12.AssemblyInfo.cs
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\Exercicio_sort_12.csproj.CoreCompileInputs.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\Exercicio_sort_12.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\ref\Exercicio_sort_12.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\Exercicio_sort_12.pdb
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_sort_12\obj\Debug\net5.0\Exercicio_sort_12.genruntimeconfig.cache
