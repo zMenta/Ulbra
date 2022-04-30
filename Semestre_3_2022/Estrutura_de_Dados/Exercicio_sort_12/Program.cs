@@ -6,21 +6,28 @@ namespace Exercicio_sort_12
     {
         static void Main(string[] args)
         {
-            const int LIST_SIZE = 10000;
+            const int LIST_SIZE = 100;
             int[] list = GenerateArray(LIST_SIZE, 10);
 
+            //  Selection
+            // // PrintArray(list);
+            // DateTime start = DateTime.Now;
+            // SelectionSort.Sort(list);
+            // DateTime end = DateTime.Now;
 
+            // TimeSpan elapsedTime = new TimeSpan(end.Ticks - start.Ticks);
 
+            // System.Console.WriteLine($"Time it took to Selection sort: {elapsedTime.TotalSeconds:N4} seconds");
+            // System.Console.WriteLine();
+            // // PrintArray(list);
+
+            //  Bubble
             // PrintArray(list);
-            DateTime start = DateTime.Now;
-            SelectionSort.Sort(list);
-            DateTime end = DateTime.Now;
-
-            TimeSpan elapsedTime = new TimeSpan(end.Ticks - start.Ticks);
-
-            System.Console.WriteLine($"Time it took to Selection sort: {elapsedTime.TotalSeconds:N4} seconds");
-            System.Console.WriteLine();
+            // BubbleSort.Sort(list);
+            // System.Console.WriteLine();
             // PrintArray(list);
+
+            
 
         }
 

@@ -23,13 +23,13 @@ namespace Ap1
             DateTime start = DateTime.Now;
 
             int[] pattern = new int[4] { 1, 1, 1, 0 };
-            int matrix_size = 100;
+            int matrix_size = 10000;
             bool printPatternPosition = false;
 
             int[,] matrix = GenerateMatrix(matrix_size);
             // int[,] matrix = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
 
-            // PrintMatrix(matrix);
+            PrintMatrix(matrix);
             int patterns_found = FindPattern(matrix, pattern, matrix_size, printPatternPosition);
 
             DateTime end = DateTime.Now;
