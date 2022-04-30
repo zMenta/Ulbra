@@ -6,35 +6,42 @@ namespace Exercicio_sort_12
     {
         static void Main(string[] args)
         {
-            const int ARRAY_SIZE = 10;
+            const int ARRAY_SIZE = 10000;
             int[] array = GenerateArray(ARRAY_SIZE, 10);
-            // int[] array = {2,5,6,8,1,4,9,10};
 
-
-
-            //  Selection
-            // // PrintArray(array);
-            // DateTime start = DateTime.Now;
-            // SelectionSort.Sort(array);
-            // DateTime end = DateTime.Now;
-
-            // TimeSpan elapsedTime = new TimeSpan(end.Ticks - start.Ticks);
-
-            // System.Console.WriteLine($"Time it took to Selection sort: {elapsedTime.TotalSeconds:N4} seconds");
-            // System.Console.WriteLine();
-            // // PrintArray(array);
+            System.Console.WriteLine();
+            System.Console.WriteLine("Array with size of "+ARRAY_SIZE);
 
             //  Bubble
+            System.Console.WriteLine("------------------- Bubble ------------------");
+            // PrintArray(array = GenerateArray(ARRAY_SIZE, 10));
+            array = GenerateArray(ARRAY_SIZE, 10);
+            DateTime start = DateTime.Now;
+            BubbleSort.Sort(array);
+            DateTime end = DateTime.Now;
+            TimeSpan elapsedTime = new TimeSpan(end.Ticks - start.Ticks);
+            System.Console.WriteLine($"Bubble Sort time: {elapsedTime.TotalSeconds:N4} seconds");
+
+            //  Selection
+            System.Console.WriteLine("------------------- Selection ------------------");
             // PrintArray(array);
-            // BubbleSort.Sort(array);
-            // System.Console.WriteLine();
-            // PrintArray(array);
+            array = array = GenerateArray(ARRAY_SIZE, 10);
+            start = DateTime.Now;
+            SelectionSort.Sort(array);
+            end = DateTime.Now;
+            elapsedTime = new TimeSpan(end.Ticks - start.Ticks);
+            System.Console.WriteLine($"Selection Sort time: {elapsedTime.TotalSeconds:N4} seconds");
 
             //  Merge
-            PrintArray(array);
-            System.Console.WriteLine();
+            System.Console.WriteLine("------------------- Merge ------------------");
+            // PrintArray(array = GenerateArray(ARRAY_SIZE, 10));
+            array = GenerateArray(ARRAY_SIZE, 10);
+            start = DateTime.Now;
             array = MergeSort.Sort(array);
-            PrintArray(array);
+            end = DateTime.Now;
+            elapsedTime = new TimeSpan(end.Ticks - start.Ticks);
+            System.Console.WriteLine($"Merge Sort time: {elapsedTime.TotalSeconds:N4} seconds");
+            System.Console.WriteLine();
 
         }
 
