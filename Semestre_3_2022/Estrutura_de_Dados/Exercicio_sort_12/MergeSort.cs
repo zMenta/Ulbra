@@ -15,17 +15,9 @@ namespace Exercicio_sort_12
             int[] array_left = arrays[0];
             int[] array_right = arrays[1];
 
-            // PrintArray(array_left);
-            // System.Console.WriteLine();
-            // PrintArray(array_right);
-            // System.Console.WriteLine();
-            // System.Console.WriteLine("---------------------------------------------");
-
-            Sort(array_left);
-            Sort(array_right);
-            // array = Merge(array_left, array_right);
-            // return array;
-
+            array_left = Sort(array_left);
+            array_right = Sort(array_right);
+            
             return Merge(array_left, array_right);
         }
 

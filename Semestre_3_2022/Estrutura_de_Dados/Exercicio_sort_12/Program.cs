@@ -8,6 +8,9 @@ namespace Exercicio_sort_12
         {
             const int ARRAY_SIZE = 10;
             int[] array = GenerateArray(ARRAY_SIZE, 10);
+            // int[] array = {2,5,6,8,1,4,9,10};
+
+
 
             //  Selection
             // // PrintArray(array);
