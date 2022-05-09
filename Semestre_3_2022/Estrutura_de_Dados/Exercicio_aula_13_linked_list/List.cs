@@ -66,5 +66,24 @@ namespace Exercicio_aula_13_linked_list
                 current_element = current_element.nextElement;
             }
         }
+
+        public void Pop()
+        {
+            Element current_element = this.first;
+            Element before_last_element = this.first;
+            for(int i = 0; i < size; i++)
+            {
+                if (current_element == this.last)
+                {
+                    before_last_element = current_element;
+                    break;
+                }
+                current_element = current_element.nextElement;
+            }
+
+            this.size--;
+            this.last = before_last_element;
+            this.last.nextElement = null;
+        }
     }
 }
