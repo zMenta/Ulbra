@@ -11,6 +11,8 @@ namespace Exercicio_aula_13_linked_list
             list.Add("Value2");
             list.Add("Value3");
             list.AddFirst("value4");
+            list.Add("Value5");
+            list.Write();
         }
     }
 }

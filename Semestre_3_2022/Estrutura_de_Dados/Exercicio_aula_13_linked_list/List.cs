@@ -48,5 +48,23 @@ namespace Exercicio_aula_13_linked_list
             }
             size++;
         }
+        public void WriteFirst()
+        {
+            System.Console.WriteLine(first.value);
+        }
+        public void WriteLast()
+        {
+            System.Console.WriteLine(last.value);
+        }
+
+        public void Write()
+        {
+            Element current_element = this.first;
+            for (int i = 0; i < size; i++)
+            {
+                System.Console.WriteLine(current_element.value);
+                current_element = current_element.nextElement;
+            }
+        }
     }
 }
