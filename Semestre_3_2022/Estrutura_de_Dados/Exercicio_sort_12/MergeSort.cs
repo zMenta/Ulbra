@@ -90,12 +90,5 @@ namespace Exercicio_sort_12
             return new List<int[]> { array_left, array_right };
         }
 
-        private static void PrintArray(int[] array)
-        {
-            foreach (var item in array)
-            {
-                System.Console.Write(item + ", ");
-            }
-        }
     }
 }

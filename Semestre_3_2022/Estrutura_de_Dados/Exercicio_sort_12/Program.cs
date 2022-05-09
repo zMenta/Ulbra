@@ -6,8 +6,8 @@ namespace Exercicio_sort_12
     {
         static void Main(string[] args)
         {
-            const int ARRAY_SIZE = 10000;
-            int[] array = GenerateArray(ARRAY_SIZE, 10);
+            const int ARRAY_SIZE = 100000;
+            int[] array = GenerateArray(ARRAY_SIZE, 100);
 
             System.Console.WriteLine();
             System.Console.WriteLine("Array with size of "+ARRAY_SIZE);

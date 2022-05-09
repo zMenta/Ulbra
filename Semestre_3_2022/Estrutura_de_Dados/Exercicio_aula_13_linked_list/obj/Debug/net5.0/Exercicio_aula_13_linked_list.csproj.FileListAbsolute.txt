@@ -1,0 +1,16 @@
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\bin\Debug\net5.0\Exercicio_aula_13_linked_list.exe
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\bin\Debug\net5.0\Exercicio_aula_13_linked_list.deps.json
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\bin\Debug\net5.0\Exercicio_aula_13_linked_list.runtimeconfig.json
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\bin\Debug\net5.0\Exercicio_aula_13_linked_list.runtimeconfig.dev.json
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\bin\Debug\net5.0\Exercicio_aula_13_linked_list.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\bin\Debug\net5.0\ref\Exercicio_aula_13_linked_list.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\bin\Debug\net5.0\Exercicio_aula_13_linked_list.pdb
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\Exercicio_aula_13_linked_list.csproj.AssemblyReference.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\Exercicio_aula_13_linked_list.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\Exercicio_aula_13_linked_list.AssemblyInfoInputs.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\Exercicio_aula_13_linked_list.AssemblyInfo.cs
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\Exercicio_aula_13_linked_list.csproj.CoreCompileInputs.cache
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\Exercicio_aula_13_linked_list.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\ref\Exercicio_aula_13_linked_list.dll
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\Exercicio_aula_13_linked_list.pdb
+E:\Repositorios\Ulbra\Semestre_3_2022\Estrutura_de_Dados\Exercicio_aula_13_linked_list\obj\Debug\net5.0\Exercicio_aula_13_linked_list.genruntimeconfig.cache
