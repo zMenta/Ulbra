@@ -32,5 +32,21 @@ namespace Exercicio_aula_13_linked_list
             }
             size++;
         }
+
+        public void AddFirst(string value)
+        {
+            Element element = new Element(value);
+            if (size == 0)
+            {
+                this.first = element;
+                this.last = element;
+            }
+            else
+            {
+                element.nextElement = first;
+                this.first = element;
+            }
+            size++;
+        }
     }
 }
