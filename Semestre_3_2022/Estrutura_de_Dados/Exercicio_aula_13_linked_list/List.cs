@@ -68,12 +68,6 @@ namespace Exercicio_aula_13_linked_list
             System.Console.WriteLine();
         }
 
-        public void RemovePosition(int index)
-        {
-            Element element = Find(index);
-
-        }
-
         public Element Find(int index)
         {
             Element current_element = this.first;
@@ -123,5 +117,27 @@ namespace Exercicio_aula_13_linked_list
                 this.Clear();
             }
         }
+
+
+        public void RemovePosition(int index)
+        {
+            Element element = Find(index);
+            if (element == this.first)
+            {
+                this.PopFirst();
+                return;
+            }
+            else if (element == this.last)
+            {
+                this.Pop();
+                return;
+            }
+            Element previous_element = Find(index - 1);
+
+            this.size--;
+            previous_element.nextElement = element.nextElement;
+            element.nextElement = null;
+        }
     }
+
 }
