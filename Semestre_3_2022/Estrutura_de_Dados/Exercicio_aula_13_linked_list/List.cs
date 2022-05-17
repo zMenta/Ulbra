@@ -174,5 +174,22 @@ namespace Exercicio_aula_13_linked_list
             return this.Find(element_index);
         }
 
+        public int FindValueAppearances(string parameter_value)
+        {
+            int appearances = 0;
+            Element current_element = this.first;
+
+            for (int i = 0; i < this.size; i++)
+            {
+                if (current_element.value == parameter_value)
+                {
+                    appearances++;
+                }
+                current_element = current_element.nextElement;
+            }
+
+            return appearances;
+        }
+
     }
 }

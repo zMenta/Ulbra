@@ -13,7 +13,7 @@ namespace Exercicio_aula_13_linked_list
             list.AddFirst("Value4");
             list.Add("Value5");
             list.Write();
-            list.RemovePosition(-1);
+            System.Console.WriteLine(list.FindValueAppearances("Value"));
             list.Write();
 
             Element element = list.Find(2);
