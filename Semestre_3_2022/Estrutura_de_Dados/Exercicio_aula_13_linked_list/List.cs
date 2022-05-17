@@ -191,5 +191,40 @@ namespace Exercicio_aula_13_linked_list
             return appearances;
         }
 
+        public void RemoveValueAppearances(string parameter_value)
+        {
+            Element current_element = this.first;
+            for (int i = 0; i < this.size; i++)
+            {
+                if (current_element.value == parameter_value)
+                {
+                    current_element = current_element.nextElement;
+                    this.RemovePosition(i);
+                    i--;
+                }
+                else
+                {
+                    current_element = current_element.nextElement;
+                }
+            }
+        }
+
+        public void WriteInverse()
+        {
+            string[] element_values = new string[this.size];
+            Element current_element = this.first;
+            for (int i = this.size - 1; i >= 0; i--)
+            {
+                element_values[i] = current_element.value;
+                current_element = current_element.nextElement;
+            }
+
+            for (int i = 0; i < this.size; i++)
+            {
+                System.Console.Write(element_values[i] + ", ");
+            }
+            System.Console.WriteLine();
+        }
+
     }
 }

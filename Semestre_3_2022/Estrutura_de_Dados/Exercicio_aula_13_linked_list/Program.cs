@@ -10,13 +10,10 @@ namespace Exercicio_aula_13_linked_list
             list.Add("Value1");
             list.Add("Value2");
             list.Add("Value3");
-            list.AddFirst("Value4");
-            list.Add("Value5");
+            list.Add("Value4");
             list.Write();
-            System.Console.WriteLine(list.FindValueAppearances("Value"));
-            list.Write();
+            list.WriteInverse();
 
-            Element element = list.Find(2);
         }
     }
 }
