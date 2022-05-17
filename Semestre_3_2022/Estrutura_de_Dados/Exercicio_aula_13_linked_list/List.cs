@@ -138,6 +138,41 @@ namespace Exercicio_aula_13_linked_list
             previous_element.nextElement = element.nextElement;
             element.nextElement = null;
         }
-    }
 
+        public int FindValueIndex(string parameter_value)
+        {
+            int element_index = 0;
+            Element current_element = this.first;
+
+            for (int i = 0; i < this.size; i++)
+            {
+                if (current_element.value == parameter_value)
+                {
+                    return element_index;
+                }
+                else
+                {
+                    current_element = current_element.nextElement;
+                    element_index++;
+                }
+            }
+
+            return -1;
+        }
+
+
+        public void RemoveValue(string parameter_value)
+        {
+            int element_index = this.FindValueIndex(parameter_value);
+            this.RemovePosition(element_index);
+        }
+
+
+        public Element FindValue(string parameter_value)
+        {
+            int element_index = this.FindValueIndex(parameter_value);
+            return this.Find(element_index);
+        }
+
+    }
 }
