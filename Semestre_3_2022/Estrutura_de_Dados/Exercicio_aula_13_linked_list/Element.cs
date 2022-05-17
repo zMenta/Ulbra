@@ -14,5 +14,6 @@ namespace Exercicio_aula_13_linked_list
 
         public string value { get; set; }
         public Element nextElement { get; set; }
+
     }
 }

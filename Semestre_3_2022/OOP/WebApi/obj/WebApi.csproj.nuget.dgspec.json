@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\Exercicio_aula_13_linked_list.csproj": {}
+    "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\Exercicio_aula_13_linked_list.csproj": {
+    "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\Exercicio_aula_13_linked_list.csproj",
-        "projectName": "Exercicio_aula_13_linked_list",
-        "projectPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\Exercicio_aula_13_linked_list.csproj",
+        "projectUniqueName": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\WebApi\\WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\brent\\.nuget\\packages\\",
-        "outputPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\obj\\",
+        "outputPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brent\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -48,6 +54,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

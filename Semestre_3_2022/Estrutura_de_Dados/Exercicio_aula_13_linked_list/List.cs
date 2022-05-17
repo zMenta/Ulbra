@@ -30,7 +30,7 @@ namespace Exercicio_aula_13_linked_list
                 this.last.nextElement = element;
                 this.last = element;
             }
-            size++;
+            this.size++;
         }
 
         public void AddFirst(string value)
@@ -46,44 +46,82 @@ namespace Exercicio_aula_13_linked_list
                 element.nextElement = first;
                 this.first = element;
             }
-            size++;
+            this.size++;
         }
         public void WriteFirst()
         {
-            System.Console.WriteLine(first.value);
+            System.Console.WriteLine(this.first.value);
         }
         public void WriteLast()
         {
-            System.Console.WriteLine(last.value);
+            System.Console.WriteLine(this.last.value);
         }
 
         public void Write()
         {
             Element current_element = this.first;
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < this.size; i++)
             {
-                System.Console.WriteLine(current_element.value);
+                System.Console.Write(current_element.value + ", ");
                 current_element = current_element.nextElement;
             }
+            System.Console.WriteLine();
         }
 
-        public void Pop()
+        public void RemovePosition(int index)
+        {
+            Element element = Find(index);
+
+        }
+
+        public Element Find(int index)
         {
             Element current_element = this.first;
-            Element before_last_element = this.first;
-            for(int i = 0; i < size; i++)
+            for (int i = 0; i < size; i++)
             {
-                if (current_element == this.last)
+                if (i == index)
                 {
-                    before_last_element = current_element;
                     break;
                 }
                 current_element = current_element.nextElement;
             }
+            return current_element;
+        }
 
-            this.size--;
-            this.last = before_last_element;
-            this.last.nextElement = null;
+
+        public void Pop()
+        {
+            if (this.size > 1)
+            {
+                // size - 2 = penultimate value index of the list or array.
+                Element penultimate = Find(this.size - 2);
+
+                this.size--;
+                this.last = penultimate;
+                this.last.nextElement = null;
+            }
+            else
+            {
+                this.Clear();
+            }
+        }
+
+
+        public void PopFirst()
+        {
+            if (this.size > 1)
+            {
+                Element first_element = this.first;
+                Element second_element = first_element.nextElement;
+
+                this.size--;
+                first_element.nextElement = null;
+                this.first = second_element;
+            }
+            else
+            {
+                this.Clear();
+            }
         }
     }
 }

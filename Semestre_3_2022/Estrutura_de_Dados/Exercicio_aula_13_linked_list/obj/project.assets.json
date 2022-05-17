@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\WINDOWS X\\.nuget\\packages\\": {}
+    "C:\\Users\\brent\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WINDOWS X\\Documents\\Lucas\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\Exercicio_aula_13_linked_list.csproj",
+      "projectUniqueName": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\Exercicio_aula_13_linked_list.csproj",
       "projectName": "Exercicio_aula_13_linked_list",
-      "projectPath": "C:\\Users\\WINDOWS X\\Documents\\Lucas\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\Exercicio_aula_13_linked_list.csproj",
-      "packagesPath": "C:\\Users\\WINDOWS X\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WINDOWS X\\Documents\\Lucas\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\obj\\",
+      "projectPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\Exercicio_aula_13_linked_list.csproj",
+      "packagesPath": "C:\\Users\\brent\\.nuget\\packages\\",
+      "outputPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\Estrutura_de_Dados\\Exercicio_aula_13_linked_list\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\WINDOWS X\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\brent\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
