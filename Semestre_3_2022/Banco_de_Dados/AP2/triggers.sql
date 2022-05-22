@@ -1,0 +1,30 @@
+CREATE TRIGGER  Check_BirthDate  BEFORE INSERT ON Person
+FOR EACH ROW
+BEGIN
+IF NEW.birth_date < '1940-01-01' THEN
+	SIGNAL SQLSTATE '45000'
+	SET MESSAGE_TEXT = 'ERROR: Birthdate need to be higher than 1940-01-01';
+END IF;
+END;
+
+
+CREATE TRIGGER  Check_Track_Length  BEFORE INSERT ON Tracks
+FOR EACH ROW
+BEGIN
+IF NEW.length_km > 50 THEN
+	SIGNAL SQLSTATE '45000'
+	SET MESSAGE_TEXT = 'ERROR: Track lenght must be less than 50km';
+END IF;
+END;
+
+
+CREATE TRIGGER Check_Guarana_Sponsor BEFORE INSERT ON Sponsorship
+FOR EACH ROW
+BEGIN
+IF NEW.name LIKE '%Guarana%' THEN
+	SIGNAL SQLSTATE '45000'
+	SET MESSAGE_TEXT = 'ERROR: Guarana is illegal';
+END IF;
+END;
+
+
