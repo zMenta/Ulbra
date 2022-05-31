@@ -7,5 +7,4 @@ def sum_array(array, i=len(array)):
         return 0
     return sum_array(array, i-1) + array[i-1]
 
-
 print(sum_array(array))
