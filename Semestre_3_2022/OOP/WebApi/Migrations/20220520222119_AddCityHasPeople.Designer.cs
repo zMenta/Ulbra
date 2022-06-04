@@ -3,6 +3,7 @@ using System;
 using Aula11CrudPeople.Models.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Aula11CrudPeople.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20220520222119_AddCityHasPeople")]
+    partial class AddCityHasPeople
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,33 +48,6 @@ namespace Aula11CrudPeople.Migrations
                     b.ToTable("People");
                 });
 
-            modelBuilder.Entity("Aula12CrudPeopleOneToMany.Models.Domains.Address", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Number")
-                        .HasColumnType("text");
-
-                    b.Property<int?>("PersonId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Street")
-                        .HasColumnType("text");
-
-                    b.Property<string>("ZipCode")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PersonId");
-
-                    b.ToTable("Addresses");
-                });
-
             modelBuilder.Entity("Aula12CrudPeopleOneToMany.Models.Domains.City", b =>
                 {
                     b.Property<int>("Id")
@@ -99,15 +74,6 @@ namespace Aula11CrudPeople.Migrations
                         .HasForeignKey("CityId");
 
                     b.Navigation("City");
-                });
-
-            modelBuilder.Entity("Aula12CrudPeopleOneToMany.Models.Domains.Address", b =>
-                {
-                    b.HasOne("Aula11CrudPeople.Models.Domains.Person", "Person")
-                        .WithMany()
-                        .HasForeignKey("PersonId");
-
-                    b.Navigation("Person");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
 using Aula11CrudPeople.Models.Domains;
+using Aula12CrudPeopleOneToMany.Models.Domains;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aula11CrudPeople.Models.Repositories
@@ -10,5 +11,8 @@ namespace Aula11CrudPeople.Models.Repositories
         {}
 
         public DbSet<Person> People { get; set; }
+
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<City> Cities { get; set; }
     }
 }
