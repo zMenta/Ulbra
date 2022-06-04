@@ -1,9 +1,9 @@
 
-using Aula12CrudPeopleOneToMany.Models.Domains;
-using Aula12CrudPeopleOneToMany.Models.Repositories;
+using WebApi.Models.Domains;
+using WebApi.Models.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Aula11CrudPeople.Controllers
+namespace WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

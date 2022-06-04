@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Aula11CrudPeople.Migrations
+namespace WebApi.Migrations
 {
     public partial class firstMigrations : Migration
     {

@@ -3,7 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace Aula11CrudPeople.Migrations
+namespace WebApi.Migrations
 {
     public partial class AddCityHasPeople : Migration
     {

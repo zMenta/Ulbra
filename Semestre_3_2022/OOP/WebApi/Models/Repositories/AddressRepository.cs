@@ -1,8 +1,8 @@
-using Aula11CrudPeople.Models.Repositories;
-using Aula12CrudPeopleOneToMany.Models.Domains;
+using WebApi.Models.Repositories;
+using WebApi.Models.Domains;
 using Microsoft.EntityFrameworkCore;
 
-namespace Aula12CrudPeopleOneToMany.Models.Repositories
+namespace WebApi.Models.Repositories
 {
     public class AddressRepository : IAddressRepository
     {

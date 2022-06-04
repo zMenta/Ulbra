@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Aula11CrudPeople.Models.Domains;
-using Aula11CrudPeople.Models.Repositories;
+using WebApi.Models.Domains;
+using WebApi.Models.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Aula11CrudPeople.Controllers
+namespace WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

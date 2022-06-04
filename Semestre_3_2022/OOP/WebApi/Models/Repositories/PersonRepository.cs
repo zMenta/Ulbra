@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Aula11CrudPeople.Models.Domains;
+using WebApi.Models.Domains;
 using Microsoft.EntityFrameworkCore;
 
-namespace Aula11CrudPeople.Models.Repositories
+namespace WebApi.Models.Repositories
 {
     public class PersonRepository : IPersonRepository
     {

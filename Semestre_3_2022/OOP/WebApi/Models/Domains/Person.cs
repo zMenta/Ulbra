@@ -1,7 +1,7 @@
 using System.Security.AccessControl;
-using Aula12CrudPeopleOneToMany.Models.Domains;
+using WebApi.Models.Domains;
 
-namespace Aula11CrudPeople.Models.Domains
+namespace WebApi.Models.Domains
 {
     public class Person
     {

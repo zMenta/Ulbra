@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\Aula11CrudPeople6\\Aula11CrudPeople.csproj",
+  "FilePath": "c:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi6\\WebApi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,7 +15616,7 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "Aula11CrudPeople",
+  "RootNamespace": "WebApi",
   "Documents": [],
   "SerializationFormat": "0.2"
 }

@@ -1,4 +1,4 @@
-namespace Aula12CrudPeopleOneToMany.Models.Domains
+namespace WebApi.Models.Domains
 {
     public class City
     {

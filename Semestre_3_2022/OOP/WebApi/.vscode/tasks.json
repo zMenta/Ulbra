@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Aula11CrudPeople.csproj",
+                "${workspaceFolder}/WebApi.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Aula11CrudPeople.csproj",
+                "${workspaceFolder}/WebApi.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Aula11CrudPeople.csproj"
+                "${workspaceFolder}/WebApi.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

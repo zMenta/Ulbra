@@ -1,6 +1,6 @@
-using Aula12CrudPeopleOneToMany.Models.Domains;
+using WebApi.Models.Domains;
 
-namespace Aula12CrudPeopleOneToMany.Models.Repositories
+namespace WebApi.Models.Repositories
 {
     public interface IAddressRepository : IBaseRepository<Address>
     {

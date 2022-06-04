@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Aula11CrudPeople/1.0.0": {
+      "WebApi/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "6.0.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.4",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
-          "Aula11CrudPeople.dll": {}
+          "WebApi.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -213,7 +213,7 @@
     }
   },
   "libraries": {
-    "Aula11CrudPeople/1.0.0": {
+    "WebApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

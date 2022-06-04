@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "qmRhgp1XZwFYgc/MR/WQYbP6I8Ku5ExK/hvq3XPYSkAz4jDle1qpANmTNdE8Oh4ylrC7ZREg+34Cze9IMEu5BA==",
   "success": true,
-  "projectFilePath": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\Aula12CrudPeopleOneToMany\\Aula11CrudPeople.csproj",
+  "projectFilePath": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cassi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\cassi\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",

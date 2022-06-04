@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Aula11CrudPeople.Models.Domains;
-using Aula12CrudPeopleOneToMany.Models.Repositories;
+using WebApi.Models.Domains;
+using WebApi.Models.Repositories;
 
-namespace Aula11CrudPeople.Models.Repositories
+namespace WebApi.Models.Repositories
 {
     public interface IPersonRepository : IBaseRepository<Person>
     {

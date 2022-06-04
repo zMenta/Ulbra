@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\Aula12CrudPeopleOneToMany\\Aula11CrudPeople.csproj": {}
+    "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\Aula12CrudPeopleOneToMany\\Aula11CrudPeople.csproj": {
+    "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\Aula12CrudPeopleOneToMany\\Aula11CrudPeople.csproj",
-        "projectName": "Aula11CrudPeople",
-        "projectPath": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\Aula12CrudPeopleOneToMany\\Aula11CrudPeople.csproj",
+        "projectUniqueName": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\cassi\\.nuget\\packages\\",
-        "outputPath": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\Aula12CrudPeopleOneToMany\\obj\\",
+        "outputPath": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

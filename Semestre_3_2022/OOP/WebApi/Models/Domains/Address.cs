@@ -1,6 +1,6 @@
-using Aula11CrudPeople.Models.Domains;
+using WebApi.Models.Domains;
 
-namespace Aula12CrudPeopleOneToMany.Models.Domains
+namespace WebApi.Models.Domains
 {
     public class Address
     {

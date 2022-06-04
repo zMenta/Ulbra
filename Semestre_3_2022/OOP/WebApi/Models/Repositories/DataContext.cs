@@ -1,8 +1,8 @@
-using Aula11CrudPeople.Models.Domains;
-using Aula12CrudPeopleOneToMany.Models.Domains;
+using WebApi.Models.Domains;
+using WebApi.Models.Domains;
 using Microsoft.EntityFrameworkCore;
 
-namespace Aula11CrudPeople.Models.Repositories
+namespace WebApi.Models.Repositories
 {
     public class DataContext : DbContext
     {

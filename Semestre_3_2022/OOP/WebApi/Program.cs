@@ -1,5 +1,5 @@
-using Aula11CrudPeople.Models.Repositories;
-using Aula12CrudPeopleOneToMany.Models.Repositories;
+using .Models.Repositories;
+using WebApi.Models.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

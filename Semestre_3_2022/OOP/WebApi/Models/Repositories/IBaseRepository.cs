@@ -1,4 +1,4 @@
-namespace Aula12CrudPeopleOneToMany.Models.Repositories
+namespace WebApi.Models.Repositories
 {
     public interface IBaseRepository<Entity>
         where Entity : class
