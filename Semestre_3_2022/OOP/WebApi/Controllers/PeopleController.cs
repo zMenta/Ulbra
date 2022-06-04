@@ -11,7 +11,7 @@ namespace Aula11CrudPeople.Controllers
     public class PeopleController : ControllerBase
     {
         private IPersonRepository repository;
-       
+    
         public PeopleController(IPersonRepository repository)
         {
             this.repository = repository;
@@ -53,7 +53,7 @@ namespace Aula11CrudPeople.Controllers
             return Ok( new {
                 message = "Person deleted.",
                 errorCode = 202
-               });
+                });
         }
     }
 }
