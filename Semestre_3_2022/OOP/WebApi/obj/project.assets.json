@@ -900,23 +900,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cassi\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\brent\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
       "projectPath": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\cassi\\.nuget\\packages\\",
       "outputPath": "C:\\Wintrab\\Ulbra\\POO\\POO-2022-2\\WebApi\\obj\\",
+=======
+      "projectUniqueName": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\WebApi\\Aula11CrudPeople.csproj",
+      "projectName": "Aula11CrudPeople",
+      "projectPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\WebApi\\Aula11CrudPeople.csproj",
+      "packagesPath": "C:\\Users\\brent\\.nuget\\packages\\",
+      "outputPath": "E:\\Repositorios\\Ulbra\\Semestre_3_2022\\OOP\\WebApi\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
+<<<<<<< Updated upstream
         "C:\\Users\\cassi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+        "C:\\Users\\brent\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> Stashed changes
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -965,6 +973,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.17, 5.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
