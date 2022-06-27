@@ -563,7 +563,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "6.0.3",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.3"
         },
         "compile": {
           "bin/placeholder/Data.dll": {}
