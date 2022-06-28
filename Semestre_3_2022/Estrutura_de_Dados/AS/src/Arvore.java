@@ -4,10 +4,9 @@ public class Arvore {
 
     private Elemento root; // Raiz da arvore
 
-    public Arvore(){
-        root=null;
+    public Arvore() {
+        root = null;
     }
-
 
     public void inserir(long v) {
         Elemento novo = new Elemento(); // cria um novo Nó
@@ -15,11 +14,12 @@ public class Arvore {
         novo.dir = null;
         novo.esq = null;
 
-        if (root == null) root = novo;
-        else  { // se nao for a raiz
+        if (root == null)
+            root = novo;
+        else { // se nao for a raiz
             Elemento atual = root;
             Elemento anterior;
-            while(true) {
+            while (true) {
                 anterior = atual;
                 if (v <= atual.item) { // ir para esquerda
                     atual = atual.esq;
@@ -27,7 +27,7 @@ public class Arvore {
                         anterior.esq = novo;
                         return;
                     }
-                }  // fim da condição ir a esquerda
+                } // fim da condição ir a esquerda
                 else { // ir para direita
                     atual = atual.dir;
                     if (atual == null) {
@@ -39,21 +39,24 @@ public class Arvore {
         } // fim do else não raiz
     }
 
-
     public Elemento buscar(long chave) {
-        if (root == null) return null; // se arvore vazia
-        Elemento atual = root;  // começa a procurar desde raiz
+        if (root == null)
+            return null; // se arvore vazia
+        Elemento atual = root; // começa a procurar desde raiz
         while (atual.item != chave) { // enquanto nao encontrou
-            if(chave < atual.item ) atual = atual.esq; // caminha para esquerda
-            else atual = atual.dir; // caminha para direita
-            if (atual == null) return null; // encontrou uma folha -> sai
+            if (chave < atual.item)
+                atual = atual.esq; // caminha para esquerda
+            else
+                atual = atual.dir; // caminha para direita
+            if (atual == null)
+                return null; // encontrou uma folha -> sai
         } // fim laço while
         return atual; // terminou o laço while e chegou aqui é pq encontrou item
     }
 
-
     public boolean remover(long v) {
-        if (root == null) return false; // se arvore vazia
+        if (root == null)
+            return false; // se arvore vazia
 
         Elemento atual = root;
         Elemento pai = root;
@@ -62,15 +65,15 @@ public class Arvore {
         // ****** Buscando o valor **********
         while (atual.item != v) { // enquanto nao encontrou
             pai = atual;
-            if(v < atual.item ) { // caminha para esquerda
+            if (v < atual.item) { // caminha para esquerda
                 atual = atual.esq;
                 filho_esq = true; // é filho a esquerda? sim
-            }
-            else { // caminha para direita
+            } else { // caminha para direita
                 atual = atual.dir;
                 filho_esq = false; // é filho a esquerda? NAO
             }
-            if (atual == null) return false; // encontrou uma folha -> sai
+            if (atual == null)
+                return false; // encontrou uma folha -> sai
         } // fim laço while de busca do valor
 
         // **************************************************************
@@ -82,32 +85,46 @@ public class Arvore {
 
         // Se nao possui nenhum filho (é uma folha), elimine-o
         if (atual.esq == null && atual.dir == null) {
-            if (atual == root ) root = null; // se raiz
-            else if (filho_esq) pai.esq = null; // se for filho a esquerda do pai
-            else pai.dir = null; // se for filho a direita do pai
+            if (atual == root)
+                root = null; // se raiz
+            else if (filho_esq)
+                pai.esq = null; // se for filho a esquerda do pai
+            else
+                pai.dir = null; // se for filho a direita do pai
         }
 
         // Se é pai e nao possui um filho a direita, substitui pela subarvore a direita
         else if (atual.dir == null) {
-            if (atual == root) root = atual.esq; // se raiz
-            else if (filho_esq) pai.esq = atual.esq; // se for filho a esquerda do pai
-            else pai.dir = atual.esq; // se for filho a direita do pai
+            if (atual == root)
+                root = atual.esq; // se raiz
+            else if (filho_esq)
+                pai.esq = atual.esq; // se for filho a esquerda do pai
+            else
+                pai.dir = atual.esq; // se for filho a direita do pai
         }
 
-        // Se é pai e nao possui um filho a esquerda, substitui pela subarvore a esquerda
+        // Se é pai e nao possui um filho a esquerda, substitui pela subarvore a
+        // esquerda
         else if (atual.esq == null) {
-            if (atual == root) root = atual.dir; // se raiz
-            else if (filho_esq) pai.esq = atual.dir; // se for filho a esquerda do pai
-            else pai.dir = atual.dir; // se for  filho a direita do pai
+            if (atual == root)
+                root = atual.dir; // se raiz
+            else if (filho_esq)
+                pai.esq = atual.dir; // se for filho a esquerda do pai
+            else
+                pai.dir = atual.dir; // se for filho a direita do pai
         }
 
         // Se possui mais de um filho, se for um avô ou outro grau maior de parentesco
         else {
             Elemento sucessor = elemento_sucessor(atual);
-            // Usando sucessor que seria o Nó mais a esquerda da subarvore a direita do No que deseja-se remover
-            if (atual == root) root = sucessor; // se raiz
-            else if(filho_esq) pai.esq = sucessor; // se for filho a esquerda do pai
-            else pai.dir = sucessor; // se for filho a direita do pai
+            // Usando sucessor que seria o Nó mais a esquerda da subarvore a direita do No
+            // que deseja-se remover
+            if (atual == root)
+                root = sucessor; // se raiz
+            else if (filho_esq)
+                pai.esq = sucessor; // se for filho a esquerda do pai
+            else
+                pai.dir = sucessor; // se for filho a direita do pai
             sucessor.esq = atual.esq; // acertando o ponteiro a esquerda do sucessor agora que ele assumiu
             // a posição correta na arvore
         }
@@ -115,7 +132,8 @@ public class Arvore {
         return true;
     }
 
-    // O sucessor é o Nó mais a esquerda da subarvore a direita do No que foi passado como parametro do metodo
+    // O sucessor é o Nó mais a esquerda da subarvore a direita do No que foi
+    // passado como parametro do metodo
     public Elemento elemento_sucessor(Elemento apaga) { // O parametro é a referencia para o No que deseja-se apagar
         Elemento paidosucessor = apaga;
         Elemento sucessor = apaga;
@@ -127,12 +145,15 @@ public class Arvore {
             atual = atual.esq; // caminha para a esquerda
         }
         // *********************************************************************************
-        // quando sair do while "sucessor" será o Nó mais a esquerda da subarvore a direita
-        // "paidosucessor" será o o pai de sucessor e "apaga" o Nó que deverá ser eliminado
+        // quando sair do while "sucessor" será o Nó mais a esquerda da subarvore a
+        // direita
+        // "paidosucessor" será o o pai de sucessor e "apaga" o Nó que deverá ser
+        // eliminado
         // *********************************************************************************
         if (sucessor != apaga.dir) { // se sucessor nao é o filho a direita do Nó que deverá ser eliminado
             paidosucessor.esq = sucessor.dir; // pai herda os filhos do sucessor que sempre serão a direita
-            // lembrando que o sucessor nunca poderá ter filhos a esquerda, pois, ele sempre será o
+            // lembrando que o sucessor nunca poderá ter filhos a esquerda, pois, ele sempre
+            // será o
             // Nó mais a esquerda da subarvore a direita do Nó apaga.
             // lembrando também que sucessor sempre será o filho a esquerda do pai
 
@@ -152,56 +173,59 @@ public class Arvore {
         System.out.print("\n Altura da arvore: " + altura(root));
         System.out.print("\n Quantidade de folhas: " + folhas(root));
         System.out.print("\n Quantidade de Nós: " + contarNos(root));
-        if (root != null ) {  // se arvore nao esta vazia
+        if (root != null) { // se arvore nao esta vazia
             System.out.print("\n Valor minimo: " + min().item);
             System.out.println("\n Valor maximo: " + max().item);
         }
     }
 
     public void inOrder(Elemento atual) {
-        //ESQ-RAIZ-DIR
+        // ESQ-RAIZ-DIR
         if (atual != null) {
             inOrder(atual.esq);
-            System.out.print(atual.item+" ");
+            System.out.print(atual.item + " ");
             inOrder(atual.dir);
         }
     }
 
-    public void preOrder(Elemento atual) {        
-        //RAIZ - ESQ - DIR
+    public void preOrder(Elemento atual) {
+        // RAIZ - ESQ - DIR
         if (atual != null) {
-            System.out.print(atual.item+" ");
+            System.out.print(atual.item + " ");
             inOrder(atual.esq);
             inOrder(atual.dir);
         }
     }
 
     public void posOrder(Elemento atual) {
-        //ESQ - DIR- RAIZ
+        // ESQ - DIR- RAIZ
         if (atual != null) {
             inOrder(atual.esq);
             inOrder(atual.dir);
-            System.out.print(atual.item+" ");
+            System.out.print(atual.item + " ");
         }
     }
 
     public int altura(Elemento atual) {
-        System.out.println("IMPLEMENTAR");
-        //TODO Altura Da Arvore
-        return 0;
+        if (atual != null) {
+            int altura_esquerda = altura(atual.esq);
+            int altura_direita = altura(atual.dir);
+            return Math.max(altura_direita, altura_esquerda) + 1;
+        }
 
+        return 0;
     }
 
     public int folhas(Elemento atual) {
         System.out.println("IMPLEMENTAR");
-        //TODO Numero de folhas
+        // TODO Numero de folhas
         return 0;
 
     }
 
     public int contarNos(Elemento atual) {
         System.out.println("IMPLEMENTAR");
-        //TODO Numero de nós.
+        // TODO Numero de nós.
         return 0;
     }
 
@@ -225,6 +249,5 @@ public class Arvore {
         return anterior;
     }
 
-
-////////////////////////////////////////////////
+    ////////////////////////////////////////////////
 }
