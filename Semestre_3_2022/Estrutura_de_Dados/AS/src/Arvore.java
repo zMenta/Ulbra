@@ -217,15 +217,20 @@ public class Arvore {
     }
 
     public int folhas(Elemento atual) {
-        System.out.println("IMPLEMENTAR");
-        // TODO Numero de folhas
+        if (atual != null) {
+            int leaves = 0;
+            if (atual.dir == null && atual.esq == null) {
+                leaves = 1;
+            }
+            return folhas(atual.esq) + folhas(atual.dir) + leaves;
+        }
         return 0;
-
     }
 
     public int contarNos(Elemento atual) {
-        System.out.println("IMPLEMENTAR");
-        // TODO Numero de nós.
+        if (atual != null) {
+            return contarNos(atual.esq) + contarNos(atual.dir) + 1;
+        }
         return 0;
     }
 
