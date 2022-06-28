@@ -167,16 +167,22 @@ public class Arvore {
         }
     }
 
-    public void preOrder(Elemento atual) {
-        System.out.println("IMPLEMENTAR");
-        //TODO preOrder
+    public void preOrder(Elemento atual) {        
         //RAIZ - ESQ - DIR
+        if (atual != null) {
+            System.out.print(atual.item+" ");
+            inOrder(atual.esq);
+            inOrder(atual.dir);
+        }
     }
 
     public void posOrder(Elemento atual) {
-        System.out.println("IMPLEMENTAR");
-        //TODO posOrder
         //ESQ - DIR- RAIZ
+        if (atual != null) {
+            inOrder(atual.esq);
+            inOrder(atual.dir);
+            System.out.print(atual.item+" ");
+        }
     }
 
     public int altura(Elemento atual) {
