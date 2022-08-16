@@ -1,8 +1,8 @@
 <?php
     include('Templates/header.php');
 
-    $page = $_GET['pages'];
-    if(isset($page)){
+    if(isset( $_GET['pages'])){
+        $page = $_GET['pages'];
         if($page == 'home'){
             include('Pages/home.php');
         }
