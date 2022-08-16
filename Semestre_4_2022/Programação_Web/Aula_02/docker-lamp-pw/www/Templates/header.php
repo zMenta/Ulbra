@@ -32,16 +32,16 @@
                 <h2>Menu</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a id="buttonHome" class="nav-link" href="#">Home</a>
+                        <a id="buttonHome" class="nav-link" href="?pages=home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a id="buttonAbout" class="nav-link" href="#">About</a>
+                        <a id="buttonAbout" class="nav-link" href="?pages=about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a id="buttonProducts" class="nav-link" href="#">Products</a>
+                        <a id="buttonProducts" class="nav-link" href="?pages=products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a id="buttonContact" class="nav-link" href="#">Contact Us</a>
+                        <a id="buttonContact" class="nav-link" href="?pages=contact">Contact Us</a>
                     </li>
                 </ul>
             </nav>
