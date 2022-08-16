@@ -47,24 +47,3 @@
             </nav>
 
             <section class="p-3 col-md-9">
-                <!-- <h1>Home</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ut nostrum quam fuga tempora
-                    facilis illo soluta beatae deserunt aut quos nemo, itaque recusandae porro non modi dolores animi
-                    aspernatur!</p> -->
-            </section>
-        </div>
-    </div>
-
-    <footer class="p-3 bg-primary text-white text-center">
-        <h3>Footer</h3>
-    </footer>
-
-</body>
-
-</html>
-
-<!-- <?php
-
-    echo "Testing Php :)";
-
-?> -->
