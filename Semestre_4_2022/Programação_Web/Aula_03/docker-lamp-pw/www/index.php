@@ -14,9 +14,7 @@
                 if (!isset($_GET['method'])) {
                     $SiteController -> home();
                 }else {
-                    $method = $_REQUEST['method'];
-                    
-                    switch ($method) {
+                    switch ($_REQUEST['method']) {
                         case 'home':
                             $SiteController -> home();
                             break;
@@ -33,9 +31,7 @@
                             $SiteController -> contact();
                             break;
                     }
-
                 }
-
                 break;
             
             default:
