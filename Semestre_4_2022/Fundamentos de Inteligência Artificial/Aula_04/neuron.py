@@ -26,6 +26,3 @@ class Neuron:
             input_sum += self.weight_list[i] * input_list[i]
 
         return input_sum
-
-    def print_stuff(self, stuff):
-        return stuff
