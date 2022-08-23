@@ -47,6 +47,10 @@
                             case 'register':
                                 $ClientController -> register();
                                 break;                            
+                                
+                            case 'registerView':
+                                $ClientController -> registerView();
+                                break;
                         }
                     }
                 break;

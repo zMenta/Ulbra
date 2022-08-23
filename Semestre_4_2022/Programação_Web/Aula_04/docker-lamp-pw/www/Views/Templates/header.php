@@ -43,6 +43,7 @@
                     <li class="nav-item">
                         <a id="buttonContact" class="nav-link" href="?controller=site&method=contact">Contact Us</a>
                     </li>
+                    <h2>Clients</h2>
                     <li class="nav-item">
                         <a id="buttonContact" class="nav-link" href="?controller=client&method=register">Client Registration</a>
                     </li>
