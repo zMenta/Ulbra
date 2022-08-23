@@ -1,17 +1,22 @@
-# Class 03 | TDE - 01
+# Class 04 | TDE
 
 from enum import Enum
 import sum_functions
 
 
 def main():
-    sum_value = sum_functions.data_sum(value_weight)
-    print(function(sum_value, F.FastLimit))
-    print(function(sum_value, F.Ramp))
-    print(function(sum_value, F.Sigmoid))
+    # PART 1
+    sum_value_part_1 = sum_functions.data_sum(value_weight)
+    print(function(sum_value_part_1, F.FastLimit))
+    print(function(sum_value_part_1, F.Ramp))
+    print(function(sum_value_part_1, F.Sigmoid))
 
 
 class F(Enum):
+    """ 
+        F = Functions. Options to be 
+        used with the def function() 
+    """
     FastLimit = 0
     Ramp = 1
     Sigmoid = 2

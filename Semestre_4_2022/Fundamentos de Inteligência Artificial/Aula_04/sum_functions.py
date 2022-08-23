@@ -21,7 +21,7 @@ def sigmoidFunction(sum_value: float) -> float:
         return 1 - (1/(1 + sum_value))
 
 
-def data_sum(data_list) -> float:
+def data_sum(data_list: list) -> float:
     current_sum: float = 0
     for values in data_list:
         current_sum += values[0] * values[1]
