@@ -2,14 +2,22 @@
 
 from enum import Enum
 import sum_functions
+import neuron
 
 
 def main():
     # PART 1
-    sum_value_part_1 = sum_functions.data_sum(value_weight)
-    print(function(sum_value_part_1, F.FastLimit))
-    print(function(sum_value_part_1, F.Ramp))
-    print(function(sum_value_part_1, F.Sigmoid))
+    # sum_value_part_1 = sum_functions.data_sum(value_weight)
+    # print(function(sum_value_part_1, F.FastLimit))
+    # print(function(sum_value_part_1, F.Ramp))
+    # print(function(sum_value_part_1, F.Sigmoid))
+
+    # Part 2
+    n1 = neuron.Neuron([1, 2])
+
+    # print(n1.weight_list)
+    # print(n1.print_stuff(2))
+    print(n1.add_input([2, 4]))
 
 
 class F(Enum):

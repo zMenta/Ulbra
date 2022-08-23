@@ -13,11 +13,19 @@ class Neuron:
         Args:
             input_list (list[floats]): List of inputs containing floats.
         """
-        if self.weight_list.count != input_list.count:
+        if type(input_list) != list:
+            print("input is not a list")
+            return
+
+        if len(self.weight_list) != len(input_list):
+            print("list don't match")
             return
 
         input_sum: float = 0
-        for i in range(input_list.count):
+        for i in range(len(input_list)):
             input_sum += self.weight_list[i] * input_list[i]
 
         return input_sum
+
+    def print_stuff(self, stuff):
+        return stuff
