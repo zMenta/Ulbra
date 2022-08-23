@@ -1,6 +1,5 @@
 class Neuron:
-    def __init__(self, weight_list: list, output: float = 0) -> None:
-        self.output = 0
+    def __init__(self, weight_list: list) -> None:
         if not weight_list.count == 0:
             self.weight_list = weight_list
         else:
