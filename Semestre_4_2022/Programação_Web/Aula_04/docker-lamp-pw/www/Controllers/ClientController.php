@@ -3,9 +3,9 @@ class ClientController{
     
     public function register()
     {
-        include('Views/Templates/header.php');
-        include('Views/Client/register.php');
-        include('Views/Templates/footer.php');
+        require_once('Views/Templates/header.php');
+        require_once('Views/Client/register.php');
+        require_once('Views/Templates/footer.php');
     }
     
     public function registerView()
@@ -15,10 +15,9 @@ class ClientController{
             'email' => $_POST['email'],
         );
 
-        
-        include('Views/Templates/header.php');
-        include('Views/Client/registerView.php');
-        include('Views/Templates/footer.php');
+        require_once('Views/Templates/header.php');
+        require_once('Views/Client/registerView.php');
+        require_once('Views/Templates/footer.php');
     }
 }
 ?>
