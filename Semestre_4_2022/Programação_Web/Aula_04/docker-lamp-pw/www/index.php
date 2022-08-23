@@ -7,6 +7,7 @@
     }else {
         
         switch ($_REQUEST['controller']) {
+            // SITE
             case 'site':
                 require_once('Controllers/SiteController.php');
                 $SiteController = new SiteController();
@@ -34,12 +35,23 @@
                 }
                 break;
             
-            default:
-                # code...
+                // CLIENT
+                case 'client':
+                    require_once('Controllers/ClientController.php');
+                    $ClientController = new ClientController();
+
+                    if (!isset($_GET['method'])){
+                        // default action
+                    }else{
+                        switch ($_REQUEST['method']) {
+                            case 'register':
+                                $ClientController -> register();
+                                break;                            
+                        }
+                    }
                 break;
         }
 
     }
-
 
 ?>
