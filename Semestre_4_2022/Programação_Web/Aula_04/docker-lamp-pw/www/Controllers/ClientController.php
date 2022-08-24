@@ -15,6 +15,8 @@ class ClientController{
             'email' => $_POST['email'],
         );
 
+        var_dump($_POST);
+
         require_once('Views/Templates/header.php');
         require_once('Views/Client/registerView.php');
         require_once('Views/Templates/footer.php');

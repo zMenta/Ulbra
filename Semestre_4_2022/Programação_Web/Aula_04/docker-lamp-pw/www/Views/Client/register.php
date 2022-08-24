@@ -10,10 +10,9 @@
     </div>
     <div class='mb-3 mt-3'>
         <h4>Gender</h4>
-        <input type="radio" name="fav_language" value="HTML">
-        <label class="form-label">Female</label><br>
-        <input type="radio" name="fav_language" value="CSS">
-        <label class="form-label">Male</label>
+        <label><input type="radio" name="gender" value="female" checked> Female</label>
+        <br>
+        <label><input type="radio" name="gender" value="male" checked> Male</label>
     </div>
     
     <button class='btn btn-primary' type='submit'>Send</button>
