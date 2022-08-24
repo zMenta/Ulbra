@@ -13,6 +13,7 @@ class ClientController{
         $client_data_array = array(
             'name' => $_POST['name'],
             'email' => $_POST['email'],
+            'gender' => $_POST['gender'],
         );
 
         var_dump($_POST);
