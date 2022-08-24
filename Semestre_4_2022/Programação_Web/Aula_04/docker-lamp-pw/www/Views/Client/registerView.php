@@ -18,4 +18,22 @@
             <?= $client_data_array['gender']?>
         </td>
     </tr>
+    <tr>
+        <th>Terms: </th>
+        <td>
+            <?= $client_data_array['term']?>
+        </td>
+    </tr>
+    <tr>
+        <th>Spam: </th>
+        <td>
+            <?= $client_data_array['spam']?>
+        </td>
+    </tr>
+    <tr>
+        <th>Notifications: </th>
+        <td>
+            <?= $client_data_array['notification']?>
+        </td>
+    </tr>
 </table>

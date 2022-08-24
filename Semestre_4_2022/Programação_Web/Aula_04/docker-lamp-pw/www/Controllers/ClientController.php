@@ -14,9 +14,12 @@ class ClientController{
             'name' => $_POST['name'],
             'email' => $_POST['email'],
             'gender' => $_POST['gender'],
+            'term' => $_POST['term'],
+            'spam' => $_POST['spam'],
+            'notification' => $_POST['notification'],
         );
 
-        var_dump($_POST);
+        // var_dump($_POST);
 
         require_once('Views/Templates/header.php');
         require_once('Views/Client/registerView.php');

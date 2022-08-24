@@ -19,11 +19,11 @@
 
     <div class="mb-3 mt-3">
         <h4>Terms and use</h4>
-        <label><input type="checkbox" name="client_term" checked > I have read and accept the client registration terms. </label>
+        <label><input type="checkbox" name="term" checked > I have read and accept the client registration terms. </label>
         <br>
-        <label><input type="checkbox" name="client_spam" checked > I want to receive spam and special offers in my email. </label>
+        <label><input type="checkbox" name="spam" checked > I want to receive spam and special offers in my email. </label>
         <br>
-        <label><input type="checkbox" name="client_notification" checked > I want to keep up with the service updates and news. </label>
+        <label><input type="checkbox" name="notification" checked > I want to keep up with the service updates and news. </label>
     </div>
     
     <button class='btn btn-primary' type='submit'>Send</button>
