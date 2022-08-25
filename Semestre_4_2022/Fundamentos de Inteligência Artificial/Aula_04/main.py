@@ -2,7 +2,7 @@
 
 from enum import Enum
 import sum_functions
-import neuron
+from neuron import Neuron
 
 
 def main():
@@ -13,11 +13,14 @@ def main():
     # print(function(sum_value_part_1, F.Sigmoid))
 
     # Part 2
-    n1 = neuron.Neuron([1, 2])
+    n1 = Neuron([1, 2])
+    n2 = Neuron([0, -1, 2])
+
+    print(n2.add_input([-1, 1, 1], 2))
 
     # print(n1.weight_list)
     # print(n1.print_stuff(2))
-    print(n1.add_input([2, 4]))
+    # print(n1.add_input([2, 4]))
 
 
 class F(Enum):
