@@ -13,10 +13,13 @@ def main():
     # print(function(sum_value_part_1, F.Sigmoid))
 
     # Part 2
-    n1 = Neuron([1, 2])
+    n1 = Neuron([1])
     n2 = Neuron([0, -1, 2])
 
-    print(n2.add_input([-1, 1, 1], 2))
+    n2_output = n2.add_input([-1, 1, 1], 0)
+
+    print(n2_output)
+    print(n1.add_input([n2_output], 2))
 
     # print(n1.weight_list)
     # print(n1.print_stuff(2))
@@ -24,9 +27,9 @@ def main():
 
 
 class F(Enum):
-    """ 
-        F = Functions. Options to be 
-        used with the def function() 
+    """
+        F = Functions. Options to be
+        used with the def function()
     """
     FastLimit = 0
     Ramp = 1
