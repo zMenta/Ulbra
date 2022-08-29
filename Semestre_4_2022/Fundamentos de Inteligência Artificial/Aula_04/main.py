@@ -1,10 +1,7 @@
 # Example groups
 
 # Group A -> 0
-from pickle import TRUE
-
-
-x1_1 = 0
+sx1_1 = 0
 x1_2 = 0
 y1 = 0
 
