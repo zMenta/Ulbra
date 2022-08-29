@@ -21,6 +21,10 @@ def main():
     print(n2_output)
     print(n1.add_input([n2_output], 2))
 
+    # Updating neuron1 weight list
+    n1.weight_list = [3, 4]
+
+    # print(n1.add_input([2, 8], 2))
     # print(n1.weight_list)
     # print(n1.print_stuff(2))
     # print(n1.add_input([2, 4]))
