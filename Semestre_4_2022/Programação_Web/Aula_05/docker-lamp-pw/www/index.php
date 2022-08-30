@@ -51,7 +51,12 @@
                             case 'registerView':
                                 $ClientController -> registerView();
                                 break;
-                        }
+                                
+                                case 'listClients':
+                                    $ClientController -> listClients();
+                                    break;
+
+                            }
                     }
                 break;
         }
