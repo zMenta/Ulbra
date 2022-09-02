@@ -33,7 +33,6 @@ def neural_sum(_input_array):
     _sum = 0
     for i in range(len(_input_array)):
         _sum += (_input_array[i] * weight_array[i])
-
     return _sum
 
 
