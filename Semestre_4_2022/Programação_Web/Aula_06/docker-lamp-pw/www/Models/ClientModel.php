@@ -1,18 +1,16 @@
 <?php
 
-class ClientModel{
+class ClientModel
+{
 
-    public function listClients(){
+    public function listClients()
+    {
         require_once('Db/ConnectClass.php');
         $ConnectClass = new ConnectClass();
-        $ConnectClass -> openConnection();
-        $connection = $ConnectClass -> getConnection();
+        $ConnectClass->openConnection();
+        $connection = $ConnectClass->getConnection();
 
         $sql = "SELECT * FROM clients";
-        return $result = $connection -> query($sql);
-    
+        return $connection->query($sql);
     }
-
 }
-
-?>
