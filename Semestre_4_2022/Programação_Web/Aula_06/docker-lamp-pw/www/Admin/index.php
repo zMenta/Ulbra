@@ -34,7 +34,7 @@ if (!isset($_GET['controller'])) {
             break;
 
         case 'user':
-            require_once('controllers/User.php');
+            require_once('controllers/UserController.php');
             $UserController = new UserController();
 
             switch ($_REQUEST['method']) {

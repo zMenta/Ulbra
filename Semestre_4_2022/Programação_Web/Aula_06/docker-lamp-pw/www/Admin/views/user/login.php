@@ -16,7 +16,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4 p-5">
                 <h1>System Login</h1>
-                <form method="?controller=user&method=validateLogin" method=POST name="form" id="form">
+                <form action="?controller=user&method=validateLogin" method=POST name="form" id="form">
                     <div class="form-group">
                         <label>Login</label>
                         <input type="text" class="form-control" name="login" placeholder="Type your user here">
