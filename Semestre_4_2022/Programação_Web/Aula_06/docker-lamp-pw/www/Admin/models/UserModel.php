@@ -10,9 +10,9 @@ class UserModel
         $connection = $ConnectClass->getConnection();
 
         $sql =
-            "SELECT * FROM clients
+            "SELECT * FROM users
         WHERE user = '$userName' ";
 
-        return $result = $connection->query($sql);
+        return $connection->query($sql);
     }
 }

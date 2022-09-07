@@ -12,7 +12,7 @@ class UserController
 
         $result = $UserModel->consultUser($login);
 
-        if ($line = $result->fetch_assoc()) {
+        if ($line = $result->fetch_assoc()) {   
             if ($password == $line['password']) {
                 $_SESSION['user'] = $line;
                 // header('Location: ?controller=main&method=home');
