@@ -24,6 +24,7 @@
 
     <header class="p-5 text-center">
         <h1> Admin Area</h1>
+        <a href="?controller=main&method=logout">Logout</a>
     </header>
 
     <div class="container-fluid">
