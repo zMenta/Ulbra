@@ -23,8 +23,8 @@ w1 = -1
 w2 = -1
 
 # Testing
-input_array = [1, 0, 1]
-weight_array = [-1, 0, -1]
+input_array = [1, -1, 0]
+weight_array = [0, 0, 0]
 y_array = 1
 
 
@@ -56,6 +56,7 @@ def adjust_weights(_input_array, _yo, _yd):
         weight_array[i] = weight_array[i] + 1 * (_yd - _yo) * _input
 
 
+# Training 
 while True:
     adjusts = 0
 
