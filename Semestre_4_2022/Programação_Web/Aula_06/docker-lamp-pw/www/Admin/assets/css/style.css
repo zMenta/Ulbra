@@ -1,0 +1,22 @@
+header {
+    background-color: rgb(32, 75, 76);
+    color: #e7e7e7;
+}
+
+nav {
+    background-color: rgb(83, 100, 130);
+    color: #e7e7e7;
+}
+
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    text-decoration: none;
+    color: #e7e7e7;
+}
+
+footer {
+    background-color: rgb(32, 75, 76);
+    color: #e7e7e7;
+}
