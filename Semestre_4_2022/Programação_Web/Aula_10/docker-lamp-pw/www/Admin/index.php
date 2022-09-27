@@ -49,7 +49,7 @@ if (!isset($_GET['controller'])) {
         case 'client':
             require_once('controllers/ClientController.php');
             $ClientController = new ClientController();
-            if(!isset($_GET['action'])){
+            if(!isset($_GET['method'])){
 
             }else{
 
