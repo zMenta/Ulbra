@@ -44,5 +44,17 @@ if (!isset($_GET['controller'])) {
             }
 
             break;
+            
+
+        case 'client':
+            require_once('controllers/ClientController.php');
+            $ClientController = new ClientController();
+            if(!isset($_GET['action'])){
+
+            }else{
+
+
+            }
+            break;
     }
 }
