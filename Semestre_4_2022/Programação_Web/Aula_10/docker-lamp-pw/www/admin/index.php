@@ -52,9 +52,14 @@ if (!isset($_GET['controller'])) {
             if(!isset($_GET['method'])){
 
             }else{
-
+                switch ($_REQUEST['method']) {
+                    case 'list':
+                        $ClientController->listClients();
+                        break;
 
             }
             break;
+        }
     }
 }
+?>
