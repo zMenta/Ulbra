@@ -57,6 +57,9 @@ if (!isset($_GET['controller'])) {
                         $ClientController->listClients();
                         break;
 
+                    case 'clientDetails':
+                        $ClientController -> clientDetails($_GET['id']);
+                        break;
             }
             break;
         }

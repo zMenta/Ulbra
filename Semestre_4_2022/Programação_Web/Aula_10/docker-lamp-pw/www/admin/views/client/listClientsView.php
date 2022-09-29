@@ -4,9 +4,6 @@
     <tr>
         <th>Client ID</th>
         <th>Name</th>
-        <th>Email</th>
-        <th>Telephone</th>
-        <th>Address</th>
         <th>Actions</th>
     </tr>
     
@@ -22,16 +19,7 @@
             <?=$client['name']?>
         </th>
         <th>
-            <?=$client['email']?>
-        </th>
-        <th>
-            <?=$client['phone']?>
-        </th>
-        <th>
-            <?=$client['address']?>    
-        </th>
-        <th>
-            <a href='?controller=client&method=clientDetail&id=<?php echo $client['idClient']?>'>Details</a>
+            <a href='?controller=client&method=clientDetails&id=<?php echo $client['idClient']?>'>Details</a>
         </th>
     </tr>
 
