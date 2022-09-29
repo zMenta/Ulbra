@@ -27,6 +27,7 @@
                     </div>
                     <input class="btn btn-primary" type="submit" name="Send" value="Login">
                 </form>
+                <a href="http://localhost/index.php">Go Back</a>
             </div>
             <div class="col-md-4"></div>
         </div>
