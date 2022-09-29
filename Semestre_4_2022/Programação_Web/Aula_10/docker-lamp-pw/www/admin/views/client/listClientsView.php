@@ -7,6 +7,7 @@
         <th>Email</th>
         <th>Telephone</th>
         <th>Address</th>
+        <th>Actions</th>
     </tr>
     
     <?php
@@ -28,6 +29,9 @@
         </th>
         <th>
             <?=$client['address']?>    
+        </th>
+        <th>
+            <a href='?controller=client&method=clientDetail&id=<?php echo $client['idClient']?>'>Details</a>
         </th>
     </tr>
 
