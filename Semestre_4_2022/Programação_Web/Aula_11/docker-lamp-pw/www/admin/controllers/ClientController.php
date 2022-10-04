@@ -29,4 +29,24 @@ class ClientController{
         require_once('views/templates/footer.php');
         }
     }
+
+    public function insert(){
+        require_once('views/templates/header.php');
+        require_once('views/client/insert.php');
+        require_once('views/templates/footer.php');
+    }
+
+    public function insertMethod(){
+        $arrayClient = array(
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'phone' => $_POST['phone'],
+            'address' => $_POST['address'],
+        );
+
+        require_once('models/ClientModel.php');
+        $ClientModel = new ClientModel();
+        $ClientModel -> insert($arrayClient);
+    }
+
 }

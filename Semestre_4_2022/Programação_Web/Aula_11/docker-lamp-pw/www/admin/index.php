@@ -60,6 +60,14 @@ if (!isset($_GET['controller'])) {
                     case 'clientDetails':
                         $ClientController -> clientDetails($_GET['id']);
                         break;
+
+                    case 'insert':
+                        $ClientController -> insert();
+                        break;
+                        
+                    case 'insert':
+                        $ClientController -> insertMethod();
+                        break;
             }
             break;
         }
