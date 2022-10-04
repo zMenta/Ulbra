@@ -21,6 +21,12 @@
         <th>
             <a href='?controller=client&method=clientDetails&id=<?php echo $client['idClient']?>'>Details</a>
         </th>
+        <th>
+            <a href='?controller=client&method=update&id=<?php echo $client['idClient']?>'>Alter</a>
+        </th>
+        <th>
+            <a href='?controller=client&method=delete&id=<?php echo $client['idClient']?>'>Delete</a>
+        </th>
     </tr>
 
     <?php

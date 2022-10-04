@@ -2,13 +2,17 @@
 
 class ClientController{
 
-    public function listClients(){
+    var $ClientModel;
+
+    public function __construct()
+    {
         require_once('models/ClientModel.php');
-        $ClientModel = new ClientModel();
-        $result = $ClientModel -> listClients();
+        $this -> ClientModel = new ClientModel();
+    }
 
+    public function listClients(){
+        $result = $this -> ClientModel -> listClients();
         $arrayClients = array();
-
         while($line = $result -> fetch_assoc()){
             array_push($arrayClients, $line);
         }
@@ -19,9 +23,7 @@ class ClientController{
     }
 
     public function clientDetails($clientId){
-        require_once('models/ClientModel.php');
-        $ClientModel = new ClientModel();
-        $result = $ClientModel -> consultClient($clientId);
+        $result = $this -> ClientModel -> consultClient($clientId);
 
         if($clientArray = $result->fetch_assoc()){
         require_once('views/templates/header.php');
@@ -43,10 +45,37 @@ class ClientController{
             'phone' => $_POST['phone'],
             'address' => $_POST['address'],
         );
+        $this -> ClientModel -> insert($arrayClient);
 
-        require_once('models/ClientModel.php');
-        $ClientModel = new ClientModel();
-        $ClientModel -> insert($arrayClient);
+        // header('Location:?controller=client&method=list);
     }
 
+
+    public function update($clientId){
+        require_once('views/templates/header.php');
+        require_once('views/client/alter.php');
+        require_once('views/templates/footer.php');
+
+        if($clientArray = $result->fetch_assoc()){
+            require_once('views/templates/header.php');
+            require_once('views/client/alter.php');
+            require_once('views/templates/footer.php');
+        }
+    }
+
+    public function updateMethod($idClient){
+        $arrayClient = array(
+            'cliendId' => $idClient,
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'phone' => $_POST['phone'],
+            'address' => $_POST['address'],
+        );
+
+        $this -> ClientModel -> update($arrayClient);
+    }
+
+    public function delete($idClient){
+        $this -> ClientModel -> delete($idClient);
+    }
 }

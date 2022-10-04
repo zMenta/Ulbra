@@ -44,5 +44,40 @@ class ClientModel
         return $connection->query($sql);
     }
 
+    public function update($arrayClient){
+        require_once('db/ConnectClass.php');
+        $ConnectClass = new ConnectClass();
+        $ConnectClass->openConnection();
+        $connection = $ConnectClass->getConnection();
+
+        $sql = "
+            UPDATE clients 
+                SET
+                    name = '{arrayClient['name']},
+                    email = '{arrayClient['email']},
+                    phone = '{arrayClient['phone']},
+                    address = '{arrayClient['address']}
+                WHERE
+                    idClient = '{arrayClient['clientId']}
+        ";
+
+        return $connection->query($sql);
+    }
+
+
+    public function delete($clientId){
+        require_once('db/ConnectClass.php');
+        $ConnectClass = new ConnectClass();
+        $ConnectClass->openConnection();
+        $connection = $ConnectClass->getConnection();
+
+        $sql = "
+            DELETE FROM clients
+                WHERE
+                    idClient = $clientId
+        ";
+
+        return $connection->query($sql);
+    }
 
 }
