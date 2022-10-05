@@ -20,7 +20,7 @@ class ClientModel
         return $this -> connection->query($sql);
     }
 
-    
+
     public function consultClient($clientId){
         $sql = "SELECT * FROM clients WHERE idClient = $clientId";
         return $this -> connection->query($sql);
