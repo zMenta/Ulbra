@@ -1,5 +1,5 @@
 <h1>Alter Client</h1>
-<form class="form" action="?controller=client&method=alterMethod" method="post">
+<form class="form" action="?controller=client&method=updateMethod" method="post">
     <div class="mb-3 mt-3">
         <label class="form-label">Name</label>
         <input name="name" class="form-control" type="text" value="<?=$clientArray['name']?>">

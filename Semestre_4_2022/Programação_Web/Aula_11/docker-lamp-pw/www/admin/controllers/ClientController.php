@@ -60,9 +60,9 @@ class ClientController{
         }
     }
 
-    public function updateMethod($idClient){
+    public function updateMethod($clientId){
         $arrayClient = array(
-            'cliendId' => $idClient,
+            'cliendId' => $clientId,
             'name' => $_POST['name'],
             'email' => $_POST['email'],
             'phone' => $_POST['phone'],
@@ -71,7 +71,7 @@ class ClientController{
         $this -> ClientModel -> update($arrayClient);
     }
 
-    public function delete($idClient){
-        $this -> ClientModel -> delete($idClient);
+    public function delete($clientId){
+        $this -> ClientModel -> delete($clientId);
     }
 }
