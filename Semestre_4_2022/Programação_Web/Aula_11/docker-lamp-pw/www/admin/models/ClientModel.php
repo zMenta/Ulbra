@@ -3,34 +3,31 @@
 class ClientModel
 {
 
-    public function listClients()
+    var $connection;
+
+    public function __construct()
     {
         require_once('db/ConnectClass.php');
         $ConnectClass = new ConnectClass();
         $ConnectClass->openConnection();
-        $connection = $ConnectClass->getConnection();
+        $this -> connection = $ConnectClass->getConnection();
+    }
 
+
+    public function listClients()
+    {
         $sql = "SELECT * FROM clients";
-        return $connection->query($sql);
+        return $this -> connection->query($sql);
     }
 
     
     public function consultClient($clientId){
-        require_once('db/ConnectClass.php');
-        $ConnectClass = new ConnectClass();
-        $ConnectClass->openConnection();
-        $connection = $ConnectClass->getConnection();
 
         $sql = "SELECT * FROM clients WHERE idClient = $clientId";
-        return $connection->query($sql);
+        return $this -> connection->query($sql);
     }
 
     public function insert($arrayClient){
-        require_once('db/ConnectClass.php');
-        $ConnectClass = new ConnectClass();
-        $ConnectClass->openConnection();
-        $connection = $ConnectClass->getConnection();
-
         $sql = "
             INSERT INTO clients (name, email, phone, address)
                 VALUES
@@ -41,15 +38,10 @@ class ClientModel
                 )
         ";
 
-        return $connection->query($sql);
+        return $this -> connection->query($sql);
     }
 
     public function update($arrayClient){
-        require_once('db/ConnectClass.php');
-        $ConnectClass = new ConnectClass();
-        $ConnectClass->openConnection();
-        $connection = $ConnectClass->getConnection();
-
         $sql = "
             UPDATE clients 
                 SET
@@ -61,23 +53,18 @@ class ClientModel
                     idClient = '{arrayClient['clientId']}
         ";
 
-        return $connection->query($sql);
+        return $this -> connection->query($sql);
     }
 
 
     public function delete($clientId){
-        require_once('db/ConnectClass.php');
-        $ConnectClass = new ConnectClass();
-        $ConnectClass->openConnection();
-        $connection = $ConnectClass->getConnection();
-
         $sql = "
             DELETE FROM clients
                 WHERE
                     idClient = $clientId
         ";
 
-        return $connection->query($sql);
+        return $this -> connection->query($sql);
     }
 
 }
