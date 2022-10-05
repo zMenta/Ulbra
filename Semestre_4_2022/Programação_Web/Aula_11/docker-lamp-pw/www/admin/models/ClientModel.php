@@ -22,10 +22,10 @@ class ClientModel
 
     
     public function consultClient($clientId){
-
         $sql = "SELECT * FROM clients WHERE idClient = $clientId";
         return $this -> connection->query($sql);
     }
+
 
     public function insert($arrayClient){
         $sql = "
@@ -34,12 +34,10 @@ class ClientModel
                 ('{arrayClient['name']}',
                 '{arrayClient['email']}',
                 '{arrayClient['phone']}',
-                '{arrayClient['address']}'
-                )
-        ";
-
+                '{arrayClient['address']}')";
         return $this -> connection->query($sql);
     }
+
 
     public function update($arrayClient){
         $sql = "
@@ -50,9 +48,7 @@ class ClientModel
                     phone = '{arrayClient['phone']},
                     address = '{arrayClient['address']}
                 WHERE
-                    idClient = '{arrayClient['clientId']}
-        ";
-
+                    idClient = '{arrayClient['clientId']}";
         return $this -> connection->query($sql);
     }
 
@@ -61,9 +57,7 @@ class ClientModel
         $sql = "
             DELETE FROM clients
                 WHERE
-                    idClient = $clientId
-        ";
-
+                    idClient = $clientId";
         return $this -> connection->query($sql);
     }
 
