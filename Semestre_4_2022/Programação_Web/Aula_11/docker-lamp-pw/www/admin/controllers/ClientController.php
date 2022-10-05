@@ -52,10 +52,7 @@ class ClientController{
 
 
     public function update($clientId){
-        require_once('views/templates/header.php');
-        require_once('views/client/alter.php');
-        require_once('views/templates/footer.php');
-
+        $result = $this -> ClientModel -> consultClient($clientId);
         if($clientArray = $result->fetch_assoc()){
             require_once('views/templates/header.php');
             require_once('views/client/alter.php');
@@ -71,7 +68,6 @@ class ClientController{
             'phone' => $_POST['phone'],
             'address' => $_POST['address'],
         );
-
         $this -> ClientModel -> update($arrayClient);
     }
 
