@@ -46,12 +46,12 @@ class ClientModel
         $sql = "
             UPDATE clients 
                 SET
-                    name = '{$arrayClient['name']},
-                    email = '{$arrayClient['email']},
-                    phone = '{$arrayClient['phone']},
-                    address = '{$arrayClient['address']}
+                    name = '{$arrayClient['name']}',
+                    email = '{$arrayClient['email']}',
+                    phone = '{$arrayClient['phone']}',
+                    address = '{$arrayClient['address']}'
                 WHERE
-                    idClient = '{$arrayClient['clientId']}";
+                    idClient = '{$arrayClient['clientId']}'";
         return $this -> connection->query($sql);
     }
 

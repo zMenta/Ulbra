@@ -55,20 +55,21 @@ class ClientController{
         $result = $this -> ClientModel -> consultClient($clientId);
         if($clientArray = $result->fetch_assoc()){
             require_once('views/templates/header.php');
-            require_once('views/client/alter.php');
+            require_once('views/client/update.php');
             require_once('views/templates/footer.php');
         }
     }
 
     public function updateMethod($clientId){
         $arrayClient = array(
-            'cliendId' => $clientId,
+            'clientId' => $clientId,
             'name' => $_POST['name'],
             'email' => $_POST['email'],
             'phone' => $_POST['phone'],
             'address' => $_POST['address'],
         );
         $this -> ClientModel -> update($arrayClient);
+        header('Location:?controller=client&method=list');
     }
 
     public function delete($clientId){
