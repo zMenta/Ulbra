@@ -73,5 +73,6 @@ class ClientController{
 
     public function delete($clientId){
         $this -> ClientModel -> delete($clientId);
+        header('Location:?controller=client&method=list');
     }
 }
