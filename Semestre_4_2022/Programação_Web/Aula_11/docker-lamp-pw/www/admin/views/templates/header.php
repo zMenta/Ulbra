@@ -39,12 +39,12 @@
                 <h2>Client</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a id="buttonHome" class="nav-link" href="?controller=client&method=list">List</a>
+                        <a id="buttonClientList" class="nav-link" href="?controller=client&method=list">List</a>
                     </li>
                 </ul>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a id="buttonHome" class="nav-link" href="?controller=client&method=insert">Insert</a>
+                        <a id="buttonClientInsert" class="nav-link" href="?controller=client&method=insert">Insert</a>
                     </li>
                 </ul>
             </nav>

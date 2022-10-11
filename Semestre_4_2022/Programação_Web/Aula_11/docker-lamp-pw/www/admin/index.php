@@ -81,9 +81,6 @@ if (!isset($_GET['controller'])) {
                         $ClientController -> delete($_GET['id']);
                         break;
                         
-                    // case 'insert':
-                    //     $ClientController -> insertMethod();
-                    //     break;
             }
             break;
         }
