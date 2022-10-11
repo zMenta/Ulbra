@@ -29,13 +29,16 @@ class ClientModel
 
     public function insert($arrayClient){
         $sql = "
-            INSERT INTO clients (name, email, phone, address)
-                VALUES
-                ('{arrayClient['name']}',
-                '{arrayClient['email']}',
-                '{arrayClient['phone']}',
-                '{arrayClient['address']}')";
-        return $this -> connection->query($sql);
+            INSERT INTO
+                clients (name, email, phone, address)
+            VALUES(
+                '{$arrayClient['name']}',
+                '{$arrayClient['email']}',
+                '{$arrayClient['phone']}',
+                '{$arrayClient['address']}'
+            )
+        ";
+         return $this -> connection -> query($sql);
     }
 
 
@@ -43,12 +46,12 @@ class ClientModel
         $sql = "
             UPDATE clients 
                 SET
-                    name = '{arrayClient['name']},
-                    email = '{arrayClient['email']},
-                    phone = '{arrayClient['phone']},
-                    address = '{arrayClient['address']}
+                    name = '{$arrayClient['name']},
+                    email = '{$arrayClient['email']},
+                    phone = '{$arrayClient['phone']},
+                    address = '{$arrayClient['address']}
                 WHERE
-                    idClient = '{arrayClient['clientId']}";
+                    idClient = '{$arrayClient['clientId']}";
         return $this -> connection->query($sql);
     }
 

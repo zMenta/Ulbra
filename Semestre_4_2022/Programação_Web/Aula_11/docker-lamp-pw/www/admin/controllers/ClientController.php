@@ -47,7 +47,7 @@ class ClientController{
         );
         $this -> ClientModel -> insert($arrayClient);
 
-        // header('Location:?controller=client&method=list);
+        header('Location:?controller=client&method=list');
     }
 
 
