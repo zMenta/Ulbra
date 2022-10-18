@@ -16,5 +16,5 @@
         <input name="address" class="form-control" type="text"value="<?=$clientArray['address']?>">
     </div>
     
-    <input class="btn btn-primary" type="submit" value="Enviar">
+    <input class="btn btn-primary" type="submit" value="Send">
 </form>
