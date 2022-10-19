@@ -12,13 +12,13 @@ if(isset($uriSegments[1])){
 	switch($uriSegments[1]){
 		case 'client':
 			require_once("Controllers/ClientController.php");
-			$client = new ClientController();
+			$clientController = new ClientController();
 			switch($request_method){
 				case 'GET':
 					if(!isset($uriSegments[2]))
-						$client -> listClients();
+						$clientController -> listClients();
 					else
-						$client -> consultClient($uriSegments[2]);
+						$clientController -> consultClient($uriSegments[2]);
 				break;
 				case 'POST':
 					//completar
