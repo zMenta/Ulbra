@@ -21,13 +21,13 @@ if(isset($uriSegments[1])){
 						$clientController -> clientDetails($uriSegments[2]);
 				break;
 				case 'POST':
-					//completar
+					$clientController -> insertClient();
 				break;
 				case 'PUT':
-					//completar
+					$clientController -> updateClient($uriSegments[2]);
 				break;
 				case 'DELETE':
-					//completar
+					$clientController -> deleteClient($uriSegments[2]);
 				break;
 			}
 		break;

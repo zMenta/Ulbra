@@ -42,7 +42,7 @@ class ClientModel
     }
 
 
-    public function update($arrayClient){
+    public function update($clientId, $arrayClient){
         $sql = "
             UPDATE clients 
                 SET
@@ -51,7 +51,7 @@ class ClientModel
                     phone = '{$arrayClient['phone']}',
                     address = '{$arrayClient['address']}'
                 WHERE
-                    idClient = '{$arrayClient['clientId']}'";
+                    idClient = '{$clientId}'";
         return $this -> connection->query($sql);
     }
 
