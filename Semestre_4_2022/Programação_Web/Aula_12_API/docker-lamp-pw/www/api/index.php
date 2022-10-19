@@ -18,7 +18,7 @@ if(isset($uriSegments[1])){
 					if(!isset($uriSegments[2]))
 						$clientController -> listClients();
 					else
-						$clientController -> consultClient($uriSegments[2]);
+						$clientController -> clientDetails($uriSegments[2]);
 				break;
 				case 'POST':
 					//completar
