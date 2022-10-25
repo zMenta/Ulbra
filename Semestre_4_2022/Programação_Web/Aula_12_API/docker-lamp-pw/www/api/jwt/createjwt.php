@@ -13,6 +13,7 @@ $payload = [
    'user' => 'xxx',
    'adm' => true
 ];
+
 $payload = json_encode($payload);
 $payload = base64_encode($payload);
 $payload = str_replace(['+', '/', '='], ['-', '_', ''], $payload); //base64url

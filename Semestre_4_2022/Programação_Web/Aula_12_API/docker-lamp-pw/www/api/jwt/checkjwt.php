@@ -5,7 +5,6 @@ $token = $header['Authorization'];
 
 $token = str_replace("Bearer ", "", $token); //se tiver o prefixo "Bearer" remover
 
-var_dump($token);
 
 $part = explode(".",$token);
 $header = $part[0];
