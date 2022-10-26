@@ -37,18 +37,11 @@ if(isset($uriSegments[1])){
 		break;
 
 
-		case 'user':
-			require_once('Controllers/UserController.php');
-			$user = new UserController();
-			switch($request_method){
-				case 'GET':
-					$user -> validateLogin();
-				break;
-			}
-		break;
-
-
 		case 'contact':
+			require_once("Controllers/UserController.php");
+			$user = new UserController();
+			if($user -> isAdmin()){
+				// Admin Area
 			require_once('Controllers/ContactController.php');
 			$contact = new ContactController();
 			switch($request_method){
@@ -58,6 +51,25 @@ if(isset($uriSegments[1])){
 					}else{
 						$contact -> consultContact($uriSegments[2]);
 					}
+				break;
+				}
+			} else {
+				// Non Admin Area
+				switch($request_method){
+					case 'POST':
+						echo 'POST METHOD HERE';
+					break;
+				}
+			}
+		break;
+
+
+		case 'user':
+			require_once('Controllers/UserController.php');
+			$user = new UserController();
+			switch($request_method){
+				case 'GET':
+					$user -> validateLogin();
 				break;
 			}
 		break;
