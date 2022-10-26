@@ -46,6 +46,21 @@ if(isset($uriSegments[1])){
 				break;
 			}
 		break;
+
+
+		case 'contact':
+			require_once('Controllers/ContactController.php');
+			$contact = new ContactController();
+			switch($request_method){
+				case 'GET':
+					if(!isset($uriSEgments[2])){
+						$contact -> listContact();
+					}else{
+						$contact -> contactDetails($uriSegments[2]);
+					}
+				break;
+			}
+		break;
 	}
 }
 ?>
