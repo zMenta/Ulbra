@@ -14,8 +14,15 @@ class ContactModel{
 
     public function listContacts(){
         $sql = "SELECT * FROM contacts";
-        return $this -> connection -> query(sql);
+        return $this -> connection -> query($sql);
     }
+
+
+    public function consultContact($contactId){
+        $sql = "SELECT * FROM contacts WHERE idContact = $contactId";
+        return $this -> connection -> query($sql);
+    }
+
 
 }
 ?>

@@ -56,7 +56,7 @@ if(isset($uriSegments[1])){
 					if(!isset($uriSEgments[2])){
 						$contact -> listContacts();
 					}else{
-						$contact -> contactDetails($uriSegments[2]);
+						$contact -> consultContact($uriSegments[2]);
 					}
 				break;
 			}
