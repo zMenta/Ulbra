@@ -24,5 +24,20 @@ class ContactModel{
     }
 
 
+    public function insertContact($contactArray){
+        $sql = "
+            INSERT INTO
+                contacts (name, email, message)
+            VALUES(
+                '{$contactArray['name']}',
+                '{$contactArray['email']}',
+                '{$contactArray['message']}'
+            )
+        ";
+         return $this -> connection -> query($sql);
+    }
+
+
+
 }
 ?>

@@ -35,5 +35,15 @@ class ContactController{
     }
 
 
+    public function insertContact(){
+        $contact = json_decode(file_get_contents("php://input"));
+        $contactArray = (array) $contact;
+        $this -> ContactModel -> insertContact($contactArray);
+
+        header('Contenty-Type: application/json');
+        echo('{ "message" : "Contact Inserted" }');
+    }
+
+
 }
 ?>

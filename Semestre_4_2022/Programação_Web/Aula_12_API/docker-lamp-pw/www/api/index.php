@@ -56,7 +56,7 @@ if(isset($uriSegments[1])){
 				// Non Admin Area
 				switch($request_method){
 					case 'POST':
-						echo 'POST METHOD HERE';
+						$contact -> insertContact();
 					break;
 				}
 			}
