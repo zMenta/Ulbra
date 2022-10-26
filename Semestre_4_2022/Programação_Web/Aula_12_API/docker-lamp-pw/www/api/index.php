@@ -40,10 +40,10 @@ if(isset($uriSegments[1])){
 		case 'contact':
 			require_once("Controllers/UserController.php");
 			$user = new UserController();
-			if($user -> isAdmin()){
-				// Admin Area
 			require_once('Controllers/ContactController.php');
 			$contact = new ContactController();
+			if($user -> isAdmin()){
+				// Admin Area
 			switch($request_method){
 				case 'GET':
 					if(!isset($uriSegments[2]))
@@ -52,13 +52,12 @@ if(isset($uriSegments[1])){
 						$contact -> consultContact($uriSegments[2]);
 				break;
 				}
-			} else {
+			}
 				// Non Admin Area
 				switch($request_method){
 					case 'POST':
 						$contact -> insertContact();
 					break;
-				}
 			}
 		break;
 
