@@ -51,6 +51,10 @@ if(isset($uriSegments[1])){
 					else
 						$contact -> consultContact($uriSegments[2]);
 				break;
+
+				case 'DELETE':
+					$contact -> deleteContact($uriSegments[2]);
+				break;
 				}
 			}
 				// Non Admin Area

@@ -45,5 +45,11 @@ class ContactController{
     }
 
 
+    public function deleteContact($contactId){
+        $this -> ContactModel -> deleteContact($contactId);
+        header('Contenty-Type: application/json');
+        echo('{ "message" : "Contact Deleted" }');
+    }
+
 }
 ?>

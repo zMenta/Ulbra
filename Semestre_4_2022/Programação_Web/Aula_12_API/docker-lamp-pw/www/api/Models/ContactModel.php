@@ -38,6 +38,13 @@ class ContactModel{
     }
 
 
+    public function deleteContact($contactId){
+        $sql = "
+            DELETE FROM contacts
+                WHERE
+                    idContact = $contactId";
+        return $this -> connection -> query($sql);
+    }
 
 }
 ?>
