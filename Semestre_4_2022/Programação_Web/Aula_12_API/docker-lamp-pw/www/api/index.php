@@ -54,7 +54,7 @@ if(isset($uriSegments[1])){
 			switch($request_method){
 				case 'GET':
 					if(!isset($uriSEgments[2])){
-						$contact -> listContact();
+						$contact -> listContacts();
 					}else{
 						$contact -> contactDetails($uriSegments[2]);
 					}
