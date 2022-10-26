@@ -46,11 +46,10 @@ if(isset($uriSegments[1])){
 			$contact = new ContactController();
 			switch($request_method){
 				case 'GET':
-					if(!isset($uriSEgments[2])){
+					if(!isset($uriSegments[2]))
 						$contact -> listContacts();
-					}else{
+					else
 						$contact -> consultContact($uriSegments[2]);
-					}
 				break;
 				}
 			} else {
