@@ -2,7 +2,7 @@
 
 use CodeIgniter\Commands\Utilities\Namespaces;
 
-Namespace App\Controllers;
+namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
