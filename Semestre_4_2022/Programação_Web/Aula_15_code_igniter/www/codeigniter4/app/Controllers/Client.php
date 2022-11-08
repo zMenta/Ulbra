@@ -1,5 +1,9 @@
 <?php
 
+use CodeIgniter\Commands\Utilities\Namespaces;
+
+Namespace App\Controllers;
+
 use App\Controllers\BaseController;
 
 class CLient extends BaseController{
