@@ -5,7 +5,6 @@ namespace App\Controllers;
 use App\Models\ClientModel;
 
 
-
 class Client extends BaseController{
 
     public function listClients(){
