@@ -17,4 +17,8 @@ class Admin extends BaseController{
         }
     }
 
+    public function login(){
+       echo view('admin/login');
+    }
+
 }
