@@ -43,6 +43,10 @@ $routes ->get('/contact', 'Site::view/contact');
 
 $routes ->get('/listClients', 'Client::listClients');
 
+// admin routes
+$routes -> get('/admin', 'Admin\Admin::index');
+$routes -> get('/admin/login', 'Admin\Admin::login');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
