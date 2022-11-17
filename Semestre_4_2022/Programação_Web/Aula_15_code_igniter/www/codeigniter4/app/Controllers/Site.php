@@ -6,6 +6,8 @@ class Site extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        echo view('templates/header.php');
+        echo view('site/home.php');
+        echo view('templates/footer.php');
     }
 }
