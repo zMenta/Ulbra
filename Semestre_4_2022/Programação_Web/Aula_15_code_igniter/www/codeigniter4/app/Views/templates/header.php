@@ -44,11 +44,11 @@
                         <a id="buttonContact" class="nav-link" href="<?=base_url('contact')?>">Contact Us</a>
                     </li>
                     <h2>Clients</h2>
+                    <!-- <li class="nav-item">
+                         <a id="buttonContact" class="nav-link" href="?controller=client&method=register">Client Registration</a>
+                         </li> -->
                     <li class="nav-item">
-                        <a id="buttonContact" class="nav-link" href="?controller=client&method=register">Client Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="buttonContact" class="nav-link" href="?controller=client&method=listClients">List Clients</a>
+                        <a id="buttonContact" class="nav-link" href="<?=base_url('listClients')?>">List Clients</a>
                     </li>
                 </ul>
             </nav>

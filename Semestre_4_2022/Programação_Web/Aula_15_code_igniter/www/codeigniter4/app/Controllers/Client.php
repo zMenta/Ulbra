@@ -1,15 +1,17 @@
 <?php
 
-use CodeIgniter\Commands\Utilities\Namespaces;
-
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
+use App\Models\ClientModel;
 
-class CLient extends BaseController{
+
+
+class Client extends BaseController{
 
     public function listClients(){
-        // $ClientModel = new ClientModel();
+        $ClientModel = new ClientModel();
+
+        var_dump( $ClientModel -> findAll());
     
         // $data = [
         //     'arrayClients' => $ClientModel -> findAll()
