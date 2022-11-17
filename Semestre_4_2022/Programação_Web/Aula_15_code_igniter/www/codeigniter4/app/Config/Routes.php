@@ -47,6 +47,8 @@ $routes ->get('/listClients', 'Client::listClients');
 $routes -> get('/admin', 'Admin\Admin::index');
 $routes -> get('/admin/login', 'Admin\Admin::login');
 
+$routes -> post('/admin/validateLogin', 'Admin\User::validateLogin');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

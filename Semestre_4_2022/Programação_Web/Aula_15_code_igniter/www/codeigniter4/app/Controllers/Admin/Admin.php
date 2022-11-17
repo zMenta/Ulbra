@@ -11,7 +11,9 @@ class Admin extends BaseController{
         $session = \Config\Services::session();
 
         if($session -> has('user')){
-           echo 'show home';
+            echo view('admin/templates/header');
+            echo view('admin/home');
+            echo view('admin/templates/footer');
         }else{
            return redirect() -> to(base_url('admin/login'));
         }

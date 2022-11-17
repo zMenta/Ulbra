@@ -16,7 +16,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4 p-5">
                 <h1>System Login</h1>
-                <form action="?controller=user&method=validateLogin" method=POST name="form" id="form">
+                <form action="<?=base_url('admin/validateLogin')?>" method=POST name="form" id="form">
                     <div class="form-group">
                         <label>Login</label>
                         <input type="text" class="form-control" name="login" placeholder="Type your user here">
@@ -27,7 +27,7 @@
                     </div>
                     <input class="btn btn-primary" type="submit" name="Send" value="Login">
                 </form>
-                <a href="http://localhost/index.php">Go Back</a>
+                <a href="<?=base_url('home')?>">Go Back</a>
             </div>
             <div class="col-md-4"></div>
         </div>
