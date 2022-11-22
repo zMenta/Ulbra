@@ -19,8 +19,16 @@ class Admin extends BaseController{
         }
     }
 
+
     public function login(){
        echo view('admin/login');
+    }
+
+
+    public function logout(){
+        $session = \Config\Services::session();
+        $session -> destroy();
+        return redirect() -> to(base_url('admin/login'));
     }
 
 }

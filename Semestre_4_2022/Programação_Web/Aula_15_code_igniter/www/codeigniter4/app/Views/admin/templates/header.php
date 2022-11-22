@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/script.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>">
 
 </head>
 
@@ -24,7 +24,7 @@
 
     <header class="p-5 text-center">
         <h1> Admin Area</h1>
-        <a href="?controller=main&method=logout">Logout</a>
+        <a href="<?=base_url('admin/logout')?>">Logout</a>
     </header>
 
     <div class="container-fluid">
@@ -33,18 +33,18 @@
                 <h2>Menu</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a id="buttonHome" class="nav-link" href="?controller=main&method=home">Home</a>
+                        <a id="buttonHome" class="nav-link" href="<?=base_url('admin')?>">Home</a>
                     </li>
                 </ul>
                 <h2>Client</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a id="buttonClientList" class="nav-link" href="?controller=client&method=list">List</a>
+                        <a id="buttonClientList" class="nav-link" href="<?=base_url('admin/listClients')?>">List</a>
                     </li>
                 </ul>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a id="buttonClientInsert" class="nav-link" href="?controller=client&method=insert">Insert</a>
+                        <a id="buttonClientInsert" class="nav-link" href="<?=base_url('admin/insertClient')?>">Insert</a>
                     </li>
                 </ul>
             </nav>
