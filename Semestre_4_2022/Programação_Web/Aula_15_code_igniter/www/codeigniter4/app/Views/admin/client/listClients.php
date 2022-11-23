@@ -19,13 +19,11 @@
             <?=$client['name']?>
         </th>
         <th>
-            <a href='?controller=client&method=clientDetails&id=<?php echo $client['idClient']?>'>Details</a>
+            <a href="<?=base_url("admin/updateClient/{$client['idClient']}")?>">Update</a>
         </th>
         <th>
-            <a href='?controller=client&method=update&id=<?php echo $client['idClient']?>'>Update</a>
-        </th>
-        <th>
-            <a href='?controller=client&method=delete&id=<?php echo $client['idClient']?>'>Delete</a>
+            <a href="<?=base_url("admin/deleteClient/{$client['idClient']}")?>">Delete</a>
+            // <a href='?controller=client&method=delete&id=<?php echo $client['idClient']?>'>Delete</a>
         </th>
     </tr>
 
