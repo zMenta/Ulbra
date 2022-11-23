@@ -19,4 +19,61 @@ class Client extends BaseController{
         echo view ('admin/templates/footer');
     }
 
+
+    public function insertClient(){
+        echo view ('admin/templates/header');
+        echo view ('admin/client/insertClient');
+        echo view ('admin/templates/footer');
+    }
+
+
+    public function insertClientAction(){
+        $ClientModel = new ClientModel();
+
+        $data = [
+            'name' => $this -> request -> getVar('name'),
+            'email' => $this -> request -> getVar('email'),
+            'phone' => $this -> request -> getVar('phone'),
+            'address' => $this -> request -> getVar('address')
+        ];
+
+        $ClientModel -> insert($data);
+        return redirect() -> to(base_url('admin/listClients'));
+    }
+
+
+    public function updateClient($idClient){
+        $ClientModel = new ClientModel();
+        $data [
+            'arrayClient' => $ClientModel -> find($idClient)
+        ];
+
+        echo view ('admin/templates/header');
+        echo view ('admin/client/updateClient', $data);
+        echo view ('admin/templates/footer');
+    }
+
+
+    public function updateClientAction($idClient){
+        $ClientModel = new ClientModel();
+
+        $data = [
+            'name' => $this -> request -> getVar('name'),
+            'email' => $this -> request -> getVar('email'),
+            'phone' => $this -> request -> getVar('phone'),
+            'address' => $this -> request -> getVar('address')
+        ];
+
+        $ClientModel -> update($idClient, $data);
+        return redirect() -> to(base_url('admin/listClients'));
+    }
+
+
+    public function deleteClient($idClient){
+        $ClientModel = new ClientModel();
+
+        $ClientModel -> delete($idClient);
+        return redirect() -> to(base_url('admin/listClients'));
+    }
+
 }

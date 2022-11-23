@@ -1,12 +1,10 @@
-<h1>Admin Client List</h1>
+<h1> Client List</h1>
 <table class="table table-striped">
 
     <tr>
         <th>Client ID</th>
         <th>Name</th>
-        <th>Email</th>
-        <th>Telephone</th>
-        <th>Address</th>
+        <th>Actions</th>
     </tr>
     
     <?php
@@ -21,13 +19,13 @@
             <?=$client['name']?>
         </th>
         <th>
-            <?=$client['email']?>
+            <a href='?controller=client&method=clientDetails&id=<?php echo $client['idClient']?>'>Details</a>
         </th>
         <th>
-            <?=$client['phone']?>
+            <a href='?controller=client&method=update&id=<?php echo $client['idClient']?>'>Update</a>
         </th>
         <th>
-            <?=$client['address']?>    
+            <a href='?controller=client&method=delete&id=<?php echo $client['idClient']?>'>Delete</a>
         </th>
     </tr>
 
