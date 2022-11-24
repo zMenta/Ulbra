@@ -45,7 +45,7 @@ class Client extends BaseController{
     public function updateClient($idClient){
         $ClientModel = new ClientModel();
         $data = [
-            'arrayClient' => $ClientModel -> find($idClient)
+            'clientArray' => $ClientModel -> find($idClient)
         ];
 
         echo view ('admin/templates/header');
