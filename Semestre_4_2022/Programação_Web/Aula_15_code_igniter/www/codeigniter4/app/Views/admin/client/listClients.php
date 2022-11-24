@@ -23,7 +23,6 @@
         </th>
         <th>
             <a href="<?=base_url("admin/deleteClient/{$client['idClient']}")?>">Delete</a>
-            // <a href='?controller=client&method=delete&id=<?php echo $client['idClient']?>'>Delete</a>
         </th>
     </tr>
 

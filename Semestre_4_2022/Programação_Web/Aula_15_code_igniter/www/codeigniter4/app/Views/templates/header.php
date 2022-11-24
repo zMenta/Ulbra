@@ -45,7 +45,7 @@
                     </li>
                     <h2>Clients</h2>
                     <!-- <li class="nav-item">
-                         <a id="buttonContact" class="nav-link" href="?controller=client&method=register">Client Registration</a>
+                         <a id="buttonContact" class="nav-link" href="<?=base_url('insertClient')?>">Client Registration</a>
                          </li> -->
                     <li class="nav-item">
                         <a id="buttonContact" class="nav-link" href="<?=base_url('listClients')?>">List Clients</a>

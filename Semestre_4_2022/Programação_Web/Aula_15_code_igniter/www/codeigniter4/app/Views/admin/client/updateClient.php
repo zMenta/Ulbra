@@ -1,5 +1,5 @@
 <h1>Update Client</h1>
-<form class="form" action="<?=base_url('admin/updateClientAction')?>" method="post">
+<form class="form" action="<?=base_url("admin/updateClientAction/{$clientArray['idClient']}")?>" method="post">
     <div class="mb-3 mt-3">
         <label class="form-label">Name</label>
         <input name="name" class="form-control" type="text" value="<?=$clientArray['name']?>">
