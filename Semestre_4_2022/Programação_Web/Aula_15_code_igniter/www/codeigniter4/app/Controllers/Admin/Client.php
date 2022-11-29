@@ -19,6 +19,17 @@ class Client extends BaseController{
         echo view ('admin/templates/footer');
     }
 
+    public function searchClient(){
+        echo view ('admin/templates/header');
+        echo view ('admin/client/searchClient');
+        echo view ('admin/templates/footer');
+    }
+
+    public function searchClientAction(){
+        return "client search action";
+
+    }
+
 
     public function insertClient(){
         echo view ('admin/templates/header');
