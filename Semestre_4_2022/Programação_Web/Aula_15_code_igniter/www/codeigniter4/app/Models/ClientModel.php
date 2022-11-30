@@ -13,4 +13,15 @@ class ClientModel extends Model{
       'name', 'email', 'phone', 'address'
     ];
 
+
+    function getClientsLike($search) {
+        return $this -> asArray() -> like('idClient', $search)
+        -> orLike('name', $search)
+        -> orLike('phone', $search)
+        -> orLike('email', $search)
+        -> orLike('address', $search)
+        -> findAll();
+    }
+
+
 }

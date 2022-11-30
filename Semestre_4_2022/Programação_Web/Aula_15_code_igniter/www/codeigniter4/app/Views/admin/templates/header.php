@@ -46,6 +46,9 @@
                     <li class="nav-item">
                         <a id="buttonClientInsert" class="nav-link" href="<?=base_url('admin/insertClient')?>">Insert</a>
                     </li>
+                    <li class="nav-item">
+                        <a id="buttonClientSearch" class="nav-link" href="<?=base_url('admin/searchClient')?>">Search</a>
+                    </li>
                 </ul>
             </nav>
 

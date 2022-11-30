@@ -20,6 +20,28 @@ class Client extends BaseController{
     }
 
 
+    public function searchClient(){
+        echo view ('admin/templates/header');
+        echo view ('admin/client/searchClient');
+        echo view ('admin/templates/footer');
+    }
+
+
+    public function searchClientAction(){
+        $ClientModel = new ClientModel();
+        $search = $this -> request -> getVar('search');
+
+        $data = [
+            'arrayClients' => $ClientModel -> getClientsLike($search)
+        ];
+
+
+        echo view ('admin/templates/header');
+        echo view ('admin/client/listClients', $data);
+        echo view ('admin/templates/footer');
+    }
+
+
     public function insertClient(){
         echo view ('admin/templates/header');
         echo view ('admin/client/insertClient');
