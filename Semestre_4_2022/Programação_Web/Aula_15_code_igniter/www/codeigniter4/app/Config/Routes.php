@@ -54,7 +54,8 @@ $routes -> post('/admin/validateLogin', 'Admin\User::validateLogin');
 $routes -> get('/api/client', 'Api\Client::listClients');
 
 $routes -> get('/admin/listClients', 'Admin\Client::listClients');
-$routes -> add('/admin/searchClient', 'Admin\Client::searchClient');
+$routes -> get('/admin/searchClient', 'Admin\Client::searchClient');
+$routes -> add('/admin/searchClientAction', 'Admin\Client::searchClientAction');
 $routes -> get('/admin/insertClient', 'Admin\Client::insertClient');
 $routes -> post('/admin/insertClientAction', 'Admin\Client::insertClientAction');
 $routes -> add('/admin/updateClient/(:num)', 'Admin\Client::updateClient/$1');
