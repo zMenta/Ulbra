@@ -11,5 +11,14 @@
             * acessibilidade
             * comunicabilidade
             * funcionalidade
+*** Resposta:
+
+
+** 2
+ - Conte-nos sua experiência (boa ou ruim) sobre o uso de alguma interface. Lembre-se que, assim como os exemplos apresentados em aula, não precisa ser um exemplo computacional, pois uma interface refere-se à comunicação com o usuário.
 
 *** Resposta:
+Além de experiências referentes a interfaces de softwares. Acredito que quase todos já presenciaram isso que vou relatar.
+Entrando em um banco, prefeitura ou qualquer estabelecimento parecido. Entrar nele e não ter a menor ideia de como prosseguir.
+Para onde eu vou? Onde que eu acesso as informação de ajuda. Aquela sensação de estar perdido e não saber para onde ir.
+Uma experiência ruim que em muitos estabelecimentos desse tipo compartilham e a maioria das vezes você acaba dependendo de ajudar de outras pessoas que trabalham lá, onde não necessariamente elas trabalham para tirar dúvidas dos clients.
