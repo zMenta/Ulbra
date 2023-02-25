@@ -13,7 +13,7 @@
 Realização do primeiro tema de estudo. Destaque de dois temas dessa *[[yt:https://www.youtube.com/watch?v=BbU4zCmKufs][Entrevista]]*  discursando sobre o tema dessa semana.
 
 * Primeiro Tema: Um novo caminho para expor a religião.
-    Como o Luís Mauro Sá Martino expõe na entrevista, atualmente muitas religiões diferentes estão utilizando o meio de mídias digitais.
+Como o Luís Mauro Sá Martino expõe na entrevista, atualmente muitas religiões diferentes estão utilizando o meio de mídias digitais.
 Para conseguir uma exposição maior da religião para seus crentes e ou futuros crentes. Que consequentemente, cria uma relação diferente entre o crente e sua religião.
 
 Com essa nova fronte de exposição, criam novas experiências e relações com a religião. Sendo o meio pelas redes sociais, televisão, rádio e entre outros
@@ -24,13 +24,14 @@ São novos métodos de criar experiências religiosas.
 Sendo possível ter um alcance maior nos meios que as pessoas experienciam sua religião, aumentando a possibilidade de ter uma experiência boa e agradável.
 
 
-
 * Segundo Tema: Aceitação dos novos meios e pluralidade.
 Com as discussões da pluralidade das religiões e dos diferentes meios de praticar sua religião a das diversas pessoas que pertecem a elas.
 É fundamental a aceitação e o entendimento dos mesmos. Para todos terem o direito de seguir sua religião da melhor forma possível.
 
 #+begin_quote
-A verdade é que, independentemente do que cremos, em que ou quem cremos ou como cremos, nós humanos efetivamente cremos em algo. -- O FENÔMENO E A EXPERIÊNCIA RELIGIOSA, Thomas Heimann
+A verdade é que, independentemente do que cremos, em que ou quem cremos ou como cremos, nós humanos efetivamente cremos em algo.
+
+-- O FENÔMENO E A EXPERIÊNCIA RELIGIOSA, Thomas Heimann
 #+end_quote
 
 Como afirma Thomas Heimann, todos nós cremos em algo. E todos temos maneiras diferentes de expressar nossa fé e crença. Ficando mais importante entender o próximo e aceitar os novos meios de crer e expressar nossa fé.
