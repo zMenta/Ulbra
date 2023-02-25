@@ -12,6 +12,11 @@
             * comunicabilidade
             * funcionalidade
 *** Resposta:
+Usabilidade, de acordo com a Norma NBR 9241, é “medida na qual um
+produto pode ser usado por usuários específicos para alcançar objetivos específicos com
+eficácia, eficiência e satisfação em um contexto específico de uso”.
+
+referência: https://drive.google.com/file/d/1GPyDLGu-1nRW5r5SAWqqgq4JNDZc-b-H/edit
 
 
 ** 2
