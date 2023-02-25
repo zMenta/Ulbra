@@ -1,0 +1,15 @@
+#+title: Questionario_aula_dia_22_fev
+
+* Questões:
+** 1
+    - Nessa primeira aula, nos deparamos com muitos termos novos, escolha, ao menos, um deles e busque uma definição para ele (indique a referência utilizada para isso).
+        Alguns termos que podem ser pesquisados:
+            * interface
+            * ergonomia
+            * interação
+            * usabilidade
+            * acessibilidade
+            * comunicabilidade
+            * funcionalidade
+
+*** Resposta:
