@@ -1,0 +1,30 @@
+#+TITLE: A Experiência Religiosa
+#+SUBTITLE: Mídia, Religião e Sociedade
+#+AUTHOR: Lucas Vianna Moog Brentano
+
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+# Disables table of contents
+#+OPTIONS: toc:nil num:nil
+#+date: 25 de fevereiro, 2023
+
+
+* Indroducao
+
+* Primeiro Tema: Tema 1
+asdggdsahkjgsah
+asdggdsahkjgsah
+asdggdsahkjgsah
+asdggdsahkjgsah
+asdggdsahkjgsah
+
+* Segundo Tema: Tema 2
+asdggdsahkjgsah
+asdggdsahkjgsah
+asdggdsahkjgsah
+asdggdsahkjgsah
+asdggdsahkjgsah
+asdggdsahkjgsah
+
+* Referências:
++ https://www.youtube.com/watch?v=BbU4zCmKufs
