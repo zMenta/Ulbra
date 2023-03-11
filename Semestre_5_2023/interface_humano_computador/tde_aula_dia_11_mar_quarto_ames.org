@@ -1,0 +1,21 @@
+#+REVEAL_PROPERTIES:
+#+REVEAL_THEME: simple
+#+OPTIONS: timestamp:nil toc:nil num:nil
+
+#+title: Quarto de Ames
+#+AUTHOR: Lucas Vianna Moog Brentano
+#+DATE: 11 de março, 2023
+
+
+* Quarto de Ames
+** O que é?
++ É uma ilusão de ótica em uma sala
+
+** Como funciona
+#+attr_html: :width 50% :align center :class img
+https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ames_room.svg/1024px-Ames_room.svg.png
+
+* Referências e fontes
++ https://en.wikipedia.org/wiki/Ames_room
+
+** Obrigado pela atenção!
