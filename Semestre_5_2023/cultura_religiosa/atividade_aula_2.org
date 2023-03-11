@@ -1,6 +1,5 @@
-#+title: Espiritualidade e Contemporaneidade
-#+TITLE: Globalização e culpa na religião
-#+SUBTITLE: Mídia, Religião e Sociedade
+#+TITLE: Espiritualidade e Contemporaneidade
+#+SUBTITLE: Globalização e culpa na religião
 #+AUTHOR: Lucas Vianna Moog Brentano
 
 #+LaTeX_CLASS: article
