@@ -7,8 +7,8 @@
 #+DATE: 11 de março, 2023
 
 
-* Quarto de Ames
-** O que é?
+* O que é?
+#+ATTR_REVEAL: :frag (fade-left)
 + É uma ilusão de ótica prática.
 
 ** Exemplos:
