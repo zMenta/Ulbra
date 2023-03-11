@@ -7,7 +7,7 @@
 #+LaTeX_CLASS_OPTIONS: [letterpaper]
 # Disables table of contents
 #+OPTIONS: toc:nil num:nil
-#+date: 25 de fevereiro, 2023
+#+date: 11 de março, 2023
 
 
 * Introdução
@@ -24,3 +24,15 @@ Outro ponto forte dessa mudanças e descobrimento de religiões novas e ou desco
 , acontecendo o fenômeno do *sincretismo religioso*. Fazendo alterações,
 misturas e remoções de conceitos de várias religiões para servir o crente em específico, muitas vezes podendo criar religiões e
 maneiras de pensamento novos diferentes dos que já existem.
+
+* Culpa e Religião
+O sentimento de culpa está presente no ser humano. Assim, não é tão surpreende que o ser humano atribui laços de culpa com a religião.
+Sendo como sacrifícios que temos que fazer para nossas culpas sejam absolvidas, curadas.
+Temos a visão que a culpa é algo a ser cobrada, por isso desenvolvemos esses mecanismos e métodos na religião e no nosso cotidiano.
+Devemos tomar o sentimento de culpa como uma bússola para nossas ações, se tornando o norte que temos que seguir. Pois não se sentimos culpados
+com ações positivas, a tendência é sentir culpa com atos negativos. Assim, tentando se tornar a melhor pessoa que podemos ser, e usar nossos sentimos
+para ser nosso guia.
+
+* Referências
++ https://sites.google.com/ulbra.br/G000001GS002/t002
++ https://drive.google.com/file/d/12ky_v7EjLjJvOHnAKHhndQBI7xpWX4gp/view
