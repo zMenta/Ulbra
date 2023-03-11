@@ -10,6 +10,7 @@
 * O que é?
 #+ATTR_REVEAL: :frag (fade-left)
 + É uma ilusão de ótica prática.
++ Contida em um quarto.
 
 ** Exemplos:
 *** Imagem 1
