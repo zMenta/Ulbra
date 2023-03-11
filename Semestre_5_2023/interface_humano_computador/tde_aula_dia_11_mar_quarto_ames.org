@@ -9,13 +9,24 @@
 
 * Quarto de Ames
 ** O que é?
-+ É uma ilusão de ótica em uma sala
++ É uma ilusão de ótica prática.
+
+** Exemplos:
+*** Imagem 1
+#+attr_html: :width 60% :align center :class img
+https://upload.wikimedia.org/wikipedia/commons/1/11/Ames_room_forced_perspective.jpg
+
+*** Imagem 2
+#+attr_html: :width 60% :align center :class img
+https://1.bp.blogspot.com/_u-LXMEsMK5Y/TBBDO_n7dLI/AAAAAAAAABw/6N_puS2taAQ/s1600/ames+room.jpg
 
 ** Como funciona
-#+attr_html: :width 50% :align center :class img
+#+attr_html: :width 60% :align center :class img
 https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ames_room.svg/1024px-Ames_room.svg.png
+
 
 * Referências e fontes
 + https://en.wikipedia.org/wiki/Ames_room
++ Google imagens
 
 ** Obrigado pela atenção!
