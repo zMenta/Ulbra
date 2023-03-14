@@ -1,0 +1,33 @@
+#+TITLE: TDE-3 Plataformas Computacionais
+#+SUBTITLE: Tipos de Sistemas Operacionais
+#+AUTHOR: Lucas Vianna Moog Brentano
+
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+# Disables table of contents
+#+OPTIONS: toc:nil num:nil
+#+date: 11 de março, 2023
+
+
+* Sistemas Operacionais
+    Os sistemas operacionais e suas evoluções se tem diretamente ao uso do hardware usado e suas aplicações.
+    Assim tendo os principais tipos os sistemas operacionais *mono tarefas*, *multi tarefas* e *múltiplo processamento*.
+
+** Sistemas Mono Tarefa
++ São voltados a executar apenas uma tarefa.
++ Aguardo do término de tarefas pendentes.
++ Recursos dedicados exclusivamente ao uma única tarefa.
++ Simples.
+
+** Sistemas Multi Tarefa
++ Várias tarefas compartilham recursos.
++ Complexidade aumentada.
++ Mais eficientes.
++ Possibilidade de possuir um ou mais usuários.
++ Sistemas de batch, time sharing e real time.
+
+
+** Sistemas de Múltiplo Processamento
++ Possuem um ou mais UCPs conectadas trabalhando em conjunto.
++ Diferentes dependendo de sua arquitetura de conexão. Uso de memória, E/S entre outros.
++ Fortemente ou fracamente conectadas.
