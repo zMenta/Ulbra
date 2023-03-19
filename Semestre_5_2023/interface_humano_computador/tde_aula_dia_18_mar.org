@@ -26,4 +26,4 @@ O que muda é o tom dos blocos adjacentes do bloco B, criando a ilusão que o bl
 Com a seguinte imagem podemos notar que são realmente do mesmo tom.
 
 #+attr_html: :width 60% :align center :class img
-https://pt.wikipedia.org/wiki/Ilus%C3%A3o_de_%C3%B3ptica#/media/Ficheiro:Checkershadow_double_med.jpg
+https://upload.wikimedia.org/wikipedia/commons/a/aa/Checkershadow_double_med.jpg
