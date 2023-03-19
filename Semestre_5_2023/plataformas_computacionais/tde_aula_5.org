@@ -7,3 +7,20 @@
 # Disables table of contents
 #+OPTIONS: toc:nil num:nil
 #+date: 19 de março, 2023
+
+* Introdução
+Irei apresentar os diversos tipos de sistemas operacionais utilizados atualmente e suas características, sendo eles os sistemas embarcados, móveis, desktops e servidores.
+
+
+* Embarcados
+Os sistemas operacionais embarcados são utilizados em dispositivos eletrônicos como smartphones, tablets, sistemas de navegação GPS, consoles de videogames, etc. Eles possuem uma estrutura reduzida, otimizada para o hardware do dispositivo, com poucos recursos e limitações de processamento, memória e armazenamento. Onde um sistema operacional generalista não
+seria adequado ou otimizado para o dispositivo alvo.
+
+*** Características
+Os sistemas operacionais embarcados possuem uma estrutura reduzida, com poucos recursos e limitações de processamento, memória e armazenamento. Eles são otimizados para o hardware do dispositivo e utilizam drivers específicos para cada componente. Os sistemas operacionais embarcados são altamente personalizáveis, permitindo a criação de interfaces de usuário e aplicativos sob medida para o dispositivo.
+
+* Móveis
+Os sistemas operacionais móveis são utilizados em dispositivos portáteis, como smartphones e tablets, com funcionalidades mais avançadas do que os sistemas embarcados. Eles possuem uma estrutura mais completa e recursos mais amplos, com foco em usabilidade e interação com o usuário. Os sistemas operacionais mais utilizados nessa área são o Android, com cerca de 75% do mercado, e o iOS, com cerca de 25%.
+
+*** Características
+Os sistemas operacionais móveis possuem uma estrutura mais completa e recursos mais amplos do que os sistemas embarcados. Eles possuem uma interface de usuário mais elaborada e uma ampla gama de aplicativos disponíveis. Os sistemas operacionais móveis são projetados para trabalhar com telas sensíveis ao toque e outras interfaces de entrada comuns em dispositivos móveis.
