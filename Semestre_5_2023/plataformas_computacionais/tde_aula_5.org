@@ -1,0 +1,9 @@
+#+title: Plataformas Computacionais
+#+SUBTITLE: TDE 5 - Sistemas operacionais
+#+AUTHOR: Lucas Vianna Moog Brentano
+
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+# Disables table of contents
+#+OPTIONS: toc:nil num:nil
+#+date: 19 de março, 2023
