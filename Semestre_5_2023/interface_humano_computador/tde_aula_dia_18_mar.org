@@ -1,0 +1,20 @@
+#+title: TDE - Interface Humano Computador
+#+SUBTITLE:Fatores humanos
+#+SUBTITLE:Ilusão de ótica
+#+AUTHOR: Lucas Vianna Moog Brentano
+
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+# Disables table of contents
+#+OPTIONS: toc:nil num:nil
+#+date: 19 de março, 2023
+
+
+* Introdução
+Trabalho de IHC(Interface Humano Computador) sobre fatores humanos e como eles podem afetar no desenvolvimento de interfaces e
+interpretações por causa de fenômenos que ocorrem com o ser humano.
+
+* Ilusão de ótica.
+#+attr_html: :alt  :align left :class img
+[[https://upload.wikimedia.org/wikipedia/commons/6/60/Grey_square_optical_illusion.PNG][Ilusão do tabuleiro cinza]]
+
