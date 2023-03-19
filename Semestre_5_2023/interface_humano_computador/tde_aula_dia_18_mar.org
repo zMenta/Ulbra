@@ -1,6 +1,5 @@
 #+title: TDE - Interface Humano Computador
-#+SUBTITLE:Fatores humanos
-#+SUBTITLE:Ilusão de ótica
+#+SUBTITLE:Fatores humanos, Ilusão de ótica
 #+AUTHOR: Lucas Vianna Moog Brentano
 
 #+LaTeX_CLASS: article
