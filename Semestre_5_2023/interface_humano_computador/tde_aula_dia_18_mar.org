@@ -13,8 +13,17 @@
 * Introdução
 Trabalho de IHC(Interface Humano Computador) sobre fatores humanos e como eles podem afetar no desenvolvimento de interfaces e
 interpretações por causa de fenômenos que ocorrem com o ser humano.
+Irei abordar a ilusão de ótica do tabuleiro cinza.
 
-* Ilusão de ótica.
-#+attr_html: :alt  :align left :class img
-[[https://upload.wikimedia.org/wikipedia/commons/6/60/Grey_square_optical_illusion.PNG][Ilusão do tabuleiro cinza]]
+* Ilusão do tabuleiro cinza
+Observando a imagem abaixo, podemos notar que aparentemente os espaços A e B são de tons diferentes.
 
+#+attr_html: :width 60% :align center :class img
+https://upload.wikimedia.org/wikipedia/commons/6/60/Grey_square_optical_illusion.PNG
+
+Porém é uma ilusão, em realidade o tom do espaço A e B são é o mesmo.
+O que muda é o tom dos blocos adjacentes do bloco B, criando a ilusão que o bloco B possui um tom mais claro que o bloco A.
+Com a seguinte imagem podemos notar que são realmente do mesmo tom.
+
+#+attr_html: :width 60% :align center :class img
+https://pt.wikipedia.org/wiki/Ilus%C3%A3o_de_%C3%B3ptica#/media/Ficheiro:Checkershadow_double_med.jpg
