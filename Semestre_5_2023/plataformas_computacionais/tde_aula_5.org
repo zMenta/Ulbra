@@ -24,3 +24,9 @@ Os sistemas operacionais móveis são utilizados em dispositivos portáteis, com
 
 *** Características
 Os sistemas operacionais móveis possuem uma estrutura mais completa e recursos mais amplos do que os sistemas embarcados. Eles possuem uma interface de usuário mais elaborada e uma ampla gama de aplicativos disponíveis. Os sistemas operacionais móveis são projetados para trabalhar com telas sensíveis ao toque e outras interfaces de entrada comuns em dispositivos móveis.
+
+* Desktops
+Os sistemas operacionais desktop são utilizados na maioria dos computadores atualmente. Eles possuem uma estrutura mais complexa, com recursos mais avançados e ampla compatibilidade com hardware e softwares de terceiros. Os sistemas operacionais mais utilizados nessa área são o Windows, com cerca de 76% do mercado, o MacOS, com cerca de 17%, e o Linux, com cerca de 6%.
+
+*** Características
+Os sistemas operacionais desktop possuem uma estrutura mais complexa, com recursos mais avançados e ampla compatibilidade com hardware e softwares de terceiros. Eles são projetados para serem utilizados com teclado e mouse, e possuem uma interface de usuário gráfica que permite ao usuário interagir com o sistema operacional e com os aplicativos instalados.
