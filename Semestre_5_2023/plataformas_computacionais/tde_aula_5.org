@@ -20,13 +20,24 @@ seria adequado ou otimizado para o dispositivo alvo.
 Os sistemas operacionais embarcados possuem uma estrutura reduzida, com poucos recursos e limitações de processamento, memória e armazenamento. Eles são otimizados para o hardware do dispositivo e utilizam drivers específicos para cada componente. Os sistemas operacionais embarcados são altamente personalizáveis, permitindo a criação de interfaces de usuário e aplicativos sob medida para o dispositivo.
 
 * Móveis
-Os sistemas operacionais móveis são utilizados em dispositivos portáteis, como smartphones e tablets, com funcionalidades mais avançadas do que os sistemas embarcados. Eles possuem uma estrutura mais completa e recursos mais amplos, com foco em usabilidade e interação com o usuário. Os sistemas operacionais mais utilizados nessa área são o Android, com cerca de 75% do mercado, e o iOS, com cerca de 25%.
+Os sistemas operacionais móveis são utilizados em dispositivos portáteis, como smartphones e tablets, com funcionalidades mais avançadas do que os sistemas embarcados. Eles possuem uma estrutura mais completa e recursos mais amplos, com foco em usabilidade e interação com o usuário. Os sistemas operacionais mais utilizados nessa área são o Android, com cerca de 71% do mercado, e o iOS, com cerca de 27%. E o resto com outros sistemas operacionais.
 
 *** Características
 Os sistemas operacionais móveis possuem uma estrutura mais completa e recursos mais amplos do que os sistemas embarcados. Eles possuem uma interface de usuário mais elaborada e uma ampla gama de aplicativos disponíveis. Os sistemas operacionais móveis são projetados para trabalhar com telas sensíveis ao toque e outras interfaces de entrada comuns em dispositivos móveis.
 
 * Desktops
-Os sistemas operacionais desktop são utilizados na maioria dos computadores atualmente. Eles possuem uma estrutura mais complexa, com recursos mais avançados e ampla compatibilidade com hardware e softwares de terceiros. Os sistemas operacionais mais utilizados nessa área são o Windows, com cerca de 76% do mercado, o MacOS, com cerca de 17%, e o Linux, com cerca de 6%.
+Os sistemas operacionais desktop são utilizados na maioria dos computadores atualmente. Eles possuem uma estrutura mais complexa, com recursos mais avançados e ampla compatibilidade com hardware e softwares de terceiros. Os sistemas operacionais mais utilizados nessa área são o Windows, com cerca de 76% do mercado, o MacOS, com cerca de 17%, e o Linux, com cerca de 2% e o resto com outros sistemas operacionais
 
 *** Características
 Os sistemas operacionais desktop possuem uma estrutura mais complexa, com recursos mais avançados e ampla compatibilidade com hardware e softwares de terceiros. Eles são projetados para serem utilizados com teclado e mouse, e possuem uma interface de usuário gráfica que permite ao usuário interagir com o sistema operacional e com os aplicativos instalados.
+
+* Servidores
+Os sistemas operacionais de servidor são utilizados em servidores de redes corporativas, data centers, hospedagem de sites e outras aplicações que exigem alta disponibilidade,  desempenho e estabilidade. Eles possuem uma estrutura robusta para atender suas necessidades e minimizar falhas e erros. Os sistemas operacionais mais utilizados nessa área são o Windows Server, com cerca de 19% do mercado, o Unix com cerca de 81%.
+
+*** Características
+Servidores são projetos em mente para uma alta taxa de processamento, armazenamento e estabilidade. Assim podendo manter o serviço do servidor com segurança, estabilidade e velocidade. Geralmente são sistemas sem interface, focando totalmente o seu uso para o processamento do servidor em si.
+
+* Referências
++ https://docs.google.com/presentation/d/1Wz0_nK_OXBiu2nlvQcNFT4GFX5sfSCIWIdFwKqA9bZY/edit#slide=id.p1
++ https://docs.google.com/presentation/d/1CcZwa7Y4MEumSbVnc0bcy_0EY2Vu2wI-5NA1sRL9Gzw/edit#slide=id.p1
++ https://gs.statcounter.com/
