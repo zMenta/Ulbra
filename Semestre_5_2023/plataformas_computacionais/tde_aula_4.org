@@ -1,0 +1,77 @@
+#+title: Plataformas Computacionais
+#+SUBTITLE: TDE 4 - Questionário sobre Sistema Operacionais
+#+AUTHOR: Lucas Vianna Moog Brentano
+
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+# Disables table of contents
+#+OPTIONS: toc:nil num:nil
+#+date: 20 de março, 2023
+
+* 1 - Defina o kernel de um SO
+    O kernel é o cérebro do sistema operacional. Onde ele gerencia o sistema em forma geral. Gerenciando os processos de memória, armazenamento, IO, etc.
+
+* 2 - Quais as principais atribuições do kernel?
+    Criação e eliminação de processos, gerenciamento de memória, armazenamento, IO, entre outros.
+
+* 3 - Defina system calls.
+    Camadas de acesso para a comunicação entre um processo criado e o hardware.
+
+* 4 - Principal função de system calls.
+    Para segurança e abstração da execução de processos no sistema.
+
+* 5 - Qual é a importância dos modos de acesso?
+    É bem importante para a segurança do sistema. Limitando ou liberando o acesso de certos processos e chamadas do sistema.
+
+* 6 - O que são instruções privilegiadas e não privilegiadas? Quando elas podem ser executadas?
+    São instruções que possuem ou não possuem acesso a criação de certos processos no sistema. Elas podem ser executadas dependendo do modo de acesso que o comando está sendo executado.
+
+* 7 - Diferencia modo usuário e modo kernel.
+    Modo usuário é o modo com menos privilégios do sistema, para a segurança. O modo kernel já é um modo com privilégios aumentados que consegue criar processos e modificar o sistema.
+
+* 8 - O kernel de um SO é sempre executado em qual modo de acesso do processador? Explique
+    O modo kernel é sempre executado no modo de acesso do usuário, pois o sistema funciona em várias camadas que tem que passar por elas. Começando com a de usuário que possui menos privilégios.
+
+* 9 - Explique como é um sistema monolítico.
+    É um sistema onde possui todos seus processos, gerenciamentos, modos, etc em um único ambiente que se comunicam entre si e o hardware.
+
+* 10 - Explique como é um sistema em camadas.
+    É um sistema onde seus processos, gerenciamentos, modos, etc pertencem em camadas que se comunicam entre si. Cada camada tendo um objetivo próprio e é isolado das outras camadas.
+
+* 11 - Explique como é um sistema cliente-servidor.
+    É um sistema onde seu núcleo é o menos e mais simples possível. Divido em vários serviços diferentes, onde o cliente solicita serviços e o servidos responde aos chamados do cliente.
+
+* 12 - Com suas palavras, defina processo.
+    Um processo nada mais é que um chamado pelo usuário, cliente a execução de alguma informação ao processador.
+
+* 13 - Qual importância do bloco de controle de processos? Quais informações ele deve conter?
+    É super importante para a organização e controle dos processos. É preciso saber sua identificação, prioridade, estado corrente, recursos alocados e informações sobre o programa em execução.
+
+* 14 - Quais são os elementos básicos que constituem um processo? Comente cada um deles.
+    Possuem o contexto de hardware, software e espaço de endereçamento. Contendo a informação dos registradores da UCP, define seus privilégios e origem de criação, informação de onde será executado.
+
+* 15 - Por quais estados um processo pode passar em sistema multiprogramado? Explique cada um deles.
+    Podem ser passados em ready, waiting e running. Ready o processo está pronto para ser executado e aguarda sua execução. Running é o processo que está sendo executado e o waiting é quando um processo espera um evento acontecer para prosseguir seu processamento.
+
+* 16 - Explique o que é a lista de ready e a lista de wait.
+    Explicado na questão 15.
+
+* 17 - Explique o que é um evento voluntário e evento involuntário.
+    Um evento voluntário é quando o evento ocorre na execução do próprio processo. E involuntário são gerados pelo SO.
+
+* 18 - Qual a classificação que o sp processos recebem em relação ao seu tipo? Explique cada um deles.
+    São classificados em CPU-bound e IO-bound. CPU-bound são quando passam a maior parte do tempo no estado de execução. Já os IO-bound são quando passam a maior parte do tempo no estado de espera.
+
+* 19 - Apresente uma vantagem e uma desvantagem em utilizar subprocessos.
+    Uma vantagem é que permite a plicação a ser dividida em vários processos diferentes onde podem trabalhar de forma concorrente. Porém pode aumentar o consumo de recursos do sistema.
+
+* 20 - O diagrama abaixo mostra as mudanças de estado de um processo. Explique os eventos que podem ocorrer para provocar cada mudança.
+#+attr_html: :alt  :align left :class img
+https://1.bp.blogspot.com/-lNzfdtK7kUE/XjQxoUp9qLI/AAAAAAACbnI/cBpaX27CgmoOlRD0YyeNm62-zMFE1IhtQCLcBGAsYHQ/s1600/execucao.jpg
+O processo no estado de pronto pode mudar para em execução, e voltar para pronto caso tenha outro processo com prioridade maior tomar o lugar do estado de execução. Após sua execução o estado muda para espera, depois de aguardar o evento de seu processo, ele muda para pronto.
+
+* 21 - Apresente uma vantagem e uma desvantagem em utilizar threads.
+    Eliminam a necessidade de ter que criar vários processos para a execução da mesma. Podem apresentar aumento de redundância dos estados dos processos distindos em cada thread.
+
+* 22 - Explique qual a principal diferença entre subprocesso e thread.
+    Subprocesso é um filho do processo a ser executado. Thread é um processo onde possui todo o ciclo de estados de processos contidos nele.
