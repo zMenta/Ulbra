@@ -1,0 +1,21 @@
+#+TITLE: Religião no Brasil
+#+AUTHOR: Lucas Vianna Moog Brentano
+
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+# Disables table of contents
+#+OPTIONS: toc:nil num:nil
+#+date: 30 de março, 2023
+
+* A Religião no Brasil
+O Brasil é um país conhecido por sua diversidade cultural e religiosa. O pluralismo religioso é uma das principais características do país, que abriga uma variedade de tradições religiosas, como o cristianismo (católico, protestante e ortodoxo), o espiritismo, o candomblé, a umbanda, o judaísmo, o islamismo, entre outras.
+
+Essa diversidade religiosa é resultado de séculos de influências e migrações de diferentes povos e culturas que se estabeleceram no país. Embora a maioria da população brasileira se identifique como cristã, há também uma significativa presença de religiões afro-brasileiras e outras tradições religiosas.
+
+Apesar de a Constituição brasileira garantir a liberdade de crença e de culto, o pluralismo religioso ainda é alvo de preconceito e intolerância por parte de alguns grupos. Por isso, é importante valorizar e respeitar a diversidade religiosa como um aspecto fundamental da cultura brasileira, promovendo a convivência pacífica entre as diferentes crenças e tradições.
+
+* Referências
++ https://sites.google.com/ulbra.br/G000001GS002/t005
++ https://drive.google.com/file/d/1VP1gPqFQSm24CMZN_y7Lx_wE-nPG0vK1/edit
++ https://www.estudopratico.com.br/sincretismo-religioso/
++ http://www.iea.usp.br/noticias/as-mudancas-na-religiosidade-brasileira
