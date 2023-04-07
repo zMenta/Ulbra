@@ -1,5 +1,5 @@
 #+TITLE:Plataformas Computacionais - AP1
-#+SUBTITLE:Linux
+#+SUBTITLE:Linux Desktop
 #+AUTHOR: BRUNO DE MATOS PACHECO
 #+AUTHOR: ENZO DRAGOUN ARENHART
 #+AUTHOR: Lucas Vianna Moog Brentano
@@ -10,3 +10,27 @@
 #+REVEAL_TITLE_SLIDE: <h2> %t </h2> <br> <h2> %s </h2> <br><br> <h5> BRUNO DE MATOS PACHECO </h5><h5> ENZO DRAGOUN ARENHART </h5> <h5>Lucas Vianna Moog Brentano </h5> <br> <h6>%d</h6>
 
 
+* O que é Linux?
+#+ATTR_REVEAL: :frag (fade-left)
++ Kernel
++ Open Source
++ Linux SO
++ Distribuições ou //Distros//
+  * Debian
+  * Ubuntu
+  * Mint
+  * Fedora
+
+* História
+** Linux
+#+ATTR_REVEAL: :frag (fade-left)
++ Criado em 1991
++ Por Linus Torvalds
+** GNU Project
+#+ATTR_REVEAL: :frag (fade-left)
++ Começado em 1983
++ Por Richard Stallman
++ GNU General Public License - 1989
++ Integração do Linux com o GNU Project
+** Curiosidade
+GNU kernel ou 386BSD existissem na época, Linux talvez nunca existiria.
