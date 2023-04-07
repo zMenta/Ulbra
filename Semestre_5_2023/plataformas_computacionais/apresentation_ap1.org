@@ -26,6 +26,8 @@
 #+ATTR_REVEAL: :frag (fade-left)
 + Criado em 1991
 + Por Linus Torvalds
++ Projeto Pessoal
++ Logo pegou popularidade
 ** GNU Project
 #+ATTR_REVEAL: :frag (fade-left)
 + Começado em 1983
@@ -34,3 +36,21 @@
 + Integração do Linux com o GNU Project
 ** Curiosidade
 GNU kernel ou 386BSD existissem na época, Linux talvez nunca existiria.
+
+* Linux nos tempos atuais
+** Uso nos desktops (PC)
+Linux 2.8%
+#+REVEAL_HTML:<div id="desktop-os_combined-ww-monthly-202203-202303" width="600" height="400" style="width:1000px; height: 400px;"></div><!-- You may change the values of width and height above to resize the chart --><p>Source: <a href="https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202203-202303-bar">StatCounter Global Stats - OS Market Share</a></p><script type="text/javascript" src="https://www.statcounter.com/js/fusioncharts.js"></script><script type="text/javascript" src="https://gs.statcounter.com/chart.php?desktop-os_combined-ww-monthly-202203-202303&chartWidth=600"></script>
+** Por que usar Linux
+#+ATTR_REVEAL: :frag (fade-left)
++ Grátis e Open Source
++ Segurança
++ Estabilidade
++ Personalização
+** Por que *não* usar Linux
+#+ATTR_REVEAL: :frag (fade-left)
++ Incompatibilidade de software
++ Atrito com um SO diferente
+
+* Obrigado pela atenção!
+
