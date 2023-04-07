@@ -1,0 +1,12 @@
+#+TITLE:Plataformas Computacionais - AP1
+#+SUBTITLE:Linux
+#+AUTHOR: BRUNO DE MATOS PACHECO
+#+AUTHOR: ENZO DRAGOUN ARENHART
+#+AUTHOR: Lucas Vianna Moog Brentano
+#+date: 10 de abril, 2023
+
+#+REVEAL_PROPERTIES:
+#+OPTIONS: timestamp:nil toc:nil num:nil
+#+REVEAL_TITLE_SLIDE: <h2> %t </h2> <br> <h2> %s </h2> <br><br> <h5> BRUNO DE MATOS PACHECO </h5><h5> ENZO DRAGOUN ARENHART </h5> <h5>Lucas Vianna Moog Brentano </h5> <br> <h6>%d</h6>
+
+
