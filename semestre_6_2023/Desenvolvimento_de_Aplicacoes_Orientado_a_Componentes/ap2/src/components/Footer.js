@@ -1,9 +1,9 @@
 import "../styles/Footer.css"
 
-function Footer() {
+function Footer({ title }) {
 	return(
 		<footer className="Footer">
-			<h5>AP2 - Lucas Vianna Moog Brentano</h5>
+			<h5>{title}</h5>
 		</footer>
 	)
 }
