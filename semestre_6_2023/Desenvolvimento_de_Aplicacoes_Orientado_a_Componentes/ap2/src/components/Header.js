@@ -1,10 +1,19 @@
 import "../styles/Header.css";
 
-function Header({ title }) {
+function Header({ titleLeft, title, titleRight }) {
 	return (
 		<>
 		<header class="Header">
-		<h1> {title} </h1>
+		<div>
+			<h2> {titleLeft} </h2>
+		</div>
+		<div>
+			<h1> {title} </h1>
+		</div>
+		<div>
+			<h2> {titleRight} </h2>
+		</div>
+
 		</header>
 		</>
 	)
