@@ -1,12 +1,15 @@
 import "../styles/Header.css";
+import HyperContent from "./HyperContent";
 
 function Header({ titleLeft, title, titleRight }) {
 	return (
 		<>
 		<header class="Header">
-		<div>
-			<h2> {titleLeft} </h2>
-		</div>
+		<HyperContent
+			url={"https://www.ulbra.br/"}
+			imageUrl={"https://servicos.ulbra.br/login/bd06ba234c939a31f5c29d1b0a8d2840.png"}
+			imageSize={50}
+		></HyperContent>
 		<div>
 			<h1> {title} </h1>
 		</div>
