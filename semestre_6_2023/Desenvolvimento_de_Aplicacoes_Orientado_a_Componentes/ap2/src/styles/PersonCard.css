@@ -1,0 +1,15 @@
+.PersonCard {
+	height: 270px;
+	width: 250px;
+	background-color: darkcyan;
+	border-radius: 16%;
+	align-items: center;
+	margin: 8px;
+	padding: 12px;
+}
+
+.PersonCard img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
