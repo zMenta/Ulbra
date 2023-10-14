@@ -3,7 +3,7 @@ import PersonCard from "./PersonCard";
 
 function CardContainer () {
 	return (
-		<Container>
+		<Container wrap={true}>
 			<PersonCard
 				name={"Name"}
 				telephone={52348523}
