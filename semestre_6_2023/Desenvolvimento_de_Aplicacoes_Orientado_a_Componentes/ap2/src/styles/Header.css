@@ -9,6 +9,6 @@
 	color: white;
 }
 
-div {
+.Header div {
 	flex-grow: 1;
 }

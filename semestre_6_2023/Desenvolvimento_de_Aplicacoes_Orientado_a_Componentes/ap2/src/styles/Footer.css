@@ -12,3 +12,7 @@
 	color: lightgray;
 	bottom: 0;
 }
+
+.Footer div {
+	flex-grow: 1;
+}
