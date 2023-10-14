@@ -1,10 +1,6 @@
 import "../styles/HyperContent.css"
 
-function HyperContent({ title, url, imageUrl, imageSize}) {
-	if(!imageSize){
-		imageSize = 45
-	}
-
+function HyperContent({ title, url, imageUrl , imageSize= 45}) {
 	if(!imageUrl){
 		return(
 			<div className="HyperContent">
@@ -22,8 +18,7 @@ function HyperContent({ title, url, imageUrl, imageSize}) {
 						alt={title}
 						width={imageSize}
 						height={imageSize}
-					>
-					</img>
+					/>
 				</a>
 				<a href={url} target="_blank" rel="noreferrer">{title}</a>
 			</div>

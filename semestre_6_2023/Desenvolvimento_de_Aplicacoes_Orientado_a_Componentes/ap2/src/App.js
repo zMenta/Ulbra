@@ -6,8 +6,8 @@ function App() {
   return (
 	<>
     <div className="App">
-		<Header titleLeft={"Ulbra"} title={"Entrevero"}></Header>
-		<Footer title={"AP2 - Lucas Vianna Moog Brentano"}></Footer>
+		<Header titleLeft={"Ulbra"} title={"Entrevero"}/>
+		<Footer title={"AP2 - Lucas Vianna Moog Brentano"}/>
     </div>
 	</>
   );
