@@ -1,22 +1,18 @@
 import { useState } from "react";
+import persons from "../staticData/persons";
 import "../styles/RegisterPerson.css"
 import Button from "./Button";
-import persons from "../staticData/persons";
 
-
-function RegisterPerson() {
+function RegisterPerson({ personsArray = persons ,setPersons }) {
 	const [name, setName] = useState()
 	const [telephone, setTelephone] = useState()
 	const [imageUrl, setImageUrl] = useState()
 	const [isInvitee, setInvitee] = useState(false)
 	const [isPaid, setPaid] = useState(false)
-	const [personsList, setPersonsList] = useState(persons)
-
-	console.log(personsList)
 
 	const createPerson = () => {
 		const person = {
-			id: personsList.length + 1,
+			id: personsArray.length + 1,
 			name: name,
 			telephone: telephone,
 			isInvitee: isInvitee,
@@ -33,7 +29,7 @@ function RegisterPerson() {
 		// setInvitee(false)
 		// setPaid()
 
-		setPersonsList([...personsList, person])
+		setPersons([...personsArray, person])
 	}
 
 	return(

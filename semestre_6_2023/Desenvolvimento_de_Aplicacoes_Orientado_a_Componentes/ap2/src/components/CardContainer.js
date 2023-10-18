@@ -2,10 +2,10 @@ import persons from "../staticData/persons";
 import Container from "./Container";
 import PersonCard from "./PersonCard";
 
-function CardContainer () {
+function CardContainer ({ personsArray = persons}) {
 	return (
 		<Container wrap={true}>
-			{persons.map(person => 
+			{personsArray.map(person => 
 				<PersonCard
 					key={person.id}
 					name={person.name}
