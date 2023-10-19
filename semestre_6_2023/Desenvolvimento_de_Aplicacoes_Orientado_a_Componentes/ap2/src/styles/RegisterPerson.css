@@ -1,9 +1,9 @@
 .RegisterPerson {
-	min-width: 350px;
-	min-height: 400px;
+	min-width: 340px;
+	min-height: 310px;
 	background-color: lightgray;
-	border-radius: 10%;
-	padding: 10px;
+	border-radius: 8%;
+	padding: 8px;
 	margin-left: 60px;
 	margin-right: 15px;
 }
