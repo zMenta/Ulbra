@@ -1,6 +1,7 @@
 import { useState } from "react";
 import persons from "../staticData/persons";
 import CardContainer from "./CardContainer";
+import CepContent from "./CepContent";
 import Container from "./Container";
 import RegisterPerson from "./RegisterPerson";
 
@@ -10,6 +11,7 @@ function Body() {
 	return(
 		<>
 			<Container>
+				<CepContent/>
 				<RegisterPerson personsArray={personsArray} setPersons={setPersonsArray}/>
 			</Container>
 			<CardContainer personsArray={personsArray}/>
