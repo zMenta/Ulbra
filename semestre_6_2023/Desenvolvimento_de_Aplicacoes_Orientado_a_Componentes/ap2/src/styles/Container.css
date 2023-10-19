@@ -6,11 +6,14 @@
 	margin: 20px;
 }
 
-.ContainerWrap {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.wrap {
 	flex-wrap: wrap;
-	flex-direction: row;
-	margin: 20px;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.alignStart {
+	align-items: start;
 }
