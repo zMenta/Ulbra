@@ -1,3 +1,4 @@
+import "../styles/CepContent.css"
 import useFetch from "../hooks/useFetch";
 
 function CepContent(){
@@ -5,7 +6,7 @@ function CepContent(){
 	console.log(data)
 
 	return(
-		<div>
+		<div className="CepContent">
 			<h3>CEP | {data.cep}</h3>
 			<p>Cidade: {data.localidade} - {data.uf}</p>
 			<p>Bairro: {data.bairro}</p>
