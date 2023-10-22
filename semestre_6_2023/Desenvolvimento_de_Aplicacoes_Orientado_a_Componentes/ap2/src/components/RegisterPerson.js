@@ -6,7 +6,7 @@ import Button from "./Button";
 function RegisterPerson({ personsArray = persons ,setPersons }) {
 	const [name, setName] = useState("")
 	const [telephone, setTelephone] = useState("")
-	const [imageUrl, setImageUrl] = useState()
+	const [imageUrl, setImageUrl] = useState("")
 	const [isInvitee, setInvitee] = useState(false)
 	const [isPaid, setPaid] = useState(false)
 	const [isValid, setValid] = useState(true)
