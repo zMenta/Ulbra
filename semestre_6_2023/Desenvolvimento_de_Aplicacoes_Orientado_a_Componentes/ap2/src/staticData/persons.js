@@ -5,7 +5,7 @@ const persons = [
     telephone: 1234567890,
     isInvitee: true,
     isPaid: false,
-    imageUrl: "alice.jpg"
+    imageUrl: ""
   },
   {
 	id: 1,
@@ -13,7 +13,7 @@ const persons = [
     telephone: 9876543210,
     isInvitee: true,
     isPaid: true,
-    imageUrl: "bob.jpg"
+    imageUrl: ""
   },
   {
 	id: 2,
@@ -21,7 +21,7 @@ const persons = [
     telephone: 5551234567,
     isInvitee: false,
     isPaid: true,
-    imageUrl: "charlie.jpg"
+    imageUrl: ""
   },
   {
 	id: 3,
@@ -29,7 +29,7 @@ const persons = [
     telephone: 8885551234,
     isInvitee: false,
     isPaid: false,
-    imageUrl: "david.jpg"
+    imageUrl: ""
   },
   {
 	id: 4,
@@ -37,7 +37,7 @@ const persons = [
     telephone: 5557778888,
     isInvitee: true,
     isPaid: true,
-    imageUrl: "eve.jpg"
+    imageUrl: ""
   },
   {
 	id: 5,
@@ -45,7 +45,7 @@ const persons = [
     telephone: 9998887777,
     isInvitee: false,
     isPaid: true,
-    imageUrl: "frank.jpg"
+    imageUrl: ""
   },
   {
 	id: 6,
@@ -53,7 +53,7 @@ const persons = [
     telephone: 7776665555,
     isInvitee: true,
     isPaid: false,
-    imageUrl: "grace.jpg"
+    imageUrl: ""
   }
 ];
 

@@ -12,6 +12,7 @@ function CardContainer ({ personsArray = persons}) {
 					telephone={person.telephone}
 					isInvitee={person.isInvitee}
 					isPaid={person.isPaid}
+					imageUrl={person.imageUrl}
 					/>
 			)}
 		</Container>
