@@ -5,6 +5,7 @@ import CardContainer from "./CardContainer";
 import CepContent from "./CepContent";
 import Container from "./Container";
 import RegisterPerson from "./RegisterPerson";
+import Welcome from "./Welcome";
 
 function Body() {
 	const [personsArray, setPersonsArray] = useState(persons)
@@ -16,6 +17,7 @@ function Body() {
 
 	return(
 		<>
+			<Welcome name={"Daniel"}/>
 			<Container alignStart={true}>
 				<Container column={true}>
 					<Button title={"CEP Button"} callback={switchCepVisible}/>
