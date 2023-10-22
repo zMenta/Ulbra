@@ -1,6 +1,8 @@
+import "../styles/Button.css"
+
 function Button({ title, callback}) {
 	return(
-		<button onClick={callback} type="button">{title}</button>
+		<button class="Button" onClick={callback} type="button">{title}</button>
 	)
 }
 
