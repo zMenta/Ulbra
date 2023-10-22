@@ -14,7 +14,7 @@ function RegisterPerson({ personsArray = persons ,setPersons }) {
 	const createPerson = () => {
 		const person = {
 			id: personsArray.length + 1,
-			name: name,
+			name: name.charAt(0).toUpperCase() + name.slice(1),
 			telephone: telephone,
 			isInvitee: isInvitee,
 			isPaid: isPaid,
@@ -30,9 +30,15 @@ function RegisterPerson({ personsArray = persons ,setPersons }) {
 		setName("")
 		setTelephone("")
 		setImageUrl("")
-
 		setValid(true)
-		setPersons([...personsArray, person])
+
+		personsArray.push(person)
+		personsArray.sort(function(a, b){
+			if(a.name < b.name) {return -1;}
+			if(a.name > b.name) {return 1;}
+			return 0;
+		})
+		setPersons([...personsArray])
 	}
 
 	return(
