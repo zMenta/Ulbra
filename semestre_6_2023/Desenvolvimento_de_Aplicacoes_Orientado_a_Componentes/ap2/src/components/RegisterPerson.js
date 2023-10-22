@@ -25,10 +25,6 @@ function RegisterPerson({ personsArray = persons ,setPersons }) {
 		setTelephone("")
 		setImageUrl("")
 
-		//   Not working?
-		// setInvitee(false)
-		// setPaid()
-
 		setPersons([...personsArray, person])
 	}
 
@@ -52,16 +48,16 @@ function RegisterPerson({ personsArray = persons ,setPersons }) {
 				<br/>
 				<br/>
 				<label> Is invitee: 
-					<input type="checkbox" value={isInvitee} onChange={(event) => {
-						setInvitee(event.target.value)
+					<input type="checkbox" value={isInvitee} onChange={() => {
+						setInvitee(!isInvitee)
 					}} />
 				</label>
 
 				<br/>
 				<br/>
 				<label> Has paid: 
-					<input type="checkbox" value={isPaid} onChange={(event) => {
-						setPaid(event.target.value)
+					<input type="checkbox" value={isPaid} onChange={() => {
+						setPaid(!isPaid)
 					}} />
 				</label>
 
