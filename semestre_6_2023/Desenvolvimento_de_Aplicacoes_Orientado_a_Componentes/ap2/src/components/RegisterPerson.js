@@ -4,11 +4,12 @@ import "../styles/RegisterPerson.css"
 import Button from "./Button";
 
 function RegisterPerson({ personsArray = persons ,setPersons }) {
-	const [name, setName] = useState()
-	const [telephone, setTelephone] = useState()
+	const [name, setName] = useState("")
+	const [telephone, setTelephone] = useState("")
 	const [imageUrl, setImageUrl] = useState()
 	const [isInvitee, setInvitee] = useState(false)
 	const [isPaid, setPaid] = useState(false)
+	const [isValid, setValid] = useState(true)
 
 	const createPerson = () => {
 		const person = {
@@ -20,17 +21,24 @@ function RegisterPerson({ personsArray = persons ,setPersons }) {
 			imageUrl: imageUrl
 		}
 
+		if(person.name === "" || person.telephone === ""){
+			setValid(false)
+			return
+		}
+
 		// Clear form fields after creating a person.
 		setName("")
 		setTelephone("")
 		setImageUrl("")
 
+		setValid(true)
 		setPersons([...personsArray, person])
 	}
 
 	return(
 		<div className="RegisterPerson">
 			<h4> Register a new person </h4>
+			{!isValid && <h4 class="WarningMsg"> Name and Telephone must be filled! </h4>}
 			<form>
 				<label> Name: 
 					<input type="text" value={name} onChange={(event) => {
