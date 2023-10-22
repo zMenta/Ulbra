@@ -1,6 +1,8 @@
+import "../styles/Welcome.css"
+
 function Welcome({ name }){
 	return(
-		<h1>Welcome {name}</h1>
+		<h1 class="Welcome" >Welcome {name}</h1>
 	)
 }
 

@@ -20,10 +20,12 @@ function Body() {
 			<Welcome name={"Daniel"}/>
 			<Container alignStart={true}>
 				<Container column={true}>
-					<Button title={"CEP Button"} callback={switchCepVisible}/>
-					<CepContent isVisible={cepVisible} streetName={"A street name"} dateTime={"15:40"}/>
+					<Container column={true}>
+						<Button title={"CEP Button"} callback={switchCepVisible}/>
+						<CepContent isVisible={cepVisible} streetName={"A street name"} dateTime={"15:40"}/>
+					</Container>
+					<RegisterPerson personsArray={personsArray} setPersons={setPersonsArray}/>
 				</Container>
-				<RegisterPerson personsArray={personsArray} setPersons={setPersonsArray}/>
 				<CardContainer personsArray={personsArray}/>
 			</Container>
 		</>
