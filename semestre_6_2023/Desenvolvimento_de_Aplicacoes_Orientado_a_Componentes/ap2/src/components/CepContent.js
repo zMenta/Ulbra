@@ -12,9 +12,10 @@ function CepContent({ isVisible = true, streetName="", dateTime=""}){
 	return(
 		<div className="CepContent">
 			<h3>CEP | {data.cep}</h3>
-			<p>City: {data.localidade} - {data.uf}</p>
-			<p>Neighborhood: {data.bairro}</p>
-			<p>Complement: {data.complemento}</p>
+			{data.localidade && <p>Cidade: {data.localidade}</p>}
+			{data.uf && <p>UF: {data.uf}</p>}
+			{data.bairro && <p>Neighborhood: {data.bairro}</p>}
+			{data.complemento && <p>Complement: {data.complemento}</p>}
 			<p>Street: {streetName}</p>
 			<p>Time: {dateTime}</p>
 		</div>
