@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Modern Coffee Table",
+      "price": 199.99,
+      "description": "A sleek and stylish coffee table with a modern design.",
+      "photo_url": "https://example.com/modern_coffee_table.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Leather Sofa",
+      "price": 599.99,
+      "description": "A comfortable leather sofa for your living room.",
+      "photo_url": "https://example.com/leather_sofa.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Wooden Bookshelf",
+      "price": 149.99,
+      "description": "A sturdy wooden bookshelf with multiple shelves for your books and decorations.",
+      "photo_url": "https://example.com/wooden_bookshelf.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dining Table Set",
+      "price": 399.99,
+      "description": "A complete dining table set with chairs, perfect for family gatherings.",
+      "photo_url": "https://example.com/dining_table_set.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Bedroom Dresser",
+      "price": 249.99,
+      "description": "A spacious dresser for your bedroom with ample storage space.",
+      "photo_url": "https://example.com/bedroom_dresser.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Lounge Chair",
+      "price": 179.99,
+      "description": "An elegant lounge chair for your cozy reading corner.",
+      "photo_url": "https://example.com/lounge_chair.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Glass Top Dining Table",
+      "price": 299.99,
+      "description": "A stylish dining table with a glass top, adding a modern touch to your dining area.",
+      "photo_url": "https://example.com/glass_top_dining_table.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Office Desk",
+      "price": 169.99,
+      "description": "A practical and spacious office desk for your home office needs.",
+      "photo_url": "https://example.com/office_desk.jpg"
+    }
+  ]
+}
