@@ -23,19 +23,18 @@ function ProductFocus(){
 		}
 	}, [])
 
-	return(
-		<>
-		{product &&
-		<>
-			<Header title={"About this product"}/>
-			<h1>{product.id} | {product.name}</h1>
-			<h3>${product.price}</h3>
-			<p>{product.description}</p>
-		</>
-		}
-		</>
-	)
-
+	if(product){
+		return(
+			<>
+				<Header title={"About this product"}/>
+				<h1>{product.id} | {product.name}</h1>
+				<h3>${product.price}</h3>
+				<p>{product.description}</p>
+			</>
+		)
+	} else {
+		window.location.href = "http://localhost:3000/products/notFound"
+	}
 }
 
 export default ProductFocus;

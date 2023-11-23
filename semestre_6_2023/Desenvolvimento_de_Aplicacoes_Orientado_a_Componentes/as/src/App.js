@@ -4,6 +4,7 @@ import './App.css';
 import { ProductContext } from './contexts/ProductContext';
 import Home from './pages/Home';
 import ProductFocus from './pages/ProductFocus';
+import ProductNotFound from './pages/ProductNotFound';
 import Products from './pages/Products';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 				<Route path='home' element={<Home/>}/>
 				<Route path='products' element={<Products/>}/>
 				<Route path='products/:id' element={<ProductFocus/>}/>
+				<Route path='products/notFound' element={<ProductNotFound/>}/>
 			</Routes>
 		  </BrowserRouter>
 	  </ProductContext.Provider>
