@@ -6,19 +6,12 @@ function ProductFocus(){
 	const params = useParams()
 	const productContext = useContext(ProductContext)
 	const [product, setProducts] = useState([])
-	//TODO Custom hook?
+
 	useEffect(() => {
-		//Old method
-		// async function fetchProducts() {
-		// 	const result = await fetch("http://localhost:3001/products")
-		// 	const products = await result.json()
-		// 	const filteredProduct = products.filter((produc => produc.id == params.id))
-		// 	setProducts(filteredProduct[0])
-		// }
-		//
-		// fetchProducts()
-		const filteredProduct = productContext.products.filter((produc => produc.id == params.id))
-		setProducts(filteredProduct[0])
+		if(productContext.products){
+			const filteredProduct = productContext.products.filter((produc => produc.id == params.id))
+			setProducts(filteredProduct[0])
+		}
 	}, [])
 
 	return(
