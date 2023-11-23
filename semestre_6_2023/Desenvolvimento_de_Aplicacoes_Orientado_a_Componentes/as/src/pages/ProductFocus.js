@@ -11,6 +11,14 @@ function ProductFocus(){
 		if(productContext.products){
 			const filteredProduct = productContext.products.filter((produc => produc.id == params.id))
 			setProducts(filteredProduct[0])
+		} else {
+			async function fetchData(){
+				const data = await fetch("http://localhost:3001/products")
+				const result = await data.json()
+				const filteredProduct = result.filter((produc => produc.id == params.id))
+				setProducts(filteredProduct[0])
+			}
+			fetchData()
 		}
 	}, [])
 
