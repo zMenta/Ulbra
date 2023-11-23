@@ -1,9 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 function ProductCard({product}) {
+	const navigate = useNavigate()
+
+	function focusProduct(id){
+		navigate(`${id}`)
+	}
+
 	return(
-		<div style={{ backgroundColor: "lightgrey", padding:8, margin:10, width: 450 }}>
+		<div onClick={() => focusProduct(product.id)} style={{ backgroundColor: "lightgrey", padding:8, margin:10, width: 450 }}>
 			<h2>{product.name}</h2>
 			<p>Price: ${product.price} </p>
-			<p>Description: {product.description}</p>
+			<p>{product.description}</p>
 		</div>
 	)
 }
