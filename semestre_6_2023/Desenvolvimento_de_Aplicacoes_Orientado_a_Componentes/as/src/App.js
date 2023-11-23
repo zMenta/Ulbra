@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './Pages/Home';
-import ProductFocus from './Pages/ProductFocus';
-import Products from './Pages/Products';
+import Home from './pages/Home';
+import ProductFocus from './pages/ProductFocus';
+import Products from './pages/Products';
 
 function App() {
+	const [product, setProduct] = useState()
+
+
   return (
 	  <BrowserRouter>
 		<Routes>

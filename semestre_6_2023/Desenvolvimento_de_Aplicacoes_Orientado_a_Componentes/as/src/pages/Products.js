@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Header from "../Components/Header";
-import ProductCard from "../Components/ProductCard";
+import Header from "../components/Header";
+import ProductCard from "../components/ProductCard";
 
 function Products(){
 	// TODO Future custom hook?
