@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Link,useParams } from "react-router-dom";
+import Header from "../components/Header";
 import { ProductContext } from "../contexts/ProductContext";
 
 function ProductFocus(){
@@ -26,9 +27,8 @@ function ProductFocus(){
 		<>
 		{product &&
 		<>
-			<Link to="/home">Home</Link>
-			<Link to="/products">Products</Link>
-			<h1>About the product {product.id} | {product.name}</h1>
+			<Header title={"About this product"}/>
+			<h1>{product.id} | {product.name}</h1>
 			<h3>${product.price}</h3>
 			<p>{product.description}</p>
 		</>
