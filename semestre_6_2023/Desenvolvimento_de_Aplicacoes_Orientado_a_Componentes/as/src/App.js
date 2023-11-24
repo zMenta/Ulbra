@@ -5,6 +5,7 @@ import { ProductContext } from './contexts/ProductContext';
 import Home from './pages/Home';
 import ProductFocus from './pages/ProductFocus';
 import ProductNotFound from './pages/ProductNotFound';
+import ProductRegister from './pages/ProductRegister';
 import Products from './pages/Products';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 				<Route path='products' element={<Products/>}/>
 				<Route path='products/:id' element={<ProductFocus/>}/>
 				<Route path='products/notFound' element={<ProductNotFound/>}/>
+				<Route path='products/register' element={<ProductRegister/>}/>
 			</Routes>
 		  </BrowserRouter>
 	  </ProductContext.Provider>

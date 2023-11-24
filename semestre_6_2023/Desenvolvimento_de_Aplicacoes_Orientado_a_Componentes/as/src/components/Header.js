@@ -8,7 +8,8 @@ function Header({title}) {
 		</div>
 		<nav>
 			<Link style={{ marginRight: 15}} to="/home">Home</Link>
-			<Link to="/products">Products</Link>
+			<Link style={{ marginRight: 15}} to="/products">Products</Link>
+			<Link to="/products/register">Register Products</Link>
 		</nav>
 		</>
 	)
