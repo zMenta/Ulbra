@@ -7,6 +7,7 @@ import ProductFocus from './pages/ProductFocus';
 import ProductNotFound from './pages/ProductNotFound';
 import ProductRegister from './pages/ProductRegister';
 import Products from './pages/Products';
+import ProductUpdate from './pages/ProductUpdate';
 
 function App() {
 	const [products, setProducts] = useState()
@@ -22,6 +23,7 @@ function App() {
 				<Route path='products/:id' element={<ProductFocus/>}/>
 				<Route path='products/notFound' element={<ProductNotFound/>}/>
 				<Route path='products/register' element={<ProductRegister/>}/>
+				<Route path='products/update' element={<ProductUpdate/>}/>
 			</Routes>
 		  </BrowserRouter>
 	  </ProductContext.Provider>
