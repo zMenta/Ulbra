@@ -19,7 +19,6 @@ function ProductUpdate(){
 			imageUrl: imageUrl
 		}
 
-		console.log(`Product id: ${id}`)
 		if( id <= -1 ||
 			product.name === "" ||
 			product.price === 0 ||
@@ -44,7 +43,7 @@ function ProductUpdate(){
 			<Header title={"Update a product"}/>
 			{!isValid && <h4>All values must be filled and price can't be 0! Id must be higher than -1</h4>}
 			{response.status === 200 && isValid && <h3>Product updated</h3>}
-			{response.status !== 200 && isValid && <h3>Error: {response.status} - {response.statusText}</h3>}
+			{response.status !== 200 && response.status && <h3>Error: {response.status} - {response.statusText}</h3>}
 			<form>
 				<label> Product ID: 
 					<input type="number" value={id} onChange={(event) => {
