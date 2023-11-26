@@ -42,33 +42,30 @@ function ProductRegister(){
 			<Link to={"/products/update"}>Update a Product</Link>
 			<div className="items-center bg-gray-900 rounded-lg flex flex-col justify-start m-10 mt-8 p-4 h-[65vh] w-[24vw] shadow-black items-center">
 				<form>
+					<h2 className="mb-8 font-bold text-lg" >Create a new product</h2>
 					<div>
-					<label> Name: 
-						<input className="ml-3 mt-8 bg-gray-600 rounded" type="text" value={name} onChange={(event) => {
+						<p>Name:</p>
+						<input className="bg-gray-600 rounded" type="text" value={name} onChange={(event) => {
 							setName(event.target.value)
 						}} />
-					</label>
 					</div>
 					<div>
-					<label> Price: 
-						<input className="ml-3 mt-8 bg-gray-600 rounded" type="number" value={price} onChange={(event) => {
+						<p className="mt-4" >Price:</p>
+						<input className="bg-gray-600 rounded" type="number" value={price} onChange={(event) => {
 							setPrice(event.target.value)
 						}} />
-					</label>
 					</div>
 					<div>
-					<label> Description: 
-						<input className="ml-3 mt-8 bg-gray-600 rounded" type="text" value={description} onChange={(event) => {
+						<p className="mt-4" >Description:</p>
+						<input className="bg-gray-600 rounded" type="text" value={description} onChange={(event) => {
 							setDescription(event.target.value)
 						}} />
-					</label>
 					</div>
 					<div>
-					<label> Image URL: 
-						<input className="ml-3 mt-8 bg-gray-600 rounded" type="text" value={imageUrl} onChange={(event) => {
+						<p className="mt-4" >Description:</p>
+						<input className="bg-gray-600 rounded" type="text" value={imageUrl} onChange={(event) => {
 							setImageUrl(event.target.value)
 						}} />
-					</label>
 					</div>
 				</form>
 				<Button title={"Register"} callback={createProduct}/>
