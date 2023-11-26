@@ -31,7 +31,7 @@ function ProductDelete(){
 				<AboutUs/>
 				<div className="items-center bg-gray-900 rounded-lg flex flex-col justify-start m-10 mt-8 p-4 h-[65vh] w-[24vw] shadow-black">
 					<form>
-						<h2 className="mb-8 font-bold text-lg" >Update a product</h2>
+						<h2 className="mb-8 font-bold text-lg" >Delete a product</h2>
 						<div>
 							<p>Id:</p>
 							<input className="bg-gray-600 rounded" type="number" value={id} onChange={(event) => {
