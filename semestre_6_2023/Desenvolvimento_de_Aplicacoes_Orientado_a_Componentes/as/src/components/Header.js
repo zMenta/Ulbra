@@ -9,7 +9,7 @@ function Header({title}) {
 			<text className="mr-2">|</text>
 			<Link className="mr-2" to="/products">Products</Link>
 			<text className="mr-2">|</text>
-			<Link to="/products/register">Register Products</Link>
+			<Link to="/products/register">About us</Link>
 			</div>
 			<h1 className="ml-80 font-bold">{title}</h1>
 		</div>
