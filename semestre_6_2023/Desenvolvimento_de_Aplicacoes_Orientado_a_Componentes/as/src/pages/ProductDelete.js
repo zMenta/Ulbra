@@ -4,17 +4,14 @@ import Button from "../components/Button";
 import ErrorMessage from "../components/ErrorMessage";
 import Header from "../components/Header";
 import SucessMessage from "../components/SucessMessage";
+import useDelete from "../customHooks/useDelete";
 
 function ProductDelete(){
 	const [id, setId] = useState(-1)
-	const [response, setResponse] = useState({})
+	const [response, sendDelete] = useDelete()
 
-	async function updateProduct(){
-		const resp = await fetch(`http://localhost:3001/products/${id}`, {
-			method: "DELETE",
-			headers: {"Content-Type": "application/json"},
-		})
-		setResponse(resp)
+	function updateProduct(){
+		sendDelete(id)
 	}
 
 	return(

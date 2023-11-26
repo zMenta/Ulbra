@@ -20,7 +20,7 @@ function ProductUpdate(){
 			name: name.charAt(0).toUpperCase() + name.slice(1),
 			price: price,
 			description: description,
-			imageUrl: imageUrl
+			photo_url: imageUrl
 		}
 
 		if(	product.name === "" ||
