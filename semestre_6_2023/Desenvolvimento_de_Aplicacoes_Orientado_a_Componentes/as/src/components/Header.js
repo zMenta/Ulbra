@@ -3,14 +3,16 @@ import { Link } from "react-router-dom"
 function Header({title}) {
 	return(
 		<>
-		<div style={{width: "100%", height: "50px", backgroundColor: "lightblue"}}>
-			<h1>{title}</h1>
-		</div>
-		<nav>
-			<Link style={{ marginRight: 15}} to="/home">Home</Link>
-			<Link style={{ marginRight: 15}} to="/products">Products</Link>
+		<div className="text-2xl flex center w-screen h-8 p-1 bg-gray-800 text-center text-gray-50 h-20 p-6"> 
+			<div className="ml-10">
+			<Link className="mr-2" to="/home">Home</Link>
+			<text className="mr-2">|</text>
+			<Link className="mr-2" to="/products">Products</Link>
+			<text className="mr-2">|</text>
 			<Link to="/products/register">Register Products</Link>
-		</nav>
+			</div>
+			<h1 className="ml-80 font-bold">{title}</h1>
+		</div>
 		</>
 	)
 }
