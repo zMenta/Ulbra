@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Header({title}) {
 	return(
 		<>
-		<div className="text-2xl flex center w-screen h-8 p-1 bg-gray-800 text-center text-gray-50 h-20 p-6"> 
+		<div className="text-2xl flex center w-screen bg-gray-800 text-center text-gray-50 h-20 p-6"> 
 			<div className="ml-10">
 			<Link className="mr-2" to="/home">Home</Link>
 			<text className="mr-2">|</text>

@@ -12,8 +12,8 @@ import ProductUpdate from './pages/ProductUpdate';
 function App() {
 	const [products, setProducts] = useState()
 
-
   return (
+	  <div className='text-gray-50'>
 	  <ProductContext.Provider value={{products, setProducts}}>
 		  <BrowserRouter>
 			<Routes>
@@ -27,6 +27,7 @@ function App() {
 			</Routes>
 		  </BrowserRouter>
 	  </ProductContext.Provider>
+	  </div>
   );
 }
 
