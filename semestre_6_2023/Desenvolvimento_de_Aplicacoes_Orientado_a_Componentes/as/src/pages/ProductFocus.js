@@ -29,7 +29,7 @@ function ProductFocus(){
 				<Header title={"About this product"}/>
 				<div className="flex justify-center">
 					<div className="bg-gray-900 rounded-lg flex flex-col justify-start m-10 mt-8 p-4 h-[85vh] w-[44vw] shadow-black items-center">
-						<img className="rounded h-[32rem] w-[48rem]" src="https://media.gettyimages.com/id/185318363/photo/office-armchair-clipping-path.jpg?s=612x612&w=0&k=20&c=cqlTWgGE1msfJmsA8hYFUYGvS3AkWUCd08Vuw3Pudjs=" alt={product.name}/>
+						<img className="rounded h-[32rem] w-[48rem]" src={product.photo_url} alt={product.name}/>
 						<h1 className="text-2xl font-bold mt-5 mb-5">{product.id} | {product.name}</h1>
 						<h3 className="text-lg mb-2">${product.price}</h3>
 						<p>{product.description}</p>

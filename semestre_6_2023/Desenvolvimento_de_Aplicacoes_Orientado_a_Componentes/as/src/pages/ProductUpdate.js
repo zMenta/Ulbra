@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import ErrorMessage from "../components/ErrorMessage";
 import Header from "../components/Header";
 import SucessMessage from "../components/SucessMessage";
+import useUpdate from "../customHooks/useUpdate";
 
 function ProductUpdate(){
 	const [id, setId] = useState(-1)
@@ -12,7 +13,7 @@ function ProductUpdate(){
 	const [description, setDescription] = useState("")
 	const [imageUrl, setImageUrl] = useState("")
 	const [isValid, setValid] = useState(true)
-	const [response, setResponse] = useState({})
+	const [response, sendUpdate] = useUpdate()
 
 	async function updateProduct(){
 		const product = {
@@ -32,12 +33,7 @@ function ProductUpdate(){
 		}
 
 		setValid(true)
-		const resp = await fetch(`http://localhost:3001/products/${id}`, {
-			method: "PUT",
-			headers: {"Content-Type": "application/json"},
-			body: JSON.stringify(product)
-		})
-		setResponse(resp)
+		sendUpdate(id, product)
 	}
 
 	return(
@@ -73,7 +69,7 @@ function ProductUpdate(){
 							}} />
 						</div>
 						<div>
-							<p className="mt-4" >Description:</p>
+							<p className="mt-4" >Image URL:</p>
 							<input className="bg-gray-600 rounded" type="text" value={imageUrl} onChange={(event) => {
 								setImageUrl(event.target.value)
 							}} />
