@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Header from "../components/Header";
+import ErrorMessage from "../components/ErrorMessage"
 
 function ProductRegister(){
 	const [name, setName] = useState("")
@@ -39,32 +40,42 @@ function ProductRegister(){
 		<>
 			<Header title={"Register a product"}/>
 			<Link to={"/products/update"}>Update a Product</Link>
-			{!isValid && <h4>All values must be filled and price can't be 0!</h4>}
-			<form>
-				<label> Name: 
-					<input type="text" value={name} onChange={(event) => {
-						setName(event.target.value)
-					}} />
-				</label>
-				<label> Price: 
-					<input type="number" value={price} onChange={(event) => {
-						setPrice(event.target.value)
-					}} />
-				</label>
-				<label> Description: 
-					<input type="text" value={description} onChange={(event) => {
-						setDescription(event.target.value)
-					}} />
-				</label>
-				<label> Image URL: 
-					<input type="text" value={imageUrl} onChange={(event) => {
-						setImageUrl(event.target.value)
-					}} />
-				</label>
-			</form>
+			<div className="items-center bg-gray-900 rounded-lg flex flex-col justify-start m-10 mt-8 p-4 h-[65vh] w-[24vw] shadow-black items-center">
+				<form>
+					<div>
+					<label> Name: 
+						<input className="ml-3 mt-8 bg-gray-600 rounded" type="text" value={name} onChange={(event) => {
+							setName(event.target.value)
+						}} />
+					</label>
+					</div>
+					<div>
+					<label> Price: 
+						<input className="ml-3 mt-8 bg-gray-600 rounded" type="number" value={price} onChange={(event) => {
+							setPrice(event.target.value)
+						}} />
+					</label>
+					</div>
+					<div>
+					<label> Description: 
+						<input className="ml-3 mt-8 bg-gray-600 rounded" type="text" value={description} onChange={(event) => {
+							setDescription(event.target.value)
+						}} />
+					</label>
+					</div>
+					<div>
+					<label> Image URL: 
+						<input className="ml-3 mt-8 bg-gray-600 rounded" type="text" value={imageUrl} onChange={(event) => {
+							setImageUrl(event.target.value)
+						}} />
+					</label>
+					</div>
+				</form>
+				<Button title={"Register"} callback={createProduct}/>
+				{!isValid && <ErrorMessage text="All values must be filled and price can't be 0!"/>}
+			</div>
 			<br/>
 			<br/>
-			<Button title={"Register"} callback={createProduct}/>
 		</>
 	)
 }
