@@ -22,8 +22,7 @@ function ProductUpdate(){
 			imageUrl: imageUrl
 		}
 
-		if( id <= -1 ||
-			product.name === "" ||
+		if(	product.name === "" ||
 			product.price === 0 ||
 			product.description === "" ||
 			product.imageUrl === ""
@@ -40,8 +39,6 @@ function ProductUpdate(){
 		})
 		setResponse(resp)
 	}
-
-	// {!isValid && <h4>All values must be filled and price can't be 0! Id must be higher than -1</h4>}
 
 	return(
 		<>
@@ -83,7 +80,7 @@ function ProductUpdate(){
 						</div>
 					</form>
 					<Button title={"Update"} callback={updateProduct}/>
-					{!isValid && <ErrorMessage text="All values must be filled and price can't be 0. Id must be higher than -1"/>}
+					{!isValid && <ErrorMessage text="All values must be filled and price can't be 0."/>}
 					{response.status === 200 && isValid && <SucessMessage text="Product updated!"/> }
 					{response.status !== 200 && response.status && <ErrorMessage text={`Error: ${response.status} - ${response.statusText}`}/>}
 				</div>
