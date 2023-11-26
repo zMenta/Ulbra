@@ -8,15 +8,8 @@ import SucessMessage from "../components/SucessMessage";
 function ProductDelete(){
 	const [id, setId] = useState(-1)
 	const [response, setResponse] = useState({})
-	const [isValid, setValid] = useState(true)
 
 	async function updateProduct(){
-		if( id <= -1 ){
-			setValid(false)
-			return
-		}
-
-		setValid(true)
 		const resp = await fetch(`http://localhost:3001/products/${id}`, {
 			method: "DELETE",
 			headers: {"Content-Type": "application/json"},
@@ -39,8 +32,8 @@ function ProductDelete(){
 							}} />
 						</div>
 					</form>
-					<Button title={"Update"} callback={updateProduct}/>
-					{response.status === 200 && isValid && <SucessMessage text="Product deleted!"/> }
+					<Button title={"Delete"} callback={updateProduct}/>
+					{response.status === 200 &&  <SucessMessage text="Product deleted!"/> }
 					{response.status !== 200 && response.status && <ErrorMessage text={`Error: ${response.status} - ${response.statusText}`}/>}
 				</div>
 			</div>
