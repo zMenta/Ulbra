@@ -26,7 +26,7 @@ function ProductRegister(){
 		if(product.name === "" ||
 			product.price === 0 ||
 			product.description === "" ||
-			product.imageUrl === ""
+			product.photo_url === ""
 		){
 			setValid(false)
 			return
@@ -34,7 +34,6 @@ function ProductRegister(){
 
 		setValid(true)
 		sendCreate(product)
-		console.log(response)
 	}
 
 	return(
