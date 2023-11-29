@@ -5,56 +5,56 @@
       "name": "Modern Coffee Table",
       "price": 199.99,
       "description": "A sleek and stylish coffee table with a modern design.",
-      "photo_url": "https://example.com/modern_coffee_table.jpg"
+      "photo_url": "https://media.gettyimages.com/id/185318363/photo/office-armchair-clipping-path.jpg?s=612x612&w=0&k=20&c=cqlTWgGE1msfJmsA8hYFUYGvS3AkWUCd08Vuw3Pudjs="
     },
     {
       "id": 2,
       "name": "Leather Sofa",
       "price": 599.99,
       "description": "A comfortable leather sofa for your living room.",
-      "photo_url": "https://example.com/leather_sofa.jpg"
+      "photo_url": "https://img.freepik.com/free-photo/lit-lamp-beside-couch_1203-616.jpg?size=626&ext=jpg"
     },
     {
       "id": 3,
       "name": "Wooden Bookshelf",
       "price": 149.99,
       "description": "A sturdy wooden bookshelf with multiple shelves for your books and decorations.",
-      "photo_url": "https://example.com/wooden_bookshelf.jpg"
+      "photo_url": "https://images.freeimages.com/images/large-previews/b8b/furniture-8-1425740.jpg?fmt=webp&w=350"
     },
     {
       "id": 4,
       "name": "Dining Table Set",
       "price": 399.99,
       "description": "A complete dining table set with chairs, perfect for family gatherings.",
-      "photo_url": "https://example.com/dining_table_set.jpg"
+      "photo_url": "https://media.gettyimages.com/id/185318363/photo/office-armchair-clipping-path.jpg?s=612x612&w=0&k=20&c=cqlTWgGE1msfJmsA8hYFUYGvS3AkWUCd08Vuw3Pudjs="
     },
     {
       "id": 5,
       "name": "Bedroom Dresser",
       "price": 249.99,
       "description": "A spacious dresser for your bedroom with ample storage space.",
-      "photo_url": "https://example.com/bedroom_dresser.jpg"
+      "photo_url": "https://media.gettyimages.com/id/154306830/photo/bedroom-chest-drawer.jpg?s=612x612&w=0&k=20&c=VQJWQWA0NcgjMkjDg3hBLSITV3f3D2ilDd96fk8GOmE="
     },
     {
       "id": 6,
       "name": "Lounge Chair",
       "price": 179.99,
       "description": "An elegant lounge chair for your cozy reading corner.",
-      "photo_url": "https://example.com/lounge_chair.jpg"
+      "photo_url": "https://media.gettyimages.com/id/185318363/photo/office-armchair-clipping-path.jpg?s=612x612&w=0&k=20&c=cqlTWgGE1msfJmsA8hYFUYGvS3AkWUCd08Vuw3Pudjs="
     },
     {
       "id": 7,
       "name": "Glass Top Dining Table",
       "price": 299.99,
       "description": "A stylish dining table with a glass top, adding a modern touch to your dining area.",
-      "photo_url": "https://example.com/glass_top_dining_table.jpg"
+      "photo_url": "https://media.gettyimages.com/id/185318363/photo/office-armchair-clipping-path.jpg?s=612x612&w=0&k=20&c=cqlTWgGE1msfJmsA8hYFUYGvS3AkWUCd08Vuw3Pudjs="
     },
     {
       "id": 8,
       "name": "Office Desk",
       "price": 169.99,
       "description": "A practical and spacious office desk for your home office needs.",
-      "photo_url": "https://example.com/office_desk.jpg"
+      "photo_url": "https://media.gettyimages.com/id/185318363/photo/office-armchair-clipping-path.jpg?s=612x612&w=0&k=20&c=cqlTWgGE1msfJmsA8hYFUYGvS3AkWUCd08Vuw3Pudjs="
     }
   ]
 }

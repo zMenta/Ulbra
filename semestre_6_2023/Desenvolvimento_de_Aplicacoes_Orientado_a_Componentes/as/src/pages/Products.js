@@ -19,9 +19,11 @@ function Products(){
 	return(
 		<>
 			<Header title={"Products page"}/>
+			<div className="flex justify-center flex-wrap mt-10">
 			{products && products.map((product) =>{
 				return <ProductCard product={product}/>
 			})}
+			</div>
 		</>
 	)
 }
