@@ -44,4 +44,9 @@ func InformacoesVoo():
 
 - Usage
 var flight = Voona.new()
+flight.air_company = "Test"
+flight.origin = "A"
+flight.destiny = "B"
+flight.flight_date = "15th of February 3028"
+flight.ticket_price = 8532
 flight.InformacoesVoo()
