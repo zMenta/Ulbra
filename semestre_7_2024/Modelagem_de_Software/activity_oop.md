@@ -1,4 +1,9 @@
-# Exercise 1
+# Modelagem de software OOP exercise
+- Lucas V. M. Brentano
+- 05/03/2024
+Using a pseudo language (with a mix of gdscript) to complete the exercises.
+
+## Student
 - Definition
 class_name Student
 var name
@@ -14,7 +19,7 @@ var student = Student.new()
 student.mostratInformacoes()
 
 
-# Beach
+## Beach
 - Definition
 class_name Beach
 var name
@@ -30,7 +35,7 @@ var beach = Beach.new()
 beach.informacoesPraia()
 
 
-# Flights
+## Flights
 - Definition
 class_name Voona
 var air_company
