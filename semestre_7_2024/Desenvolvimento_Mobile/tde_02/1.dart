@@ -7,6 +7,11 @@ void main() {
         7,
     ];
 
+    if (numList.length == 0) {
+        print("List is empty, calculation of average stopped");
+        return;
+    }
+
     int total = 0;
     for (int i = 0; i < numList.length; i++) {
         total += numList[i];
