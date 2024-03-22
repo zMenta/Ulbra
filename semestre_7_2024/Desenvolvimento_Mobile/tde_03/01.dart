@@ -1,7 +1,8 @@
 enum Operation {
     add,
     multiply,
-    subtract
+    subtract,
+    divide
 }
 
 void main() {
@@ -10,7 +11,7 @@ void main() {
     print(calculator(10, 5, Operation.subtract));
 }
 
-int calculator(int x, int y, Operation oper) {
+double calculator(double x, double y, Operation oper) {
     switch(oper) {
         case Operation.add:
             return x + y;
@@ -18,5 +19,7 @@ int calculator(int x, int y, Operation oper) {
             return x * y;
         case Operation.subtract:
             return x - y;
+        case Operation.divide:
+            return x / y;
     }
 }
