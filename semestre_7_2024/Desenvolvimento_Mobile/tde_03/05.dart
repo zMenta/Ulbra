@@ -1,14 +1,16 @@
 void main() {
     List<int> my_list = [1, 2, 3, 4, 5];
 
-    print(returnAverage(my_list));
+    print(returnEven(my_list));
 }
 
-double returnAverage(List<int> list) {
-    double total = 0;
+List<int> returnEven(List<int> list) {
+    List<int> new_list = [];
     for (int i = 0; i < list.length; i++) {
-        total += list[i];
+        if (list[i] % 2 != 0) {
+            new_list.add(list[i]);
+        }
     }
 
-    return total / list.length;
+    return new_list;
 }
