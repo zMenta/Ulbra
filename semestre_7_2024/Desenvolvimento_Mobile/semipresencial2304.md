@@ -36,14 +36,75 @@ class Pencil {
 ```
 
 
-Now if we want to implement a behavior of *"Write"*:
+Now if we want to implement a behavior of *"write"*:
+```dart
+class Pencil {
+    String color = "Black";
+    double length = 6.5;
+
+    void write(){
+        print("Writing stuff!");
+    }
+}
+```
+
+## Objects
+Now objects, are instances of our classes. In our development cycle we create,modify and delete many objects.
+
+Following our last example in the **Classes** section, we can create an object like this:
+
+```dart
+Pencil brandNewPencil = Pencil();
+```
+
+And if we want to call our *write* method:
+```dart
+Pencil brandNewPencil = Pencil();
+
+brandNewPencil.write();
+```
+Simple right?
+
+
+
+But now what we do if we want to create a diverse set of pencils? I'm sure that only having Black colored pencils can be boring.
+
+We can change the values like this:
+```dart
+Pencil brandNewPencil = Pencil();
+
+brandNewPencil.color = "Red";
+```
+Now we have created a black pencil, then modified it's color value to red.
+
+## Constructors 
+But I'm sure that creating a diverse set of pencils and changing their colors one by one can be tiresome. But luckily Constructors are here to help us!
+
+Constructors are methods that are called when an objects is created.
+
+
+
+Looking back at our Pencil class, when creating a constructor is good practice to call the constructor method the same name as the class.
 ```dart
 class Pencil {
     String color;
     double length;
 
-    void Write(){
+    // I'm a constructor
+    Pencil(this.color, this.length);
+
+    void write(){
         print("Writing stuff!");
     }
 }
+```
+Note that we also removed the default values of the *color* and *length* properties.
+Also note that we are using the **this** keyword before writing the class properties, using *this*, we can make sure that the property is in the scope of that instance, and not related to any other property or variable with that same name.
+
+
+Now if we want to create a new Pencil object, we do the following:
+```dart
+Pencil bluePencil = Pencil("Blue", 6.5);
+Pencil redPencil = Pencil("Red", 6.5);
+Pencil shortPencil = Pencil("Black", 2.5);
 ```
